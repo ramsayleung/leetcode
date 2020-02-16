@@ -22,7 +22,7 @@ Note:
 
 
 class Solution(object):
-    def validPalindrome(self, s):
+    def validPalindrome(self, s:str)->bool:
         """
         :type s: str
         :rtype: bool
@@ -31,17 +31,16 @@ class Solution(object):
         chars = list(s)
         size = len(chars)
         if (index != -1):
-            firstS = list(chars)
-            del firstS[index]
+            k = size - index
+            firstS = chars[index:k - 1]
             if self.isPalindrome(firstS) == -1:
                 return True
-            lastS = chars
-            del lastS[size - index - 1]
+            lastS = chars[index + 1:k]
             return self.isPalindrome(lastS) == -1
         else:
             return True
 
-    def isPalindrome(self, chars):
+    def isPalindrome(self, chars:list)->int:
         """
         :type chars:list<str>
         :rtype: int
