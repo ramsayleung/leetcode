@@ -30,7 +30,6 @@ Note:
 
     The string size will be in the range [1, 100].
 """
-from typing import List
 
 
 class Solution:
@@ -38,55 +37,24 @@ class Solution:
         if not s:
             return True
         chars = list(s)
-        # the left/right- parentiesis is high priority
-        self.handleMatchParenthesis(chars, lambda c: c == '(',
-                                    lambda c: c == ')', True)
-        chars = list(filter(None, chars))
-        print("before:", chars)
-        length = len(chars)
-        for i in range(length):
-            if chars[i] == '(':
-                for c in range(length - i):
-                    if chars[c + i] == ')' or chars[c + i] == '*':
-                        chars[i] = ''
-                        chars[c + i] = ''
-                        break
-            if chars[i] == ')':
-                for c in range(i + 1):
-                    if chars[i - c] == '(' or chars[i - c] == '*':
-                        chars[i] = ''
-                        chars[i - c] = ''
-                        break
-
-        print("after: ", chars)
-        return all([x == '*' or x == '' for x in chars])
-
-    def handleMatchParenthesis(self,
-                               chars: List[str],
-                               leftParenthesisFunc,
-                               rightParenthesisFunc,
-                               firstRound=False):
-        length = len(chars)
-        for k in range(length if firstRound else 1):
-            for i in range(length):
-                if leftParenthesisFunc(chars[i]):
-                    for j in range(k + 1 if firstRound else length - i):
-                        if j + i >= length:
-                            continue
-                        if rightParenthesisFunc(chars[j + i]):
-                            chars[i] = ""
-                            chars[j + i] = ""
-                            break
-
-    def getFirstLeftParenthesis(self, chars: List) -> int:
-        for i, c in enumerate(chars):
-            if c == '(':
-                return i
-        return -1
-
-    def getLastRightParenthesis(self, chars: List) -> int:
-        lastIndex = -1
-        for i, c in enumerate(chars):
-            if c == ')':
-                lastIndex = i
-        return lastIndex
+        leftBalanced = 0
+        for c in chars:
+            if c == '*' or c == '(':
+                leftBalanced += 1
+            else:
+                leftBalanced -= 1
+            # ensure `(` go before `)`
+            if leftBalanced < 0:
+                return False
+        if leftBalanced == 0:
+            return True
+        rightBalanced = 0
+        for c in reversed(chars):
+            if c == ')' or c == '*':
+                rightBalanced += 1
+            else:
+                rightBalanced -= 1
+            # ensure ')' go after '('
+            if rightBalanced < 0:
+                return False
+        return True
