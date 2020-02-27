@@ -12,3 +12,4 @@
 | 673  | [Number of longest increasing subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)   | [Python3](./number_of_longest_increasing_subsequence.py)  | Medium     |
 | 672  | [Bulb Switcher2](https://leetcode.com/problems/bulb-switcher-ii/)                                                     | [Python3](./bulb_switcher2.py)                            | Medium     |
 | 671  | [Second minimum node in binary tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)             | [Python3](./second_minimum_node_in_binary_tree.py)        | Easy       |
+| 670  | [Maximum swap](https://leetcode.com/problems/maximum-swap/)                                                           | [Python3](./maximum_swap.py)                              | Medium     |
