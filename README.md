@@ -13,3 +13,4 @@
 | 672  | [Bulb Switcher2](https://leetcode.com/problems/bulb-switcher-ii/)                                                     | [Python3](./bulb_switcher2.py)                            | Medium     |
 | 671  | [Second minimum node in binary tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)             | [Python3](./second_minimum_node_in_binary_tree.py)        | Easy       |
 | 670  | [Maximum swap](https://leetcode.com/problems/maximum-swap/)                                                           | [Python3](./maximum_swap.py)                              | Medium     |
+| 669  | [Trim a binary search tree](https://leetcode.com/problems/trim-a-binary-search-tree/)                                 | [Python3](./trim_a_binary_search_tree.py)                 | Easy       |
