@@ -16,3 +16,4 @@
 | 669  | [Trim a binary search tree](https://leetcode.com/problems/trim-a-binary-search-tree/)                                                 | [Python3](./trim_a_binary_search_tree.py)                   | Easy       |
 | 668  | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/submissions/) | [Python3](./kth_smallest_number_in_multiplication_table.py) | Hard       |
 | 667  | [Beautiful Arrangment II](https://leetcode.com/problems/beautiful-arrangement-ii/)                                                    | [Python3](./beautiful_arragement_2.py)                      | Medium     |
+| 665  | [Non Decreasing Array](https://leetcode.com/problems/non-decreasing-array/)                                                           | [Python3](./non_decreasing_array.py)                        | Easy       |
