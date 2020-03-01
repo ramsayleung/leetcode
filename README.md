@@ -15,3 +15,4 @@
 | 670  | [Maximum swap](https://leetcode.com/problems/maximum-swap/)                                                                           | [Python3](./maximum_swap.py)                                | Medium     |
 | 669  | [Trim a binary search tree](https://leetcode.com/problems/trim-a-binary-search-tree/)                                                 | [Python3](./trim_a_binary_search_tree.py)                   | Easy       |
 | 668  | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/submissions/) | [Python3](./kth_smallest_number_in_multiplication_table.py) | Hard       |
+| 667  | [Beautiful Arrangment II](https://leetcode.com/problems/beautiful-arrangement-ii/)                                                    | [Python3](./beautiful_arragement_2.py)                      | Medium     |
