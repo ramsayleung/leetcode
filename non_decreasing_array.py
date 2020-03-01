@@ -28,11 +28,14 @@ class Solution:
             if i == len(nums) - 1:
                 break
             if nums[i] > nums[i + 1]:
-                result = False
-                copyNums = list(nums)
-                del copyNums[i + 1]
+                tmp = nums[i]
                 del nums[i]
-                return self.isIncreasing(nums) or self.isIncreasing(copyNums)
+                if not self.isIncreasing(nums):
+                    nums.insert(i, tmp)
+                    del nums[i + 1]
+                    return self.isIncreasing(nums)
+                else:
+                    return True
         return True
 
     def isIncreasing(self, nums: List[int]) -> bool:
