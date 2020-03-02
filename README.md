@@ -17,3 +17,5 @@
 | 668  | [Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/submissions/) | [Python3](./kth_smallest_number_in_multiplication_table.py) | Hard       |
 | 667  | [Beautiful Arrangment II](https://leetcode.com/problems/beautiful-arrangement-ii/)                                                    | [Python3](./beautiful_arragement_2.py)                      | Medium     |
 | 665  | [Non Decreasing Array](https://leetcode.com/problems/non-decreasing-array/)                                                           | [Python3](./non_decreasing_array.py)                        | Easy       |
+| 664  | [Strange Printer](https://leetcode.com/problems/strange-printer/)                                                                     | not understand the question                                 | Hard       |
+| 662  | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/)                                           | [Python3](./maximum_width_of_binary_tree.py)                | Medium     |
