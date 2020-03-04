@@ -22,4 +22,5 @@
 | 661  | [Image smoother](https://leetcode.com/problems/image-smoother/)                                                                       | not understand the question                                 | Easy       |
 | 659  | [Split Array Into consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)                 | [Python3](./split_array_into_consecutive_subsequences.py)   | Medium     |
 | 658  | [Find K closest elements](https://leetcode.com/problems/find-k-closest-elements/submissions/)                                         | [Python3](./find_k_closest_elements.py)                     | Medium     |
-| 657  | [Robot Return To Origin](https://leetcode.com/problems/robot-return-to-origin/)                                                       | [Python3](././robot_return_to_origin.py)                    | Easy       |
+| 657  | [Robot Return To Origin](https://leetcode.com/problems/robot-return-to-origin/)                                                       | [Python3](./robot_return_to_origin.py)                      | Easy       |
+| 655  | [Print Binary Tree](https://leetcode.com/problems/print-binary-tree/)                                                                 | [Python3](./print_binary_tree.py)                           | Medium     |
