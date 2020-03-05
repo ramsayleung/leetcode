@@ -24,3 +24,4 @@
 | 658  | [Find K closest elements](https://leetcode.com/problems/find-k-closest-elements/submissions/)                                         | [Python3](./find_k_closest_elements.py)                     | Medium     |
 | 657  | [Robot Return To Origin](https://leetcode.com/problems/robot-return-to-origin/)                                                       | [Python3](./robot_return_to_origin.py)                      | Easy       |
 | 655  | [Print Binary Tree](https://leetcode.com/problems/print-binary-tree/)                                                                 | [Python3](./print_binary_tree.py)                           | Medium     |
+| 654  | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)                                                             | [Python3](./maximum_binary_tree.py)                         | Medium     |
