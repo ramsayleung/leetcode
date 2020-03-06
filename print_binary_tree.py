@@ -28,7 +28,6 @@ class Solution:
                                      floor(pos - middlePos / (2**depth))))
                 nodeDepthPos.append((node.right, depth + 1,
                                      floor(pos + middlePos / (2**depth))))
-                print(f"pos={pos}, depth={depth} val={node.val}")
                 buffer[depth - 1][int(pos) - 1] = str(node.val)
         return buffer
 
