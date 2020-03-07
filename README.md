@@ -27,3 +27,4 @@
 | 654  | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)                                                             | [Python3](./maximum_binary_tree.py)                         | Medium     |
 | 653  | [Two Sum IV Input Is A BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)                                                 | [Python3](./two_sum_4_input_a_bst.py)                       | Easy       |
 | 652  | [Find duplicate Subtree](https://leetcode.com/problems/find-duplicate-subtrees/)                                                      | [Python3](./find_duplicate_subtrees.py)                     | Medium     |
+| 651  | [2 keys keyboard](https://leetcode.com/problems/2-keys-keyboard/)                                                                     | [Python3](./_2_keys_keyboard.py)                            | Medium     |
