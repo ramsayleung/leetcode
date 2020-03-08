@@ -31,3 +31,4 @@
 | 650  | [Dota2 senate](https://leetcode.com/problems/dota2-senate/)                                                                           | [Python3](./dota2_senate.py)                                | Medium     |
 | 648  | [Replace words](https://leetcode.com/problems/replace-words/)                                                                         | [Python3](./replace_words.py)                               | Medium     |
 | 647  | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                       | [Python3](./palindromic_substring.py)                       | Medium     |
+| 646  | [Maximum Length of Pair Chain](https://leetcode.com/problems/maximum-length-of-pair-chain/)                                           | [Python3](./maximum_length_of_pair_chain.py)                | Medium     |

@@ -21,7 +21,6 @@ Output: 6
 Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 '''
 
-
 # time complexity: O(N**2), N is the length of `s`
 # space complexity: O(1)
 class Solution:
