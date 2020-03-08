@@ -29,3 +29,4 @@
 | 652  | [Find duplicate Subtree](https://leetcode.com/problems/find-duplicate-subtrees/)                                                      | [Python3](./find_duplicate_subtrees.py)                     | Medium     |
 | 651  | [2 keys keyboard](https://leetcode.com/problems/2-keys-keyboard/)                                                                     | [Python3](./_2_keys_keyboard.py)                            | Medium     |
 | 650  | [Dota2 senate](https://leetcode.com/problems/dota2-senate/)                                                                           | [Python3](./dota2_senate.py)                                | Medium     |
+| 648  | [Replace words](https://leetcode.com/problems/replace-words/)                                                                         | [Python3](./replace_words.py)                               | Medium     |
