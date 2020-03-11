@@ -1,4 +1,7 @@
 """
+source: https://leetcode.com/problems/design-search-autocomplete-system/
+author: Ramsay Leung
+date: 2020-03-10
 Design a search autocomplete system for a search engine. Users may input a sentence (at least one word and end with a special character '#'). For each character they type except '#', you need to return the top 3 historical hot sentences that have prefix the same as the part of sentence already typed. Here are the specific rules:
 
     1. The hot degree for a sentence is defined as the number of times a user typed the exactly same sentence before.
@@ -125,11 +128,21 @@ class AutocompleteSystem:
         self.trie = TrieNode('*')
         for word, time in zip(sentences, times):
             self.trie.add(word, time)
-        self.input = ""
+        self.data = ""
 
     def input(self, c: str) -> List[str]:
-        self.input += c
-        allSequenceTimes = self.trie.findAllByPrefix(self.input)
+        allSequenceTimes = {}
+        if c == '#':
+            allSequenceTimes = self.trie.findAllByPrefix(self.data)
+            value = 1
+            if self.data in allSequenceTimes:
+                value += allSequenceTimes[self.data]
+            self.trie.add(self.data, value)
+            self.data = ""
+            return []
+        else:
+            self.data += c
+            allSequenceTimes = self.trie.findAllByPrefix(self.data)
         allSequenceTimes = [(k, v) for k, v in allSequenceTimes.items()]
         result = [
             i[0]
@@ -141,10 +154,3 @@ class AutocompleteSystem:
 # Your AutocompleteSystem object will be instantiated and called as such:
 # obj = AutocompleteSystem(sentences, times)
 # param_1 = obj.input(c)
-if __name__ == "__main__":
-    obj = AutocompleteSystem(
-        ["i love you", "island", "ironman", "i love leetcode"], [5, 3, 2, 2])
-    print(obj.input("i"))
-    print(obj.input(" "))
-    print(obj.input("a"))
-    print(obj.input("#"))
