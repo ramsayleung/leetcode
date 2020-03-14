@@ -38,3 +38,4 @@
 | 642  | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/)                                 | [Python3](./design_search_autocomplete_system.py)           | Hard       |
 | 641  | [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)                                                         | [Python3](./design_circular_deque.py)                       | Medium     |
 | 640  | [Solve the equation](https://leetcode.com/problems/solve-the-equation/)                                                               | [Python3](./solve_equation_problem.py)                      | Medium     |
+| 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                               | Medium     |
