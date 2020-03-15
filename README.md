@@ -39,4 +39,5 @@
 | 641  | [Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)                                                         | [Python3](./design_circular_deque.py)                       | Medium     |
 | 640  | [Solve the equation](https://leetcode.com/problems/solve-the-equation/)                                                               | [Python3](./solve_equation_problem.py)                      | Medium     |
 | 639  | [Decode ways ii](https://leetcode.com/problems/decode-ways-ii/)                                                                       | [Python3](./decode_ways_2.py)                               | Hard       |
+| 638  | [Shopping Offers](https://leetcode.com/problems/shopping-offers/)                                                                     | [Python3](./shopping_offers.py)                             | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                               | Medium     |
