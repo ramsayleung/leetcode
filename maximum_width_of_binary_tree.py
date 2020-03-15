@@ -85,5 +85,6 @@ class Solution:
                     currentDepth = depth
                     # when goes into a new depth, the left pos goes before right pos
                     left = pos
-                result = max(result, pos - left + 1)
+                else:
+                    result = max(result, pos - left + 1)
         return result
