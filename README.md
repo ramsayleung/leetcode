@@ -42,4 +42,5 @@
 | 638  | [Shopping offers](https://leetcode.com/problems/shopping-offers/)                                                                     | [Python3](./shopping_offers.py)                             | Medium     |
 | 637  | [Average of levels in binary tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)                                   | [Python3](./average_levels_of_binary_tree.py)               | Medium     |
 | 636  | [Exclusive time of functions](https://leetcode.com/problems/exclusive-time-of-functions/)                                             | [Python3](./exclusive_times_of_functions.py)                | Medium     |
+| 591  | [Tag validator](https://leetcode.com/problems/tag-validator/)                                                                         | [Python3](./tag_validator.py)                               | Hard       |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                               | Medium     |
