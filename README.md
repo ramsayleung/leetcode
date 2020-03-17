@@ -43,5 +43,6 @@
 | 637  | [Average of levels in binary tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/)                                   | [Python3](./average_levels_of_binary_tree.py)               | Medium     |
 | 636  | [Exclusive time of functions](https://leetcode.com/problems/exclusive-time-of-functions/)                                             | [Python3](./exclusive_times_of_functions.py)                | Medium     |
 | 591  | [Tag validator](https://leetcode.com/problems/tag-validator/)                                                                         | [Python3](./tag_validator.py)                               | Hard       |
+| 503  | [Next greater element ii](https://leetcode.com/problems/next-greater-element-ii/)                                                     | [Python3](./next_greater_element_2.py)                      | Medium     |
 | 496  | [Next greater element i](https://leetcode.com/problems/next-greater-element-i/)                                                       | [Python3](./next_greater_element_1.py)                      | Easy       |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                               | Medium     |
