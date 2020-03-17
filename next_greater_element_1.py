@@ -32,14 +32,21 @@ Note:
 from typing import List
 
 
+# time complxity: O(m+n), m is the length of nums1, n is the length of nums2
+# space complxity: O(), n is the length of nums2
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        lenNums1 = len(nums1)
-        ans = [-1] * lenNums1
+        numGreaterMapping = {}
+        stack = []
+        for num in nums2:
+            # find a greater element
+            while len(stack) > 0 and num > stack[-1]:
+                numGreaterMapping[stack[-1]] = num
+                stack.pop()
+            stack.append(num)
+        ans = [-1] * len(nums1)
         for i, num in enumerate(nums1):
-            index = nums2.index(num)
-            for j in range(index, len(nums2)):
-                if nums2[j] > num:
-                    ans[i] = nums2[j]
-                    break
+            # the greater element is found, otherwise it's default value `-1`
+            if num in numGreaterMapping:
+                ans[i] = numGreaterMapping[num]
         return ans
