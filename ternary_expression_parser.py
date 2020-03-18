@@ -57,9 +57,8 @@ class Solution:
                 isQuestionMark = True
             elif len(stack) > 0 and isQuestionMark:
                 if e == "T":
-                    left = stack.pop()
-                    stack.pop()
-                    stack.append(left)
+                    # pop the second topest item
+                    stack.pop(-2)
                 else:
                     stack.pop()
                 isQuestionMark = False
