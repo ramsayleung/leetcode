@@ -47,4 +47,5 @@
 | 496  | [Next greater element i](https://leetcode.com/problems/next-greater-element-i/)                                                       | [Python3](./next_greater_element_1.py)                      | Easy       |
 | 456  | [132 pattern](https://leetcode.com/problems/132-pattern/)                                                                             | [Python3](./132_pattern.py)                                 | Medium     |
 | 439  | [Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)                                                 | [Python3](./ternary_expression_parser.py)                   | Medium     |
+| 394  | [Decode String](https://leetcode.com/problems/decode-string/)                                                                         | [Python3](./decode_string.py)                               | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                               | Medium     |

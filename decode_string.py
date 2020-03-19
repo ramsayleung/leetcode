@@ -18,49 +18,27 @@ s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 """
 
+# time complexity: O(n), n is the length of `s`
+# space complexity: O(n), n is the length of `s`
+
 
 class Solution:
     def decodeString(self, s: str) -> str:
-        stack = []
-        i = len(s) - 1
-        decoded = ""
+        numStack = []
+        wordStack = []
         repeat = 0
-        while i >= 0:
-            if s[i] == "]":
-                if s[i - 1].isalpha():
-                    encoded = self.parseString(i, s)
-                    i -= (len(encoded) + 1)
-                    stack.append(encoded)
-                else:
-                    i -= 1
-            elif s[i].isdigit():
-                repeat = repeat * 10 + int(s[i])
-                if i - 1 >= 0 and not s[i - 1].isdigit():
-                    if len(stack) > 0:
-                        decoded = repeat * stack.pop() + decoded
-                    else:
-                        decoded = repeat * decoded
-                    repeat = 0
-                i -= 1
-            elif s[i] == "[":
-                i -= 1
+        word = ""
+        for c in s:
+            if c.isdigit():
+                repeat = repeat * 10 + int(c)
+            elif c == "[":
+                numStack.append(repeat)
+                repeat = 0
+                wordStack.append(word)
+                word = ""
+            elif c == "]":
+                wordStack[-1] += (word * numStack.pop())
+                word = wordStack.pop()
             else:
-                decoded = s[i] + decoded
-                i -= 1
-        return decoded
-
-    def parseString(self, start: int, encoded: str) -> str:
-        result = ""
-        start -= 1
-        while encoded[start] != "[":
-            result = encoded[start] + result
-            start -= 1
-        return result
-
-
-if __name__ == "__main__":
-    s = Solution()
-    print(s.decodeString("100[leetcode]"))
-    print(s.decodeString("3[a]2[bc]"))
-    print(s.decodeString("3[a2[c]]"))
-    print(s.decodeString("2[abc]3[cd]ef"))
+                word += c
+        return word if len(wordStack) == 0 else wordStack.pop()
