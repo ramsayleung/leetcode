@@ -28,6 +28,8 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 # solve this problem with iterative style solution
 
 
+# time complexity: O(n), n is the number of nodes `root` contains
+# space complexity: O(n), n is the number of nodes `root` contains
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         stack = []

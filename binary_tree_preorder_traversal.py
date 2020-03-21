@@ -26,6 +26,8 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 #         self.right = None
 
 
+# time complexity: O(n), n is the number of nodes `root` contains
+# space complexity: O(n), n is the number of nodes `root` contains
 class Solution:
     def __init__(self):
         self.order = []
