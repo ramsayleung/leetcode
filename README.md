@@ -50,6 +50,7 @@
 | 402  | [Remove k digits](https://leetcode.com/problems/remove-k-digits/)                                                                     | [Python3](./remove_k_digits.py)                             | Medium     |
 | 394  | [Decode String](https://leetcode.com/problems/decode-string/)                                                                         | [Python3](./decode_string.py)                               | Medium     |
 | 316  | [Remove duplicate letters](https://leetcode.com/problems/remove-duplicate-letters/)                                                   | [Python3](./remove_duplicate_letters.py)                    | Hard       |
+| 144  | [Binary tree preorder traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                       | [Python3](./binary_tree_preorder_traversal.py)              | Medium     |
 | 94   | [Binary tree inorder traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                         | [Python3](./binary_tree_inorder_traversal.py)               | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                               | Medium     |
 | 20   | [Valida parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                | [Python3](./valid_parentheses.py)                           | Easy       |
