@@ -51,6 +51,7 @@
 | 394  | [Decode String](https://leetcode.com/problems/decode-string/)                                                                         | [Python3](./decode_string.py)                               | Medium     |
 | 341  | [Flatten nested list iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)                                           | [Python3](./flatten_nested_list_iterator.py)                | Medium     |
 | 316  | [Remove duplicate letters](https://leetcode.com/problems/remove-duplicate-letters/)                                                   | [Python3](./remove_duplicate_letters.py)                    | Hard       |
+| 225  | [Implement stack using queues](https://leetcode.com/problems/implement-stack-using-queues/)                                           | [Python3](./implement_stack_using_queues.py)                | Easy       |
 | 224  | [Binary search tree iterator](https://leetcode.com/problems/basic-calculator/)                                                        | [Python3](./basic_calculator.py)                            | Hard       |
 | 173  | [Binary search tree iterator](https://leetcode.com/problems/binary-search-tree-iterator/)                                             | [Python3](./binary_search_tree_iterator.py)                 | Medium     |
 | 155  | [Min stack](https://leetcode.com/problems/min-stack/)                                                                                 | [Python3](./min_stack.py)                                   | Easy       |
