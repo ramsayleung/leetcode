@@ -49,6 +49,7 @@
 | 439  | [Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/)                                                 | [Python3](./ternary_expression_parser.py)                   | Medium     |
 | 402  | [Remove k digits](https://leetcode.com/problems/remove-k-digits/)                                                                     | [Python3](./remove_k_digits.py)                             | Medium     |
 | 394  | [Decode String](https://leetcode.com/problems/decode-string/)                                                                         | [Python3](./decode_string.py)                               | Medium     |
+| 341  | [Flatten nested list iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)                                           | [Python3](./flatten_nested_list_iterator.py)                | Medium     |
 | 316  | [Remove duplicate letters](https://leetcode.com/problems/remove-duplicate-letters/)                                                   | [Python3](./remove_duplicate_letters.py)                    | Hard       |
 | 150  | [Evaluate reverse polish notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                                   | [Python3](./evaluate_reverse_polish_notation.py)            | Medium     |
 | 145  | [Binary tree postorder traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)                                     | [Python3](./binary_tree_postorder_traversql.py)             | Hard       |
