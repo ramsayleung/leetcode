@@ -51,6 +51,7 @@
 | 394  | [Decode String](https://leetcode.com/problems/decode-string/)                                                                         | [Python3](./decode_string.py)                               | Medium     |
 | 341  | [Flatten nested list iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)                                           | [Python3](./flatten_nested_list_iterator.py)                | Medium     |
 | 316  | [Remove duplicate letters](https://leetcode.com/problems/remove-duplicate-letters/)                                                   | [Python3](./remove_duplicate_letters.py)                    | Hard       |
+| 155  | [Min stack](https://leetcode.com/problems/min-stack/)                                                                                 | [Python3](./min_stack.py)                                   | Easy       |
 | 150  | [Evaluate reverse polish notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                                   | [Python3](./evaluate_reverse_polish_notation.py)            | Medium     |
 | 145  | [Binary tree postorder traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)                                     | [Python3](./binary_tree_postorder_traversql.py)             | Hard       |
 | 144  | [Binary tree preorder traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                       | [Python3](./binary_tree_preorder_traversal.py)              | Medium     |
