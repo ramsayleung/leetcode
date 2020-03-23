@@ -50,6 +50,7 @@
 | 402  | [Remove k digits](https://leetcode.com/problems/remove-k-digits/)                                                                     | [Python3](./remove_k_digits.py)                                | Medium     |
 | 394  | [Decode String](https://leetcode.com/problems/decode-string/)                                                                         | [Python3](./decode_string.py)                                  | Medium     |
 | 341  | [Flatten nested list iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)                                           | [Python3](./flatten_nested_list_iterator.py)                   | Medium     |
+| 331  | [Verify preorder serialization of a binary tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/)       | [Python3](./verify_preorder_serialization_of_a_binary_tree.py) | Medium     |
 | 316  | [Remove duplicate letters](https://leetcode.com/problems/remove-duplicate-letters/)                                                   | [Python3](./remove_duplicate_letters.py)                       | Hard       |
 | 255  | [Verify preorder sequence in binary search tree](https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/)       | [Python3](./verify_preorder_sequence_in_binary_search_tree.py) | Medium     |
 | 232  | [Implement queue using stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                                           | [Python3](./implement_queue_using_stacks.py)                   | Easy       |
