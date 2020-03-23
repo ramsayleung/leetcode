@@ -57,6 +57,7 @@
 | 232  | [Implement queue using stacks](https://leetcode.com/problems/implement-queue-using-stacks/)                                           | [Python3](./implement_queue_using_stacks.py)                   | Easy       |
 | 225  | [Implement stack using queues](https://leetcode.com/problems/implement-stack-using-queues/)                                           | [Python3](./implement_stack_using_queues.py)                   | Easy       |
 | 224  | [Binary search tree iterator](https://leetcode.com/problems/basic-calculator/)                                                        | [Python3](./basic_calculator.py)                               | Hard       |
+| 222  | [Count the complete tree nodes](https://leetcode.com/problems/count-complete-tree-nodes/)                                             | [Python3](./count_complete_tree_nodes.py)                      | Medium     |
 | 173  | [Binary search tree iterator](https://leetcode.com/problems/binary-search-tree-iterator/)                                             | [Python3](./binary_search_tree_iterator.py)                    | Medium     |
 | 155  | [Min stack](https://leetcode.com/problems/min-stack/)                                                                                 | [Python3](./min_stack.py)                                      | Easy       |
 | 150  | [Evaluate reverse polish notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                                   | [Python3](./evaluate_reverse_polish_notation.py)               | Medium     |
