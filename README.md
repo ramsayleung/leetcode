@@ -68,4 +68,6 @@
 | 94   | [Binary tree inorder traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                         | [Python3](./binary_tree_inorder_traversal.py)                  | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                                  | Medium     |
 | 20   | [Valida parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                | [Python3](./valid_parentheses.py)                              | Easy       |
+| 5    | [Longest palindromic substring](https://leetcode.com/problems/longest-palindromic-substring/)                                         | [Python3](./longest_palindromic_substring.py)                  | Medium     |
+
 
