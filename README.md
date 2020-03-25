@@ -67,5 +67,6 @@
 | 103  | [Binary tree zigzag level order traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                   | [Python3](./binary_tree_zigzag_level_order_traversal.py)       | Medium     |
 | 94   | [Binary tree inorder traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                         | [Python3](./binary_tree_inorder_traversal.py)                  | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                                  | Medium     |
+| 53   | [Maximum subarray](https://leetcode.com/problems/maximum-subarray/)                                                                   | [Python3](./maximum_subarray.py)                               | Easy       |
 | 20   | [Valida parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                | [Python3](./valid_parentheses.py)                              | Easy       |
 
