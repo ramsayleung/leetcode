@@ -1,4 +1,8 @@
 """
+source: https://leetcode.com/problems/unique-paths-ii/
+author: Ramsay Leung
+date: 2020-03-26
+
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
 
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
@@ -34,8 +38,8 @@ There are two ways to reach the bottom-right corner:
 from typing import List
 
 
-# time complxity: O(n), n is the length of `obstacleGrid`
-# space complxity: O(n), n is the length of `obstacleGrid`
+# time complxity: O(m*n)
+# space complxity: O(m*n)
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         ylen = len(obstacleGrid)
