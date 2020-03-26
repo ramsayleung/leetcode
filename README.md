@@ -67,6 +67,7 @@
 | 103  | [Binary tree zigzag level order traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                   | [Python3](./binary_tree_zigzag_level_order_traversal.py)       | Medium     |
 | 94   | [Binary tree inorder traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                         | [Python3](./binary_tree_inorder_traversal.py)                  | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                                  | Medium     |
+| 70   | [Minimum path sum](https://leetcode.com/problems/climbing-stairs/)                                                                    | [Python3](./climbing_stairs.py)                                | Easy       |
 | 64   | [Minimum path sum](https://leetcode.com/problems/minimum-path-sum/)                                                                   | [Python3](./minimum_path_sum.py)                               | Medium     |
 | 63   | [Unique paths ii](https://leetcode.com/problems/unique-paths-ii/)                                                                     | [Python3](./unique_paths_ii.py)                                | Medium     |
 | 62   | [Unique paths](https://leetcode.com/problems/unique-paths/)                                                                           | [Python3](./unique_paths.py)                                   | Medium     |
