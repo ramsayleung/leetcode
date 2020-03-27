@@ -31,18 +31,19 @@ from typing import List
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         ylen = len(triangle)
-        xlen = len(triangle[ylen-1]) if ylen > 0 else 0
-        sum = [[0 for i in range(xlen)]for i in range(ylen)]
+        sum = [] * ylen
         for y in range(ylen):
+            buffer = []
             for x in range(len(triangle[y])):
                 if y > 0:
                     if x == 0:
-                        sum[y][x] = triangle[y][x] + sum[y-1][x]
+                        buffer.append(triangle[y][x] + sum[y-1][x])
                     elif x == len(triangle[y]) - 1:
-                        sum[y][x] = triangle[y][x] + sum[y-1][x-1]
+                        buffer.append(triangle[y][x] + sum[y-1][x-1])
                     else:
-                        sum[y][x] = min(triangle[y][x] + sum[y-1][x],
-                                        triangle[y][x] + sum[y-1][x-1])
+                        buffer.append(min(triangle[y][x] + sum[y-1][x],
+                                          triangle[y][x] + sum[y-1][x-1]))
                 else:
-                    sum[y][x] = triangle[y][x]
+                    buffer.append(triangle[y][x])
+            sum.append(buffer)
         return min(sum[ylen-1])
