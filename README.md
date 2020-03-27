@@ -64,6 +64,7 @@
 | 150  | [Evaluate reverse polish notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                                   | [Python3](./evaluate_reverse_polish_notation.py)               | Medium     |
 | 145  | [Binary tree postorder traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)                                     | [Python3](./binary_tree_postorder_traversql.py)                | Hard       |
 | 144  | [Binary tree preorder traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                       | [Python3](./binary_tree_preorder_traversal.py)                 | Medium     |
+| 120  | [Triangle](https://leetcode.com/problems/triangle/)                                                                                   | [Python3](./triangle.py)                                       | Medium     |
 | 103  | [Binary tree zigzag level order traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                   | [Python3](./binary_tree_zigzag_level_order_traversal.py)       | Medium     |
 | 94   | [Binary tree inorder traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                         | [Python3](./binary_tree_inorder_traversal.py)                  | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./decode_ways_1.py)                                  | Medium     |
