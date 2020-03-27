@@ -64,6 +64,7 @@
 | 150  | [Evaluate reverse polish notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)                                   | [Python3](./100/evaluate_reverse_polish_notation.py)                | Medium     |
 | 145  | [Binary tree postorder traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)                                     | [Python3](./100/binary_tree_postorder_traversql.py)                 | Hard       |
 | 144  | [Binary tree preorder traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)                                       | [Python3](./100/binary_tree_preorder_traversal.py)                  | Medium     |
+| 120  | [Triangle](https://leetcode.com/problems/triangle/)                                                                                   | [Python3](./100/triangle.py)                                       | Medium     |
 | 103  | [Binary tree zigzag level order traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)                   | [Python3](./100/binary_tree_zigzag_level_order_traversal.py)        | Medium     |
 | 94   | [Binary tree inorder traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)                                         | [Python3](./000/binary_tree_inorder_traversal.py)                   | Medium     |
 | 91   | [Decode ways](https://leetcode.com/problems/decode-ways/)                                                                             | [Python3](./000/decode_ways_1.py)                                   | Medium     |
@@ -74,5 +75,3 @@
 | 53   | [Maximum subarray](https://leetcode.com/problems/maximum-subarray/)                                                                   | [Python3](./000/maximum_subarray.py)                                | Easy       |
 | 20   | [Valida parentheses](https://leetcode.com/problems/valid-parentheses/)                                                                | [Python3](./000/valid_parentheses.py)                               | Easy       |
 | 5    | [Longest palindromic substring](https://leetcode.com/problems/longest-palindromic-substring/)                                         | [Python3](./000/longest_palindromic_substring.py)                   | Medium     |
-
-
