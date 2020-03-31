@@ -24,34 +24,25 @@ import bisect
 
 
 # xxxxx i dp.append(i) if i/2 in dp or i/3 in dp or i/5 in dp
-# time complxity: O(n), n is the length of n
-# space complxity: O(n), n is the length of n
 class Solution:
     # @profile
     def nthUglyNumber(self, n: int) -> int:
-        dp = [1, 2, 3, 4, 5, 6, 8, 9, 10]
-        if n < 9:
-            return dp[n - 1]
-        i = dp[len(dp) - 1] + 1
-        data = []
+        dp = [1]
+        # convert to dict to improve search performance. List search is O(n),
+        # dict search is O(1)
+        search = {1: 0}
+        i = 1
+        counter = 1
         for i in dp:
-            bisect.insort(data, i * 2)
-            bisect.insort(data, i * 3)
-            bisect.insort(data, i * 5)
-        result = dp[len(dp) - 1]
-        # convert dp to dict for search performance
-        dp = {x: 0 for x in dp}
-        length = len(dp)
-        for i in data:
-            if i > result and (i / 2 in dp or i / 3 in dp or i / 5 in dp):
-                dp[i] = 0
-                result = i
-                length += 1
-                if i * 2 not in dp:
-                    bisect.insort(data, i * 2)
-                if i * 3 not in dp:
-                    bisect.insort(data, i * 3)
-                if i * 5 not in dp:
-                    bisect.insort(data, i * 5)
-            if length >= n:
-                return result
+            if i*2 not in search:
+                bisect.insort(dp, i * 2)
+                search[i*2] = 0
+            if i*3 not in search:
+                bisect.insort(dp, i * 3)
+                search[i*3] = 0
+            if i*5 not in search:
+                bisect.insort(dp, i * 5)
+                search[i*5] = 0
+            counter += 1
+            if counter >= n:
+                return dp[n-1]
