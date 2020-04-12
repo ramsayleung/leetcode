@@ -62,6 +62,7 @@
   | 376 | [[https://leetcode.com/problems/wiggle-subsequence/][Wiggle subsequence]]                                         | [[./300/wiggle_subsequence.py][Python3]]  | Medium     |
   | 343 | [[https://leetcode.com/problems/integer-break/][Integer break]]                                              | [[./300/integer_break.py][Python3]]  | Medium     |
   | 341 | [[https://leetcode.com/problems/flatten-nested-list-iterator/][Flatten nested list iterator]]                               | [[./300/flatten_nested_list_iterator.py][Python3]]  | Medium     |
+  | 339 | [[https://leetcode.com/problems/nested-list-weight-sum/][Nested list weight sum]]                                     | [[./300/nested_list_weight_sum.org][Python3]]  | Easy       |
   | 338 | [[https://leetcode.com/problems/counting-bits/][Counting bits]]                                              | [[./300/counting_bits.py][Python3]]  | Medium     |
   | 332 | [[https://leetcode.com/problems/coin-change/][Coin change]]                                                | [[./300/coin_change.py][Python3]]  | Medium     |
   | 331 | [[https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/][Verify preorder serialization of a binary tree]]             | [[./300/verify_preorder_serialization_of_a_binary_tree.py][Python3]]  | Medium     |
