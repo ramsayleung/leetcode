@@ -60,6 +60,7 @@
   | 392 | [[https://leetcode.com/problems/is-subsequence/][Is subsequence]]                                             | [[./300/is_subsequence.py][Python3]]  | Easy       |
   | 377 | [[https://leetcode.com/problems/combination-sum-iv/][Combination sum iv]]                                         | [[./300/combination_sum_iv.py][Python3]]  | Medium     |
   | 376 | [[https://leetcode.com/problems/wiggle-subsequence/][Wiggle subsequence]]                                         | [[./300/wiggle_subsequence.py][Python3]]  | Medium     |
+  | 364 | [[https://leetcode.com/problems/nested-list-weight-sum-ii/][Nested list weight sum ii]]                                  | [[./300/nested_list_weight_sum_ii.org][Python3]]  | Medium     |
   | 343 | [[https://leetcode.com/problems/integer-break/][Integer break]]                                              | [[./300/integer_break.py][Python3]]  | Medium     |
   | 341 | [[https://leetcode.com/problems/flatten-nested-list-iterator/][Flatten nested list iterator]]                               | [[./300/flatten_nested_list_iterator.py][Python3]]  | Medium     |
   | 339 | [[https://leetcode.com/problems/nested-list-weight-sum/][Nested list weight sum]]                                     | [[./300/nested_list_weight_sum.org][Python3]]  | Easy       |
