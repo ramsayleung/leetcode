@@ -52,6 +52,7 @@
   | 494 | [[https://leetcode.com/problems/target-sum/][Target sum]]                                                 | [[./400/target_sum.py][Python3]]  | Medium     |
   | 456 | [[https://leetcode.com/problems/132-pattern/][132 pattern]]                                                | [[./400/132_pattern.py][Python3]]  | Medium     |
   | 439 | [[https://leetcode.com/problems/ternary-expression-parser/][Ternary expression parser]]                                  | [[./400/ternary_expression_parser.py][Python3]]  | Medium     |
+  | 430 | [[https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/][Flatten a multilevel doubly linked list]]                    | [[./400/flatten_a_multilevel_doubly_linked_list.org][Python3]]  | Medium     |
   | 429 | [[https://leetcode.com/problems/n-ary-tree-level-order-traversal/][N-ary tree level order traversal]]                           | [[./400/n_ary_tree_level_order_traversal.py][Python3]]  | Medium     |
   | 416 | [[https://leetcode.com/problems/partition-equal-subset-sum/][Partition equal subset sum]]                                 | [[./400/partition_equal_subset_sum.py][Python3]]  | Medium     |
   | 413 | [[https://leetcode.com/problems/arithmetic-slices/][Arithmetic slices]]                                          | [[./400/arithmetic_slices.py][Python3]]  | Medium     |

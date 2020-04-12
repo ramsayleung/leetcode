@@ -1,0 +1,142 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-12 Sun>
+
+source: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
+
+You are given a doubly linked list which in addition to the next and previous pointers, it could have a child pointer, which may or may not point to a separate doubly linked list. These child lists may have one or more children of their own, and so on, to produce a multilevel data structure, as shown in the example below.
+
+Flatten the list so that all the nodes appear in a single-level, doubly linked list. You are given the head of the first level of the list.
+
+ 
+#+begin_example
+
+Example 1:
+
+Input: head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]
+Output: [1,2,3,7,8,11,12,9,10,4,5,6]
+Explanation:
+
+The multilevel linked list in the input is as follows:
+
+#+end_example
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlist.png @ 2020-04-12 20:38:20
+[[file:../images/2020-04-12_20-38-20_multilevellinkedlist.png]]
+
+
+After flattening the multilevel linked list it becomes:
+
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlistflattened.png @ 2020-04-12 20:38:45
+[[file:../images/2020-04-12_20-38-45_multilevellinkedlistflattened.png]]
+
+
+Example 2:
+
+#+begin_example
+Input: head = [1,2,null,3]
+Output: [1,3,2]
+Explanation:
+
+The input multilevel linked list is as follows:
+
+  1---2---NULL
+  |
+  3---NULL
+#+end_example
+
+Example 3:
+
+#+begin_example
+Input: head = []
+Output: []
+#+end_example
+
+ 
+
+*How multilevel linked list is represented in test case*:
+
+We use the multilevel linked list from *Example 1* above:
+
+ #+begin_example
+ 1---2---3---4---5---6--NULL
+         |
+         7---8---9---10--NULL
+             |
+             11--12--NULL
+ #+end_example
+
+The serialization of each level is as follows:
+
+#+begin_example
+[1,2,3,4,5,6,null]
+[7,8,9,10,null]
+[11,12,null]
+#+end_example
+
+To serialize all levels together we will add nulls in each level to signify no node connects to the upper node of the previous level. The serialization becomes:
+
+#+begin_example
+[1,2,3,4,5,6,null]
+[null,null,7,8,9,10,null]
+[null,11,12,null]
+#+end_example
+
+Merging the serialization of each level and removing trailing nulls we obtain:
+
+#+begin_example
+[1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]
+#+end_example
+
+ 
+
+*Constraints*:
+
+    + Number of Nodes will not exceed 1000.
+    + ~1 <= Node.val <= 10^5~
+#+begin_src python
+  """
+  # Definition for a Node.
+  class Node:
+      def __init__(self, val, prev, next, child):
+	  self.val = val
+	  self.prev = prev
+	  self.next = next
+	  self.child = child
+  """
+
+  from typing import Tuple
+
+
+  # time complexity: O(n), n is the number of element in linked list
+  # space complexity: O(s), s is the size of recursive stack.
+  class Solution:
+      def flatten(self, head: 'Node') -> 'Node':
+	  first, last = self.helper(head)
+	  return first
+
+      def helper(self, head: 'Node') -> Tuple['Node', 'Node']:
+	  firstHead = head
+	  lastHead = head
+	  while head:
+	      if head.child:
+		  next = head.next
+		  first, last = self.helper(head.child)
+		  first.prev = head
+		  head.next = first
+		  head.child = None
+
+		  if next:
+		      last.next = next
+		      next.prev = last
+		  # skip the flattened child, the linked list between [first,
+		  # last] has been iterated
+		  head = last
+	      lastHead = head
+	      head = head.next
+	  return (firstHead, lastHead)
+
+#+end_src
+
