@@ -98,6 +98,7 @@
   | 145 | [[https://leetcode.com/problems/binary-tree-postorder-traversal/][Binary tree postorder traversal]]                            | [[./100/binary_tree_postorder_traversql.py][Python3]]  | Hard       |
   | 144 | [[https://leetcode.com/problems/binary-tree-preorder-traversal/][Binary tree preorder traversal]]                             | [[./100/binary_tree_preorder_traversal.py][Python3]]  | Medium     |
   | 139 | [[https://leetcode.com/problems/word-break/][Word break]]                                                 | [[./100/word_break.py][Python3]]  | Medium     |
+  | 136 | [[https://leetcode.com/problems/single-number/][Single number]]                                              | [[./100/single_number.org][Python3]]  | Easy       |
   | 129 | [[https://leetcode.com/problems/sum-root-to-leaf-numbers/][Sum root to leaf numbers]]                                   | [[./100/sum_root_to_leaf_numbers.py][Python3]]  | Medium     |
   | 121 | [[https://leetcode.com/problems/best-time-to-buy-and-sell-stock/][Best time to buy and sell stock]]                            | [[./100/best_time_to_buy_and_sell_stock.py][Python3]]  | Easy       |
   | 120 | [[https://leetcode.com/problems/triangle/][Triangle]]                                                   | [[./100/triangle.py][Python3]]  | Medium     |

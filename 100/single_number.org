@@ -1,0 +1,37 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+source: https://leetcode.com/problems/single-number/
+
+Given a *non-empty* array of integers, every element appears twice except for one. Find that single one.
+
+Note:
+
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+
+Example 1:
+
+#+begin_example
+Input: [2,2,1]
+Output: 1
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input: [4,1,2,1,2]
+Output: 4
+#+end_example
+
+#+begin_src python
+
+  from collections import Counter
+  from typing import List
+
+  # time complexity: O(n), n is the size of nums
+  # space complexity: O(n), n is the size of map
+
+  class Solution:
+      def singleNumber(self, nums: List[int]) -> int:
+	  c = Counter(nums)
+	  return c.most_common()[-1][0]
+#+end_src
