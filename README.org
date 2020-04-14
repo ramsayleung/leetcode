@@ -129,3 +129,4 @@
   |  53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]  | Easy       |
   |  20 | [[https://leetcode.com/problems/valid-parentheses/][Valida parentheses]]                                         | [[./000/valid_parentheses.py][Python3]]  | Easy       |
   |   5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/longest_palindromic_substring.py][Python3]]  | Medium     |
+  |   3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]  | Medium     |
