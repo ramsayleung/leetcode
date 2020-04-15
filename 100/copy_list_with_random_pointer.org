@@ -1,0 +1,74 @@
+A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
+
+Return a [[https://en.wikipedia.org/wiki/Object_copying#Deep_copy][deep copy]] of the list.
+
+The Linked List is represented in the input/output as a list of ~n~ nodes. Each node is represented as a pair of ~[val, random_index]~ where:
+
+    + ~val~: an integer representing ~Node.val~
+    + ~random_index~: the index of the node (range from ~0~ to ~n-1~) where random pointer points to, or ~null~ if it does not point to any node.
+
+Example 1:
+
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2019/12/18/e1.png @ 2020-04-15 22:54:27
+[[file:../images/2020-04-15_22-54-27_e1.png]]
+
+#+begin_example
+Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+#+end_example
+
+Example 2:
+
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2019/12/18/e2.png @ 2020-04-15 22:54:43
+[[file:../images/2020-04-15_22-54-43_e2.png]]
+
+#+begin_example
+Input: head = [[1,1],[2,1]]
+Output: [[1,1],[2,1]]
+#+end_example
+
+Example 3:
+
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2019/12/18/e3.png @ 2020-04-15 22:54:59
+[[file:../images/2020-04-15_22-54-59_e3.png]]
+
+#+begin_example
+Input: head = [[3,null],[3,0],[3,null]]
+Output: [[3,null],[3,0],[3,null]]
+#+end_example
+
+Example 4:
+
+#+begin_example
+Input: head = []
+Output: []
+Explanation: Given linked list is empty (null pointer), so return null.
+#+end_example
+
+ 
+
+Constraints:
+
+    + ~-10000 <= Node.val <= 10000~
+    + ~Node.random~ is null or pointing to a node in the linked list.
+    + Number of Nodes will not exceed 1000.
+#+begin_src python
+  """
+  # Definition for a Node.
+  class Node:
+      def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
+	  self.val = int(x)
+	  self.next = next
+	  self.random = random
+  """
+  # Python standard library provides a way to implement `deepcopy`, just make use
+  # of it.
+  from copy import deepcopy
+  class Solution:
+      def copyRandomList(self, head: 'Node') -> 'Node':
+	  return deepcopy(head)
+#+end_src
+
