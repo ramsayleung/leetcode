@@ -1,0 +1,47 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-16 Thu>
+source: https://leetcode.com/problems/happy-number/
+
+Write an algorithm to determine if a number n is "happy".
+
+A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it *loops endlessly in a cycle* which does not include 1. Those numbers for which this process ends in 1 are happy numbers.
+
+Return True if n is a happy number, and False if not.
+
+Example: 
+
+#+begin_example
+Input: 19
+Output: true
+Explanation: 
+12 + 92 = 82
+82 + 22 = 68
+62 + 82 = 100
+12 + 02 + 02 = 1
+#+end_example
+
+#+begin_src python
+  # time complexity: I don't know :)
+  # space complexity: I don't know either :)
+
+
+  class Solution:
+      def isHappy(self, n: int) -> bool:
+	  sum = 0
+	  seen = set()
+	  while n > 0:
+	      sum += (n % 10)**2
+	      n = int(n / 10)
+	      if n <= 0:
+		  if sum == 1:
+		      return True
+		  if sum in seen:
+		      break
+		  else:
+		      seen.add(sum)
+		      n = sum
+		      sum = 0
+	  return False
+#+end_src
