@@ -1,0 +1,46 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-15 Wed>
+source: https://leetcode.com/problems/group-anagrams/
+
+Given an array of strings, group anagrams together.
+
+Example:
+
+#+begin_example
+Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+Output:
+[
+  ["ate","eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+#+end_example
+
+Note:
+
+    + All inputs will be in lowercase.
+    + The order of your output does not matter.
+#+begin_src python
+  from typing import List
+
+
+  # time complexity: O(s*k), s is the length of strs, k is length of longest string.
+  # space complexity: O(g), s is size of group.
+  class Solution:
+      def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+	  mapping = {}
+	  for str in strs:
+	      s = "".join(sorted(str))
+	      if s not in mapping:
+		  mapping[s] = [str]
+	      else:
+		  mapping[s].append(str)
+	  result = []
+	  for k, v in mapping.items():
+	      result.append(v)
+	  return result
+
+#+end_src
+
