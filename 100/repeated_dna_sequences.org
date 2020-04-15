@@ -1,0 +1,39 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-15 Wed>
+source: https://leetcode.com/problems/repeated-dna-sequences/
+
+All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.
+
+Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
+
+Example:
+
+#+begin_example
+Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+
+Output: ["AAAAACCCCC", "CCCCCAAAAA"]
+#+end_example
+
+#+begin_src python
+  from typing import List
+
+
+  # time complexity: O(n), n is the length of s
+  # space complexity: O(n), n is the size of mapping
+  class Solution:
+      def findRepeatedDnaSequences(self, s: str) -> List[str]:
+	  length = len(s)
+	  if length < 10:
+	      return []
+	  mapping = {}
+	  for i in range(length - 9):
+	      mapping[s[i:i+10]] = i
+	      filter_duplicate = set()
+	  for i in range(length - 9):
+	      sub_string = s[i:i + 10]
+	      if sub_string in mapping and mapping[sub_string] != i:
+		  filter_duplicate.add(sub_string)
+	  return list(filter_duplicate)
+#+end_src
