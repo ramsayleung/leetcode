@@ -1,0 +1,34 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-17 Fri>
+source: https://leetcode.com/problems/count-primes/
+
+Count the number of prime numbers less than a non-negative number, n.
+
+Example:
+
+#+begin_example
+Input: 10
+Output: 4
+Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+#+end_example
+
+#+begin_src python
+  # time complexity: O(n)
+  # space complexity: O(n)
+
+
+  class Solution:
+      def countPrimes(self, n: int) -> int:
+	  counter = 0
+	  evens = [False]*(n+1)
+	  for i in range(2, n):
+	      if not evens[i]:
+		  counter += 1
+		  start = 2
+		  while i * start < n:
+		      evens[i*start] = True
+		      start += 1
+	  return counter
+#+end_src
