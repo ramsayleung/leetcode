@@ -1,0 +1,56 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-17 Fri>
+source: https://leetcode.com/problems/isomorphic-strings/
+
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
+
+Example 1:
+
+#+begin_example
+Input: s = "egg", t = "add"
+Output: true
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input: s = "foo", t = "bar"
+Output: false
+#+end_example
+
+Example 3:
+
+#+begin_example
+Input: s = "paper", t = "title"
+Output: true
+#+end_example
+
+*Note*:
+You may assume both s and t have the same length.
+
+#+begin_src python
+  # time complexity: O(sl + tl), sl is the length of s, tl is the length of t
+  # space complexity: O(sl + tl), sl+tl is the total space of mapping
+
+
+  class Solution:
+      def isIsomorphic(self, s: str, t: str) -> bool:
+	  return self.serial(s) == self.serial(t)
+
+      def serial(self, s: str) -> str:
+	  s_serial = ""
+	  s_mapping = {}
+	  for i, c in enumerate(s):
+	      if c not in s_mapping:
+		  s_mapping[c] = i
+		  s_serial += str(i)
+	      else:
+		  s_serial += str(s_mapping[c])
+	  return s_serial
+#+end_src

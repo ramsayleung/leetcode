@@ -88,6 +88,7 @@
   | 221 | [[https://leetcode.com/problems/maximal-square/][Maximal square]]                                             | [[./200/maximal_square.py][Python3]]  | Medium     |
   | 213 | [[https://leetcode.com/problems/house-robber-ii/][House robber ii]]                                            | [[./200/house_robber_ii.py][Python3]]  | Medium     |
   | 207 | [[https://leetcode.com/problems/course-schedule/][Course schedule]]                                            | [[./200/course_schedule.py][Python3]]  | Medium     |
+  | 205 | [[https://leetcode.com/problems/isomorphic-strings/][Isomorphic strings]]                                         | [[./200/isomorphic_strings.org][Python3]]  | Easy       |
   | 202 | [[https://leetcode.com/problems/happy-number/][Happy number]]                                               | [[./200/happy_number.org][Python3]]  | Easy       |
   | 200 | [[https://leetcode.com/problems/number-of-islands/][Number of islands]]                                          | [[./200/number_of_islands.py][Python3]]  | Medium     |
   | 199 | [[https://leetcode.com/problems/binary-tree-right-side-view/][Binary Tree Right Side View]]                                | [[./100/binary_tree_right_side_view.py][Python3]]  | Medium     |
