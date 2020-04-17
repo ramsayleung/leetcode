@@ -1,0 +1,56 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-17 Fri>
+
+source: https://leetcode.com/problems/valid-anagram/
+
+Given two strings s and t , write a function to determine if t is an anagram of s.
+
+Example 1:
+
+#+begin_example
+Input: s = "anagram", t = "nagaram"
+Output: true
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input: s = "rat", t = "car"
+Output: false
+#+end_example
+
+*Note*:
+You may assume the string contains only lowercase alphabets.
+
+*Follow up*:
+What if the inputs contain unicode characters? How would you adapt your solution to such case?
+#+begin_src python
+  from typing import Dict
+
+
+  # Runtime: 40 ms, faster than 84.03% of Python3 online submissions for Valid Anagram.
+  # time complexity: O(sl+ tl) sl is the length of s, tl is the length of l
+  # space complexity: O(sl+ tl) sl is the space of s_mapping, tl is the size of l_mapping
+  class Solution:
+      def isAnagram(self, s: str, t: str) -> bool:
+	  if len(s) != len(t):
+	      return False
+	  s_mapping = self.generate_mapping(s)
+	  t_mapping = self.generate_mapping(t)
+	  for k, v in s_mapping.items():
+	      if k not in t_mapping or t_mapping[k] != v:
+		  return False
+	  return True
+
+      def generate_mapping(self, s: str) -> Dict:
+	  mapping = {}
+	  for char in s:
+	      if char not in mapping:
+		  mapping[char] = 1
+	      else:
+		  mapping[char] += 1
+	  return mapping
+
+#+end_src
