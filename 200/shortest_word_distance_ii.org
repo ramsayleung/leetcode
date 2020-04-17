@@ -2,9 +2,9 @@
 #+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
 #+AUTHOR: Ramsay Leung
 #+DATE: <2020-04-18 Sat>
-source: https://leetcode.com/problems/shortest-word-distance/
+source: https://leetcode.com/problems/shortest-word-distance-ii/
 
-Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
+Design a class which receives a list of words in the constructor, and implements a method that takes two words word1 and word2 and return the shortest distance between these two words in the list. Your method will be called repeatedly many times with different parameters. 
 
 Example:
 #+begin_example
@@ -17,33 +17,33 @@ Input: word1 = "makes", word2 = "coding"
 Output: 1
 #+end_example
 
-*Note*:
+Note:
 You may assume that word1 does *not equal to* word2, and word1 and word2 are both in the list.
-Accepted
-91,446
-Submissions
 
 #+begin_src python
   from sys import maxsize
   from typing import List
 
 
-  # Runtime: 64 ms, faster than 78.49% of Python3 online submissions for Shortest Word Distance.
+  # Runtime: 92 ms, faster than 95.64% of Python3 online submissions for Shortest
+  # Word Distance II.
   # time complexity: O(n+m), n is the length of words, m is number of occurrences
   # of word1 and word2 occurs in words.
   # time complexity: O(n), n is the size of mapping.
-  class Solution:
-      def shortestDistance(self, words: List[str], word1: str, word2: str) -> int:
-	  mapping = {}
+  class WordDistance:
+
+      def __init__(self, words: List[str]):
+	  self.mapping = {}
 	  for i, w in enumerate(words):
-	      if w not in mapping:
-		  mapping[w] = [i]
+	      if w not in self.mapping:
+		  self.mapping[w] = [i]
 	      else:
-		  mapping[w].append(i)
-		  shortest = maxsize
-	  for i in mapping[word1]:
-	      for j in mapping[word2]:
+		  self.mapping[w].append(i)
+
+      def shortest(self, word1: str, word2: str) -> int:
+	  shortest = maxsize
+	  for i in self.mapping[word1]:
+	      for j in self.mapping[word2]:
 		  shortest = min(shortest, abs(i-j))
 	  return shortest
-
 #+end_src
