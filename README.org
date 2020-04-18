@@ -81,6 +81,7 @@
   | 263 | [[https://leetcode.com/problems/ugly-number/][Ugly number]]                                                | [[./200/ugly_number.py][Python3]]  | Easy       |
   | 257 | [[https://leetcode.com/problems/binary-tree-paths/][Binary tree paths]]                                          | [[./200/binary_tree_paths.py][Python3]]  | Easy       |
   | 255 | [[https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/][Verify preorder sequence in binary search tree]]             | [[./200/verify_preorder_sequence_in_binary_search_tree.py][Python3]]  | Medium     |
+  | 249 | [[https://leetcode.com/problems/group-shifted-strings/][Group shifted strings]]                                      | [[./200/group_shifted_strings.org][Python3]]  | Medium     |
   | 245 | [[https://leetcode.com/problems/shortest-word-distance-iii/][Shortest word distance iii]]                                 | [[./200/shortest_word_distance_iii.org][Python3]]  | Medium     |
   | 244 | [[https://leetcode.com/problems/shortest-word-distance-ii/][Shortest word distance ii]]                                  | [[./200/shortest_word_distance_ii.org][Python3]]  | Medium     |
   | 243 | [[https://leetcode.com/problems/shortest-word-distance/][Shortest word distance]]                                     | [[./200/shortest_word_distance.org][Python3]]  | Easy       |

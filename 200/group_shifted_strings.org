@@ -1,0 +1,63 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-18 Sat>
+Given a string, we can "shift" each of its letter to its successive letter, for example: ~"abc" -> "bcd"~. We can keep "shifting" which forms the sequence:
+
+#+begin_example
+"abc" -> "bcd" -> ... -> "xyz"
+#+end_example
+
+Given a list of strings which contains only lowercase alphabets, group all strings that belong to the same shifting sequence.
+
+~Example~:
+
+#+begin_example
+Input: ["abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"],
+Output: 
+[
+  ["abc","bcd","xyz"],
+  ["az","ba"],
+  ["acef"],
+  ["a","z"]
+]
+#+end_example
+
+#+begin_src python
+  from typing import List
+
+
+  # Runtime: 92 ms, faster than 5.60% of Python3 online submissions for Group Shifted Strings.
+  # time complexity: O(n+g), n is the size of strings, g is number of group.
+  # time complexity: O(n+g), n is the size of `second_mapping`, g is the size of `first_mapping`
+  class Solution:
+      def groupStrings(self, strings: List[str]) -> List[List[str]]:
+	  first_mapping = {}
+	  second_mapping = {}
+	  for word in strings:
+	      if word not in first_mapping:
+		  shifted = self.shift(word)
+		  first_mapping[word] = word
+		  second_mapping[word] = [word]
+		  while word != shifted:
+		      first_mapping[shifted] = word
+		      shifted = self.shift(shifted)
+	      else:
+		  second_mapping[first_mapping[word]].append(word)
+		  result = []
+	  for k, v in second_mapping.items():
+	      result.append(v)
+	  return result
+
+      def shift(self, s: str) -> str:
+	  bound = ord('z')
+	  result = ""
+	  for i in range(len(s)):
+	      if ord(s[i]) == bound:
+		  result += chr(ord('a'))
+	      else:
+		  result += chr(ord(s[i]) + 1)
+	  return result
+
+#+end_src
+
