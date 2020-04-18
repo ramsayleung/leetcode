@@ -74,6 +74,7 @@
   | 304 | [[https://leetcode.com/problems/range-sum-query-2d-immutable/][Range sum query 2d immutable]]                               | [[./300/range_sum_query_2d_immutable.py][Python3]]  | Medium     |
   | 303 | [[https://leetcode.com/problems/range-sum-query-immutable/][Range sum query immutable]]                                  | [[./300/range_sum_query_immutable.py][Python3]]  | Easy       |
   | 300 | [[https://leetcode.com/problems/longest-increasing-subsequence/][Longest increasing subsequence]]                             | [[./300/longest_increasing_subsequence.py][Python3]]  | Medium     |
+  | 290 | [[https://leetcode.com/problems/word-pattern/][Word pattern]]                                               | [[./200/word_pattern.org][Python3]]  | Easy       |
   | 279 | [[https://leetcode.com/problems/perfect-squares/][Perfect squares]]                                            | [[./200/perfect_squares.py][Python3]]  | Medium     |
   | 272 | [[https://leetcode.com/problems/closest-binary-search-tree-value-ii/][Closest binary search tree value ii]]                        | [[./200/closest_binary_search_tree_value_ii.py][Python3]]  | Hard       |
   | 270 | [[https://leetcode.com/problems/closest-binary-search-tree-value/][Closest binary search tree value]]                           | [[./200/closest_binary_search_tree_value.py][Python3]]  | Easy       |

@@ -1,0 +1,66 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-18 Sat>
+source: https://leetcode.com/problems/word-pattern/
+
+Given a ~pattern~ and a string ~str~, find if ~str~ follows the same pattern.
+
+Here *follow* means a full match, such that there is a bijection between a letter in ~pattern~ and a *non-empty* word in str.
+
+Example 1:
+
+#+begin_example
+Input: pattern = "abba", str = "dog cat cat dog"
+Output: true
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input:pattern = "abba", str = "dog cat cat fish"
+Output: false
+#+end_example
+
+Example 3:
+
+#+begin_example
+Input: pattern = "aaaa", str = "dog cat cat dog"
+Output: false
+#+end_example
+
+Example 4:
+
+#+begin_example
+Input: pattern = "abba", str = "dog dog dog dog"
+Output: false
+#+end_example
+
+*Notes*:
+You may assume ~pattern~ contains only lowercase letters, and ~str~ contains lowercase letters that may be separated by a single space.
+
+#+begin_src python
+  # Runtime: 24 ms, faster than 87.38% of Python3 online submissions for Word Pattern.
+  # time complexity: O(pl + sl), pl is the length of pattern, sl is the length of str
+  # space complexity: O(pl + sl), pl is the size of pattern mapping, sl is the
+  # size of str mapping
+
+
+  class Solution:
+      def wordPattern(self, pattern: str, str: str) -> bool:
+	  words = str.split(" ")
+	  return self.serial(pattern) == self.serial(words)
+
+      def serial(self, s) -> str:
+	  s_serial = ""
+	  s_mapping = {}
+	  for i, c in enumerate(s):
+	      if c not in s_mapping:
+		  s_mapping[c] = str(i)
+		  s_serial += str(i)
+	      else:
+		  s_serial += s_mapping[c]
+	  return s_serial
+
+#+end_src
+
