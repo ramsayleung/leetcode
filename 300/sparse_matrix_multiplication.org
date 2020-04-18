@@ -1,0 +1,61 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-18 Sat>
+source: https://leetcode.com/problems/sparse-matrix-multiplication/
+
+Given two [[https://en.wikipedia.org/wiki/Sparse_matrix][sparse matrices]] *A* and *B*, return the result of *AB*.
+
+You may assume that *A*'s column number is equal to *B*'s row number.
+
+Example:
+
+#+begin_example
+Input:
+
+A = [
+  [ 1, 0, 0],
+  [-1, 0, 3]
+]
+
+B = [
+  [ 7, 0, 0 ],
+  [ 0, 0, 0 ],
+  [ 0, 0, 1 ]
+]
+
+Output:
+
+     |  1 0 0 |   | 7 0 0 |   |  7 0 0 |
+AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
+                  | 0 0 1 |
+#+end_example
+
+#+begin_src python
+  from typing import List
+
+
+  # Runtime: 208 ms, faster than 12.53% of Python3 online submissions for Sparse Matrix Multiplication.
+  # time complexity: O(ac*ar + bc*br), ac is the number of cols of A, ar is the
+  # number of rows of A, bc and br are same for B.
+  # space complexity: O(bc*ar), bc*ar is the size of result matrix.
+  class Solution:
+      def multiply(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
+	  arows = len(A)
+	  acols = len(A[0])
+	  brows = len(B)
+	  bcols = len(B[0])
+	  result = [[0 for r in range(bcols)]for c in range(arows)]
+	  for ar in range(arows):
+	      for bc in range(bcols):
+		  val_in_same_col = [B[x][bc] for x in range(brows)]
+		  result[ar][bc] = self.list_multiply(A[ar], val_in_same_col)
+	  return result
+
+      def list_multiply(self, A: List[int], B: List[int]) -> int:
+	  result = 0
+	  for a, b in zip(A, B):
+	      result += a*b
+	  return result
+#+end_src
+

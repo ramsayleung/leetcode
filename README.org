@@ -72,6 +72,7 @@
   | 332 | [[https://leetcode.com/problems/coin-change/][Coin change]]                                                | [[./300/coin_change.py][Python3]]  | Medium     |
   | 331 | [[https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/][Verify preorder serialization of a binary tree]]             | [[./300/verify_preorder_serialization_of_a_binary_tree.py][Python3]]  | Medium     |
   | 316 | [[https://leetcode.com/problems/remove-duplicate-letters/][Remove duplicate letters]]                                   | [[./300/remove_duplicate_letters.py][Python3]]  | Hard       |
+  | 311 | [[https://leetcode.com/problems/sparse-matrix-multiplication/][Sparse matrix multiplication]]                               | [[./300/sparse_matrix_multiplication.org][Python3]]  | Medium     |
   | 304 | [[https://leetcode.com/problems/range-sum-query-2d-immutable/][Range sum query 2d immutable]]                               | [[./300/range_sum_query_2d_immutable.py][Python3]]  | Medium     |
   | 303 | [[https://leetcode.com/problems/range-sum-query-immutable/][Range sum query immutable]]                                  | [[./300/range_sum_query_immutable.py][Python3]]  | Easy       |
   | 300 | [[https://leetcode.com/problems/longest-increasing-subsequence/][Longest increasing subsequence]]                             | [[./300/longest_increasing_subsequence.py][Python3]]  | Medium     |
