@@ -1,0 +1,40 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-18 Sat>
+source: https://leetcode.com/problems/intersection-of-two-arrays/
+
+Given two arrays, write a function to compute their intersection.
+
+Example 1:
+
+#+begin_example
+Input: nums1 = [1,2,2,1], nums2 = [2,2]
+Output: [2]
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+Output: [9,4]
+#+end_example
+
+*Note*:
+
+    + Each element in the result must be unique.
+    + The result can be in any order.
+#+begin_src python
+  from typing import List
+
+
+  # Runtime: 36 ms, faster than 97.75% of Python3 online submissions for Intersection of Two Arrays.
+  # time complexity: O(n1+n2), n1 is the length of nums1, n2 is the length of nums2
+  # space complexity: O(n1+n2), n1 is the size of _set1, n2 is the size of _set2
+  class Solution:
+      def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+	  _set1 = set(nums1)
+	  _set2 = set(nums2)
+	  return list(_set1.intersection(_set2))
+
+#+end_src
