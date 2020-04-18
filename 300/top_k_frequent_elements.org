@@ -1,0 +1,38 @@
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+source: https://leetcode.com/problems/top-k-frequent-elements/
+
+Given a non-empty array of integers, return the k most frequent elements.
+
+Example 1:
+
+#+begin_example
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input: nums = [1], k = 1
+Output: [1]
+#+end_example
+
+*Note*:
+
+1. You may assume k is always valid, 1 ≤ k ≤ number of unique elements.
+2. Your algorithm's time complexity *must be* better than O(n log n), where n is the array's size.
+
+#+begin_src python
+  from collections import Counter
+  from typing import List
+
+
+  # Runtime: 96 ms, faster than 96.44% of Python3 online submissions for Top K Frequent Elements.
+  # solve it with leveraging collections.Counter
+  class Solution:
+      def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+	  frequency = Counter(nums)
+	  return [x[0] for x in frequency.most_common(k)]
+
+#+end_src
