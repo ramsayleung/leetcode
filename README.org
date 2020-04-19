@@ -59,6 +59,7 @@
   | 402 | [[https://leetcode.com/problems/remove-k-digits/][Remove k digits]]                                            | [[./400/remove_k_digits.py][Python3]]  | Medium     |
   | 394 | [[https://leetcode.com/problems/decode-string/][Decode String]]                                              | [[./300/decode_string.py][Python3]]  | Medium     |
   | 392 | [[https://leetcode.com/problems/is-subsequence/][Is subsequence]]                                             | [[./300/is_subsequence.py][Python3]]  | Easy       |
+  | 389 | [[https://leetcode.com/problems/find-the-difference/][find-the-difference]]                                        | [[./300/find_the_difference.org][Python3]]  | Easy       |
   | 387 | [[https://leetcode.com/problems/first-unique-character-in-a-string/][First unique character in a string]]                         | [[./300/first_unique_character_in_a_string.org][Python3]]  | Easy       |
   | 377 | [[https://leetcode.com/problems/combination-sum-iv/][Combination sum iv]]                                         | [[./300/combination_sum_iv.py][Python3]]  | Medium     |
   | 376 | [[https://leetcode.com/problems/wiggle-subsequence/][Wiggle subsequence]]                                         | [[./300/wiggle_subsequence.py][Python3]]  | Medium     |
