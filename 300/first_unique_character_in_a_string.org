@@ -1,0 +1,37 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: <2020-04-19 Sun>
+
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+
+Examples:
+
+#+begin_example
+s = "leetcode"
+return 0.
+
+s = "loveleetcode",
+return 2.
+#+end_example
+
+*Note*: You may assume the string contain only lowercase letters. 
+
+#+begin_src python
+  from collections import Counter
+
+  # Runtime: 88 ms, faster than 89.09% of Python3 online submissions for First Unique Character in a String.
+  # time complxity: O(n), n is the length of s.
+  # space complxity: O(n), n is the size of counter.
+
+
+  class Solution:
+      def firstUniqChar(self, s: str) -> int:
+	  counter = Counter(s)
+	  for i, char in enumerate(s):
+	      if counter[char] == 1:
+		  return i
+	  return -1
+
+#+end_src
