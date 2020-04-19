@@ -1,0 +1,62 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-19T20:39:46
+source: https://leetcode.com/problems/intersection-of-two-arrays-ii/
+
+Given two arrays, write a function to compute their intersection.
+
+Example 1:
+
+#+begin_example
+Input: nums1 = [1,2,2,1], nums2 = [2,2]
+Output: [2,2]
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+Output: [4,9]
+#+end_example
+
+Note:
+
++ Each element in the result should appear as many times as it shows in both arrays.
++ The result can be in any order.
+
+Follow up:
+
++ What if the given array is already sorted? How would you optimize your algorithm?
++ What if nums1's size is small compared to nums2's size? Which algorithm is better?
++ What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
+
+#+begin_src python
+  from collections import Counter
+  from typing import List
+
+
+  # Runtime: 36 ms, faster than 98.69% of Python3 online submissions for Intersection of Two Arrays II.
+  # time complxity: O(n), n is the lengthof longer nums
+  # space complxity: O(n), n is the lengthof smaller nums
+  class Solution:
+      def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+	  len1 = len(nums1)
+	  len2 = len(nums2)
+	  intersection = []
+	  counter = None
+	  input = None
+	  if len1 < len2:
+	      counter = Counter(nums2)
+	      input = nums1
+	  else:
+	      counter = Counter(nums1)
+	      input = nums2
+	  for num in input:
+	      if num in counter and counter[num] > 0:
+		  intersection.append(num)
+		  counter[num] -= 1
+	  return intersection
+
+#+end_src
