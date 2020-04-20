@@ -1,0 +1,65 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-21T00:32:45
+source: https://leetcode.com/problems/sort-characters-by-frequency/
+
+Given a string, sort it in decreasing order based on the frequency of characters.
+
+Example 1:
+
+#+begin_example
+Input:
+"tree"
+
+Output:
+"eert"
+
+Explanation:
+'e' appears twice while 'r' and 't' both appear once.
+So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input:
+"cccaaa"
+
+Output:
+"cccaaa"
+
+Explanation:
+Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
+Note that "cacaca" is incorrect, as the same characters must be together.
+#+end_example
+
+Example 3:
+
+#+begin_example
+Input:
+"Aabb"
+
+Output:
+"bbAa"
+
+Explanation:
+"bbaA" is also a valid answer, but "Aabb" is incorrect.
+Note that 'A' and 'a' are treated as two different characters.
+#+end_example
+
+#+begin_src python
+  from collections import Counter
+
+  # Runtime: 32 ms, faster than 94.65% of Python3 online submissions for Sort Characters By Frequency.
+  # time complxity: O(n), n is the length of `s`
+  # space complxity: O(n), n is the size of `counter`
+  class Solution:
+      def frequencySort(self, s: str) -> str:
+	  counter = Counter(s)
+	  result = ""
+	  for x in counter.most_common():
+	      result += x[0]*x[1]
+	  return result
+#+end_src
