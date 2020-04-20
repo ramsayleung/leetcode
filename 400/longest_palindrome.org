@@ -1,0 +1,53 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-20T23:43:41
+source: https://leetcode.com/problems/longest-palindrome/
+
+Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+
+This is case sensitive, for example "Aa" is not considered a palindrome here.
+
+Note:
+Assume the length of given string will not exceed 1,010.
+
+Example:
+
+#+begin_example
+Input:
+"abccccdd"
+
+Output:
+7
+
+Explanation:
+One longest palindrome that can be built is "dccaccd", whose length is 7.
+#+end_example
+
+#+begin_src python
+  from collections import Counter
+
+
+  # Runtime: 24 ms, faster than 94.59% of Python3 online submissions for Longest Palindrome.
+  # time complxity: O(n), n is the length of `s`
+  # space complxity: O(n), n is the size of `counter`
+  class Solution:
+      def longestPalindrome(self, s: str) -> int:
+	  counter = Counter(s)
+
+	  evensCount = oddsCount = oddsNumber = 0
+	  for x in counter.most_common():
+	      if x[1] % 2 == 1:
+		  oddsCount += x[1]
+		  oddsNumber += 1
+	      else:
+		  evensCount += x[1]
+		  # if there are oddsNumber odd number, oddsNumber - 1 odd number can
+		  # become even by minusing 1
+	  if oddsNumber > 0:
+	      return evensCount + (oddsCount - (oddsNumber-1))
+	  else:
+	      return evensCount
+
+#+end_src
