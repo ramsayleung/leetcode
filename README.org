@@ -48,6 +48,7 @@
   | 515 | [[https://leetcode.com/problems/find-largest-value-in-each-tree-row/][Find largest value in each tree row]]                        | [[./500/find_largest_value_in_each_tree_row.py][Python3]]  | Medium     |
   | 513 | [[https://leetcode.com/problems/find-bottom-left-tree-value/][Find bottom left tree value]]                                | [[./500/find_bottom_left_tree_value.py][Python3]]  | Medium     |
   | 503 | [[https://leetcode.com/problems/next-greater-element-ii/][Next greater element ii]]                                    | [[./500/next_greater_element_2.py][Python3]]  | Medium     |
+  | 500 | [[https://leetcode.com/problems/keyboard-row/][Keyboard row]]                                               | [[./500/keyboard_row.org][Python3]]  | Easy       |
   | 496 | [[https://leetcode.com/problems/next-greater-element-i/][Next greater element i]]                                     | [[./400/next_greater_element_1.py][Python3]]  | Easy       |
   | 494 | [[https://leetcode.com/problems/target-sum/][Target sum]]                                                 | [[./400/target_sum.py][Python3]]  | Medium     |
   | 463 | [[https://leetcode.com/problems/island-perimeter/][Island perimeter]]                                           | [[./400/island_perimeter.org][Python3]]  | Easy       |

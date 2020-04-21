@@ -1,0 +1,64 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-21T23:08:45
+source: https://leetcode.com/problems/keyboard-row/
+
+Given a List of words, return the words that can be typed using letters of *alphabet* on only one row's of American keyboard like the image below.
+
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/keyboard.png @ 2020-04-21 23:10:14
+[[file:../images/2020-04-21_23-10-14_keyboard.png]]
+ 
+
+Example:
+
+#+begin_example
+Input: ["Hello", "Alaska", "Dad", "Peace"]
+Output: ["Alaska", "Dad"]
+#+end_example
+
+ 
+
+Note:
+
+1. You may use one character in the keyboard more than once.
+2. You may assume the input string will only contain letters of alphabet.
+
+#+begin_src python
+  from typing import List, Set
+
+
+  # Runtime: 24 ms, faster than 88.60% of Python3 online submissions for Keyboard Row.
+  # time complxity: O(n), n is length of words
+  # space complxity: O(1)
+  class Solution:
+      def findWords(self, words: List[str]) -> List[str]:
+	  firstRow = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"]
+	  secondRow = ["a", "s", "d", "f", "g", "h", "j", "k", "l"]
+	  thirdRow = ["z", "x", "c", "v", "b", "n", "m"]
+	  firstSet = self.generateSet(firstRow)
+	  secondSet = self.generateSet(secondRow)
+	  thirdSet = self.generateSet(thirdRow)
+	  result = []
+	  for word in words:
+	      if word[0] in firstSet and self.inSet(word, firstSet):
+		  result.append(word)
+	      elif word[0] in secondSet and self.inSet(word, secondSet):
+		  result.append(word)
+	      elif word[0] in thirdSet and self.inSet(word, thirdSet):
+		  result.append(word)
+	  return result
+
+      def generateSet(self, chars: List[str]) -> Set[str]:
+	  _set = set()
+	  for char in chars:
+	      _set.add(char)
+	      _set.add(char.upper())
+	  return _set
+
+      def inSet(self, word: str, _set: Set[str]) -> bool:
+	  return all([x in _set for x in word])
+
+#+end_src
