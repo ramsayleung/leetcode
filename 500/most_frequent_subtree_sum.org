@@ -1,0 +1,70 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-21T23:37:32
+source: https://leetcode.com/problems/most-frequent-subtree-sum/
+
+Given the root of a tree, you are asked to find the most frequent subtree sum. The subtree sum of a node is defined as the sum of all the node values formed by the subtree rooted at that node (including the node itself). So what is the most frequent subtree sum value? If there is a tie, return all the values with the highest frequency in any order.
+
+Examples 1
+#+begin_example
+Input:
+
+  5
+ /  \
+2   -3
+
+return [2, -3, 4], since all the values happen only once, return all of them in any order.
+#+end_example
+
+Examples 2
+#+begin_example
+Input:
+
+  5
+ /  \
+2   -5
+
+return [2], since 2 happens twice, however -5 only occur once.
+#+end_example
+
+*Note*: You may assume the sum of values in any subtree is in the range of 32-bit signed integer. 
+
+#+begin_src python
+  # Definition for a binary tree node.
+  # class TreeNode:
+  #     def __init__(self, x):
+  #         self.val = x
+  #         self.left = None
+  #         self.right = None
+  from collections import Counter
+  from typing import List
+
+
+  # Runtime: 44 ms, faster than 90.78% of Python3 online submissions for Most Frequent Subtree Sum.
+  # time complxity: O(n), n is the number of nodes of given tree
+  # space complxity: O(n), n is the size of frequent.
+  class Solution:
+      def findFrequentTreeSum(self, root: TreeNode) -> List[int]:
+	  result = []
+	  if not root:
+	      return result
+	  frequent = Counter()
+	  self.preorderTraversal(root, frequent)
+	  mostFrequent = frequent.most_common(1)[0][1]
+	  for x in frequent.most_common():
+	      if x[1] == mostFrequent:
+		  result.append(x[0])
+	  return result
+
+      def preorderTraversal(self, root: TreeNode, frequent) -> int:
+	  if not root:
+	      return 0
+	  left = self.preorderTraversal(root.left, frequent)
+	  right = self.preorderTraversal(root.right, frequent)
+	  tmp = left+right+root.val
+	  frequent[tmp] += 1
+	  return tmp
+
+#+end_src
