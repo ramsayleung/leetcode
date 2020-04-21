@@ -1,0 +1,60 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-21T12:40:38
+source: https://leetcode.com/problems/island-perimeter/
+
+You are given a map in form of a two-dimensional integer grid where 1 represents land and 0 represents water.
+
+Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).
+
+The island doesn't have "lakes" (water inside that isn't connected to the water around the island). One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
+
+Example:
+#+begin_example
+
+Input:
+[[0,1,0,0],
+ [1,1,1,0],
+ [0,1,0,0],
+ [1,1,0,0]]
+
+Output: 16
+
+Explanation: The perimeter is the 16 yellow stripes in the image below:
+#+end_example
+
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/10/12/island.png @ 2020-04-21 12:41:04
+[[file:../images/2020-04-21_12-41-04_island.png]]
+
+#+begin_src python
+  from typing import List
+
+
+  # Runtime: 512 ms, faster than 86.37% of Python3 online submissions for Island Perimeter.
+  # time complxity: O(r*c), r is number of rows of grid, c is the number of
+  # columns of grid.
+  # space complxity: O(1)
+  class Solution:
+      def islandPerimeter(self, grid: List[List[int]]) -> int:
+	  rows = len(grid)
+	  cols = len(grid[0]) if rows > 0 else 0
+	  perimeter = 0
+	  for row in range(rows):
+	      for col in range(cols):
+		  if grid[row][col] == 1:
+		      p = 4
+		      if row > 0 and grid[row-1][col] == 1:
+			  p -= 1
+		      if row + 1 < rows and grid[row+1][col] == 1:
+			  p -= 1
+		      if col > 0 and grid[row][col-1] == 1:
+			  p -= 1
+		      if col + 1 < cols and grid[row][col+1] == 1:
+			  p -= 1
+			  perimeter += p
+	  return perimeter
+
+#+end_src
