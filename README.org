@@ -161,6 +161,7 @@
   |  62 | [[https://leetcode.com/problems/unique-paths/][Unique paths]]                                               | [[./000/unique_paths.py][Python3]]  | Medium     |
   |  53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]  | Easy       |
   |  49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]  | Medium     |
+  |  23 | [[https://leetcode.com/problems/merge-k-sorted-lists/][Merge k sorted lists]]                                       | [[./000/merge_k_sorted_lists.org][Python3]]  | Hard       |
   |  21 | [[https://leetcode.com/problems/merge-two-sorted-lists/][Merge two sorted lists]]                                     | [[./000/merge_two_sorted_lists.org][Python3]]  | Easy       |
   |  20 | [[https://leetcode.com/problems/valid-parentheses/][Valida parentheses]]                                         | [[./000/valid_parentheses.py][Python3]]  | Easy       |
   |   5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/longest_palindromic_substring.py][Python3]]  | Medium     |
