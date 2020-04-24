@@ -46,6 +46,7 @@
   | 591 | [[https://leetcode.com/problems/tag-validator/][Tag validator]]                                              | [[./500/tag_validator.py][Python3]]  | Hard       |
   | 559 | [[https://leetcode.com/problems/maximum-depth-of-n-ary-tree/][Maximum depth of n ary tree]]                                | [[./500/maximum_depth_of_n_ary_tree.py][Python3]]  | Easy       |
   | 542 | [[https://leetcode.com/problems/01-matrix/][01 matrix]]                                                  | [[./500/01_matrix.py][Python3]]  | Medium     |
+  | 525 | [[https://leetcode.com/problems/contiguous-array/][Contiguous array]]                                           | [[./500/contiguous_array.org][Python3]]  | Medium     |
   | 515 | [[https://leetcode.com/problems/find-largest-value-in-each-tree-row/][Find largest value in each tree row]]                        | [[./500/find_largest_value_in_each_tree_row.py][Python3]]  | Medium     |
   | 513 | [[https://leetcode.com/problems/find-bottom-left-tree-value/][Find bottom left tree value]]                                | [[./500/find_bottom_left_tree_value.py][Python3]]  | Medium     |
   | 508 | [[https://leetcode.com/problems/most-frequent-subtree-sum/][Most frequent subtree sum]]                                  | [[./500/most_frequent_subtree_sum.org][Python3]]  | Medium     |
