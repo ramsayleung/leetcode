@@ -1,0 +1,47 @@
+#+AUTHOR: Ramsay Leung
+#+DATE: <2020-04-24 Fri>
+source: https://leetcode.com/problems/contiguous-array/
+
+Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
+
+Example 1:
+
+#+BEGIN_EXAMPLE
+Input: [0,1]
+Output: 2
+Explanation: [0, 1] is the longest contiguous subarray with equal number of 0 and 1.
+#+END_EXAMPLE
+
+Example 2:
+
+#+BEGIN_SRC 
+Input: [0,1,0]
+Output: 2
+Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
+#+END_SRC
+
+*Note*: The length of the given binary array will not exceed 50,000. 
+
+#+BEGIN_SRC python
+  from typing import List
+
+
+  # Runtime: 920 ms, faster than 52.40% of Python3 online submissions for Contiguous Array.
+  # time complexity: O(n), n is the length of nums
+  # space complexity: O(n), n is the size of nums
+  class Solution:
+      def findMaxLength(self, nums: List[int]) -> int:
+	  prefixSum = {}
+	  length = len(nums)
+	  _sum = longest = 0
+	  for i in range(length):
+	      _sum += 1 if (nums[i] == 1) else -1
+	      if _sum == 0:
+		  longest = max(longest, i+1)
+	      if _sum in prefixSum:
+		  longest = max(longest, i - prefixSum[_sum])
+	      else:
+		  prefixSum[_sum] = i
+	  return longest
+
+#+END_SRC
