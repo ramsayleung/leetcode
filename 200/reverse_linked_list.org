@@ -1,0 +1,48 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-24T22:28:35
+source: https://leetcode.com/problems/reverse-linked-list/
+
+Reverse a singly linked list.
+
+Example:
+
+#+begin_example
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+#+end_example
+
+*Follow up*:
+
+A linked list can be reversed either iteratively or recursively. Could you implement both?
+
+#+begin_src python
+  # Definition for singly-linked list.
+  # class ListNode:
+  #     def __init__(self, x):
+  #         self.val = x
+  #         self.next = None
+
+  # Runtime: 40 ms, faster than 25.14% of Python3 online submissions for Reverse Linked List.
+  # time complexity: O(n), n is the number of nodes.
+  # space complexity: O(n)
+
+
+  class Solution:
+      def reverseList(self, head: ListNode) -> ListNode:
+	  values = []
+	  while head:
+	      values.append(head.val)
+	      head = head.next
+	      parent = root = None
+	  while len(values) > 0:
+	      newNode = ListNode(values.pop(-1))
+	      if not parent:
+		  parent = root = newNode
+	      else:
+		  parent.next = newNode
+		  parent = parent.next
+	  return root
+#+end_src
