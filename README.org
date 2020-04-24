@@ -43,6 +43,7 @@
   | 637 | [[https://leetcode.com/problems/average-of-levels-in-binary-tree/][Average of levels in binary tree]]                           | [[./600/average_levels_of_binary_tree.py][Python3]]  | Medium     |
   | 636 | [[https://leetcode.com/problems/exclusive-time-of-functions/][Exclusive time of functions]]                                | [[./600/exclusive_times_of_functions.py][Python3]]  | Medium     |
   | 599 | [[https://leetcode.com/problems/minimum-index-sum-of-two-lists/][Minimum index sum of two lists]]                             | [[./500/minimum_index_sum_of_two_lists.org][Python3]]  | Easy       |
+  | 594 | [[https://leetcode.com/problems/longest-harmonious-subsequence/][Longest harmonious subsequence]]                             | [[./500/longest_harmonious_subsequence.org][Python3]]  | Easy       |
   | 591 | [[https://leetcode.com/problems/tag-validator/][Tag validator]]                                              | [[./500/tag_validator.py][Python3]]  | Hard       |
   | 559 | [[https://leetcode.com/problems/maximum-depth-of-n-ary-tree/][Maximum depth of n ary tree]]                                | [[./500/maximum_depth_of_n_ary_tree.py][Python3]]  | Easy       |
   | 542 | [[https://leetcode.com/problems/01-matrix/][01 matrix]]                                                  | [[./500/01_matrix.py][Python3]]  | Medium     |
