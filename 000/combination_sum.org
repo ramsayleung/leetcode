@@ -1,0 +1,66 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-25T21:58:44
+source: https://leetcode.com/problems/combination-sum/
+
+Given a *set* of candidate numbers (~candidates~) (*without duplicates*) and a target number (~target~), find all unique combinations in ~candidates~ where the candidate numbers sums to ~target~.
+
+The *same* repeated number may be chosen from ~candidates~ unlimited number of times.
+
+*Note*:
+
+1. All numbers (including target) will be positive integers.
+2. The solution set must not contain duplicate combinations.
+
+*Example 1*:
+
+#+begin_example
+Input: candidates = [2,3,6,7], target = 7,
+A solution set is:
+[
+  [7],
+  [2,2,3]
+]
+#+end_example
+
+*Example 2*:
+
+#+begin_example
+Input: candidates = [2,3,5], target = 8,
+A solution set is:
+[
+  [2,2,2,2],
+  [2,3,3],
+  [3,5]
+]
+#+end_example
+
+#+begin_src python
+  from typing import List
+
+
+  # Runtime: 924 ms, faster than 5.03% of Python3 online submissions for Combination Sum.
+  # time complexity: (n^n), n is the length of candidates.
+  # space complexity: (n^n)
+  class Solution:
+      def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+	  output: List[List[int]] = []
+
+	  def backtracking(candidates: List[int], solution: List[int], target: int) -> None:
+	      if sum(solution) == target:
+		  s = sorted(solution)
+		  if s not in output:
+		      output.append(s)
+		  return
+	      elif sum(solution) > target:
+		  return
+	      for c in candidates:
+		  solution.append(c)
+		  backtracking(candidates, solution, target)
+		  solution.pop(-1)
+		  backtracking(candidates, [], target)
+	  return output
+
+#+end_src
