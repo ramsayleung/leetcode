@@ -60,7 +60,7 @@ A solution set is:
 		  solution.append(c)
 		  backtracking(candidates, solution, target)
 		  solution.pop(-1)
-		  backtracking(candidates, [], target)
+	  backtracking(candidates, [], target)
 	  return output
 
 #+end_src

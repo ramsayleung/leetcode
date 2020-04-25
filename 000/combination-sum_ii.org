@@ -1,0 +1,70 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-25T22:17:32
+source: https://leetcode.com/problems/combination-sum-ii/
+
+Given a collection of candidate numbers (~candidates~) and a target number (~target~), find all unique combinations in ~candidates~ where the candidate numbers sums to ~target~.
+
+Each ~number~ in candidates may only be used *once* in the combination.
+
+*Note*:
+
+    1. All numbers (including target) will be positive integers.
+    2. The solution set must not contain duplicate combinations.
+
+*Example 1*:
+
+#+begin_example
+Input: candidates = [10,1,2,7,6,1,5], target = 8,
+A solution set is:
+[
+  [1, 7],
+  [1, 2, 5],
+  [2, 6],
+  [1, 1, 6]
+]
+#+end_example
+
+*Example 2*:
+#+begin_example
+
+Input: candidates = [2,5,2,1,2], target = 5,
+A solution set is:
+[
+  [1,2,2],
+  [5]
+]
+#+end_example
+
+#+begin_src python
+from typing import List
+
+
+# Runtime: 64 ms, faster than 66.68% of Python3 online submissions for Combination Sum II.
+# time complexity: O(n!), n is the length of candidates.
+# space complexity: O(s!), s is the number of all solution.
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        output: List[List[int]] = []
+        candidates = sorted(candidates)
+
+        def backtracking(candidates: List[int], solution: int, target: int) -> None:
+            if target == 0:
+                s = sorted(solution)
+                if s not in output:
+                    output.append(s)
+                return
+            for idx, num in enumerate(candidates):
+                if target >= num:
+                    backtracking(candidates[idx+1:],
+                                 solution+[num], target-num)
+                else:
+                    # because candidates is sorted, if target is less than num,
+                    # it will be less than the follow-up number either.
+                    break
+        backtracking(candidates, [], target)
+        return output
+
+#+end_src
