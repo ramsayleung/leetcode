@@ -1,0 +1,47 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-25T23:09:19
+source: https://leetcode.com/problems/permutations-ii/
+
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+*Example*:
+
+#+begin_example
+Input: [1,1,2]
+Output:
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+#+end_example
+
+#+begin_src python
+import typing
+from collections import Counter
+from typing import List
+
+
+# Runtime: 56 ms, faster than 70.25% of Python3 online submissions for Permutations II.
+# time complexity: O(n!), n is the length of nums.
+# space complexity: O(n!), n is the size of output.
+class Solution:
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        output: List[List[int]] = []
+
+        def backtracking(counter: typing.Counter, permutation: List[int]) -> None:
+            if len(nums) == len(permutation):
+                output.append(permutation.copy())
+                return
+            for x in counter:
+                if counter[x] > 0:
+                    counter[x] -= 1
+                    backtracking(counter, permutation+[x])
+                    counter[x] += 1
+        backtracking(Counter(nums), [])
+        return output
+
+#+end_src
