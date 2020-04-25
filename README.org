@@ -163,6 +163,7 @@
   |  64 | [[https://leetcode.com/problems/minimum-path-sum/][Minimum path sum]]                                           | [[./000/minimum_path_sum.py][Python3]]  | Medium     |
   |  63 | [[https://leetcode.com/problems/unique-paths-ii/][Unique paths ii]]                                            | [[./000/unique_paths_ii.py][Python3]]  | Medium     |
   |  62 | [[https://leetcode.com/problems/unique-paths/][Unique paths]]                                               | [[./000/unique_paths.py][Python3]]  | Medium     |
+  |  60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]  | Medium     |
   |  53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]  | Easy       |
   |  49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]  | Medium     |
   |  47 | [[https://leetcode.com/problems/permutations-ii/][Permutations ii]]                                            | [[./000/permutations_ii.org][Python3]]  | Medium     |

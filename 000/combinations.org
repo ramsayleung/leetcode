@@ -42,4 +42,13 @@ Output:
 	  backtracking(1, [])
 	  return output
 
+  # Or solve it by using standard library
+  # from itertools import combinations
+  # from typing import List
+
+
+  # Runtime: 76 ms, faster than 98.41% of Python3 online submissions for Combinations.
+  # class Solution:
+  #     def combine(self, n: int, k: int) -> List[List[int]]:
+  #         return combinations(range(1, n+1), k)
 #+end_src
