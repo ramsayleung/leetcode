@@ -1,0 +1,54 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-26T23:58:04
+source: https://leetcode.com/problems/remove-nth-node-from-end-of-list
+
+Given a linked list, remove the n-th node from the end of list and return its head.
+
+*Example*:
+
+Given linked list: *1->2->3->4->5*, and *n = 2*.
+
+After removing the second node from the end, the linked list becomes 1->2->3->5.
+
+*Note*:
+
+Given n will always be valid.
+
+*Follow up*:
+
+Could you do this in one pass?
+
+#+begin_src python
+
+  # Runtime: 28 ms, faster than 86.69% of Python3 online submissions for Remove Nth Node From End of List.
+  # time complexity: O(2*n)=O(n), n is the number of nodes.
+  # space complexity: O(n), n is the size of helper `flatten`
+  # Definition for singly-linked list.
+  # class ListNode:
+  #     def __init__(self, x):
+  #         self.val = x
+  #         self.next = None
+
+  class Solution:
+      def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+	  flatten = []
+	  self.traversal(head, flatten)
+	  flatten.pop(-n)
+	  parent = root =None
+	  while len(flatten)>0:
+	      newNode = ListNode(flatten.pop(0))
+	      if not parent:
+		  parent = root = newNode
+	      else:
+		  parent.next = newNode
+		  parent = parent.next
+	  return root
+      def traversal(self, head: ListNode, flattenList: List[int])->None:
+	  while head:
+	      flattenList.append(head.val)
+	      head =head.next
+#+end_src
+
