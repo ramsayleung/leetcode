@@ -28,7 +28,7 @@ Output:
 
 #+begin_src python
   from typing import List
-  # Runtime: 36 ms, faster than 39.79% of Python3 online submissions for Subsets.
+  # Runtime: 32 ms, faster than 73.24% of Python3 online submissions for Subsets.
   # time complexity: O(N*2^N) to generate all subsets and then copy them into
   # output list
   # space complexity: O(2^N) 2^N subsets for the length, every subset need O(N) to store
@@ -36,17 +36,18 @@ Output:
       def subsets(self, nums: List[int]) -> List[List[int]]:
 	  output: List[List[int]] = []
 	  seen = set()
-	  def backtracking(nums: List[int], subset: List[int]) ->None:
-	      if not nums:
+	  length = len(nums)
+	  def backtracking(start: int, subset: List[int]) ->None:
+	      if start >= length:
 		  output.append(subset.copy())
-	      for idx, num in enumerate(nums):
+		  return
+	      for idx in range(start, length):
 		  if tuple(subset) not in seen:
 		      seen.add(tuple(subset))
 		      output.append(subset)
-		  if num not in set(subset):
-		      backtracking(nums[idx+1:], subset+[num])
-	  backtracking(nums, [])
+		  if nums[idx] not in set(subset):
+		      backtracking(idx+1, subset+[nums[idx]])
+	  backtracking(0, [])
 	  return output
-
 #+end_src
 

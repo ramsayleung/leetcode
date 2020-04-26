@@ -20,28 +20,28 @@ Output:
 #+end_example
 
 #+begin_src python
-import typing
-from collections import Counter
-from typing import List
+  import typing
+  from collections import Counter
+  from typing import List
 
 
-# Runtime: 56 ms, faster than 70.25% of Python3 online submissions for Permutations II.
-# time complexity: O(n!), n is the length of nums.
-# space complexity: O(n!), n is the size of output.
-class Solution:
-    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        output: List[List[int]] = []
+  # Runtime: 56 ms, faster than 70.25% of Python3 online submissions for Permutations II.
+  # time complexity: O(n!), n is the length of nums.
+  # space complexity: O(n!), n is the size of output.
+  class Solution:
+      def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+	  output: List[List[int]] = []
 
-        def backtracking(counter: typing.Counter, permutation: List[int]) -> None:
-            if len(nums) == len(permutation):
-                output.append(permutation.copy())
-                return
-            for x in counter:
-                if counter[x] > 0:
-                    counter[x] -= 1
-                    backtracking(counter, permutation+[x])
-                    counter[x] += 1
-        backtracking(Counter(nums), [])
-        return output
+	  def backtracking(counter: typing.Counter, permutation: List[int]) -> None:
+	      if len(nums) == len(permutation):
+		  output.append(permutation.copy())
+		  return
+	      for x in counter:
+		  if counter[x] > 0:
+		      counter[x] -= 1
+		      backtracking(counter, permutation+[x])
+		      counter[x] += 1
+	  backtracking(Counter(nums), [])
+	  return output
 
 #+end_src
