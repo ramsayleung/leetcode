@@ -1,0 +1,103 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-28T00:10:27
+source: https://leetcode.com/problems/lru-cache/
+
+Design and implement a data structure for [[https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU][Least Recently Used (LRU) cache]]. It should support the following operations: =get= and =put=.
+
+=get(key)= - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+=put(key, value)= - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
+
+The cache is initialized with a =positive= capacity.
+
+*Follow up*:
+
+Could you do both operations in =O(1)= time complexity?
+
+*Example*:
+
+#+begin_example
+LRUCache cache = new LRUCache( 2 /* capacity */ );
+
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // returns 1
+cache.put(3, 3);    // evicts key 2
+cache.get(2);       // returns -1 (not found)
+cache.put(4, 4);    // evicts key 1
+cache.get(1);       // returns -1 (not found)
+cache.get(3);       // returns 3
+cache.get(4);       // returns 4
+#+end_example
+
+
+#+begin_src python
+  # Runtime: 216 ms, faster than 54.83% of Python3 online submissions for LRU Cache.
+  # time complexity:
+  # get: O(1)
+  # put: O(1)
+  # space complexity: O(capacity)
+  class LinkedNode:
+      def __init__(self):
+	  self.prev = None
+	  self.next = None
+	  self.key = None
+        
+  # add a new node right after head
+  def addNode(node, head)->None:
+      node.prev = head
+      node.next = head.next
+    
+      head.next.prev = node
+      head.next = node
+    
+  # remove a existing node
+  def removeNode(node)->None:
+      node.next.prev = node.prev
+      node.prev.next = node.next
+    
+  # move a node to right after head
+  def moveToHead(node, head)->None:
+      removeNode(node)
+      addNode(node, head)
+    
+  class LRUCache:
+      def __init__(self, capacity: int):
+	  self.data = {}
+	  self.capacity = capacity
+	  self.dumbHead = LinkedNode()
+	  self.dumbTail = LinkedNode()
+	  self.dumbHead.next = self.dumbTail
+	  self.dumbTail.prev = self.dumbHead
+        
+	  # key<->linkedNode
+	  self.keyLinkedNode = {}
+      # O(1)
+      def get(self, key: int) -> int:
+	  if key not in self.data:
+	      return -1
+	  node = self.keyLinkedNode[key]
+	  moveToHead(node, self.dumbHead)
+	  return self.data[key]
+    
+      # O(1)
+      def put(self, key: int, value: int) -> None:
+	  if key in self.data:
+	      self.data[key] = value
+	      node = self.keyLinkedNode[key]
+	      moveToHead(node, self.dumbHead)
+	  else:
+	      if len(self.data) >= self.capacity:
+		  removed = self.dumbTail.prev
+		  removeNode(removed)
+		  del self.data[removed.key]
+		  del self.keyLinkedNode[removed.key]
+	      newNode = LinkedNode()
+	      newNode.key = key
+	      addNode(newNode, self.dumbHead)
+            
+	      self.keyLinkedNode[key] = newNode
+	      self.data[key] =value
+#+end_src
