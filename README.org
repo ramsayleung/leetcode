@@ -180,3 +180,7 @@
   |   3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]  | Medium     |
   |   2 | [[https://leetcode.com/problems/add-two-numbers/][add two numbers]]                                            | [[./000/add_two_numbers.org][Python3]]  | Medium     |
   
+* Pramp problem's solution
+
+  | Title      | Solution |
+  | [[https://www.pramp.com/challenge/15oxrQx6LjtQj9JK9XqA][Sales Path]] | [[./pramp/sales_path.org][Python3]]  |
