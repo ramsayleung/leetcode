@@ -171,6 +171,7 @@
   |  46 | [[https://leetcode.com/problems/permutations/][Permutations]]                                               | [[./000/permutations.org][Python3]]  | Medium     |
   |  40 | [[https://leetcode.com/problems/combination-sum-ii/][Combination sum ii]]                                         | [[./000/combination-sum_ii.org][Python3]]  | Medium     |
   |  39 | [[https://leetcode.com/problems/combination-sum/][Combination sum]]                                            | [[./000/combination_sum.org][Python3]]  | Medium     |
+  |  34 | [[https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/][Find first and last position of element in sorted array]]    | [[./000/find_first_and_last_position_of_element_in_sorted_array.org][Python3]]  | Medium     |
   |  23 | [[https://leetcode.com/problems/merge-k-sorted-lists/][Merge k sorted lists]]                                       | [[./000/merge_k_sorted_lists.org][Python3]]  | Hard       |
   |  21 | [[https://leetcode.com/problems/merge-two-sorted-lists/][Merge two sorted lists]]                                     | [[./000/merge_two_sorted_lists.org][Python3]]  | Easy       |
   |  20 | [[https://leetcode.com/problems/valid-parentheses/][Valida parentheses]]                                         | [[./000/valid_parentheses.py][Python3]]  | Easy       |
