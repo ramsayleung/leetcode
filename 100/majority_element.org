@@ -1,0 +1,37 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-28T12:51:07
+source: https://leetcode.com/problems/majority-element/
+
+Given an array of size n, find the majority element. The majority element is the element that appears *more than* =⌊ n/2 ⌋= times.
+
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+*Example 1*:
+
+#+begin_example
+Input: [3,2,3]
+Output: 3
+#+end_example
+
+*Example 2*:
+
+#+begin_example
+Input: [2,2,1,1,1,2,2]
+Output: 2
+#+end_example
+
+#+begin_src python
+  from collections import Counter
+  # Runtime: 164 ms, faster than 95.69% of Python3 online submissions for Majority Element.
+  # time complexity: O(n), n is the length of nums
+  # space complexity: O(n), n is the size of counter
+  class Solution:
+      def majorityElement(self, nums: List[int]) -> int:
+	  counter = Counter(nums)
+	  majority = counter.most_common(1)[0][0]
+	  return majority
+#+end_src
+
