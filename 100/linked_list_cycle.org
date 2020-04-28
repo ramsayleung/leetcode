@@ -18,6 +18,9 @@ Explanation: There is a cycle in the linked list, where tail connects to the sec
 #+end_example
 
 
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png @ 2020-04-28 09:55:15
+[[file:../images/2020-04-28_09-55-10_circularlinkedlist.png]]
+
 *Example 2*:
 
 #+begin_example
@@ -25,6 +28,11 @@ Input: head = [1,2], pos = 0
 Output: true
 Explanation: There is a cycle in the linked list, where tail connects to the first node.
 #+end_example
+
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png @ 2020-04-28 09:55:28
+[[file:../images/2020-04-28_09-55-28_circularlinkedlist_test2.png]]
+
 
 *Example 3*:
 
@@ -34,6 +42,9 @@ Output: false
 Explanation: There is no cycle in the linked list.
 #+end_example
 
+
+#+DOWNLOADED: https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png @ 2020-04-28 09:55:41
+[[file:../images/2020-04-28_09-55-41_circularlinkedlist_test3.png]]
  
 
 *Follow up*:
