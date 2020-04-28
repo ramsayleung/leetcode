@@ -125,13 +125,16 @@
   | 198 | [[https://leetcode.com/problems/house-robber/][Binary search tree iterator]]                                | [[./100/house_robber.py][Python3]]  | Easy       |
   | 187 | [[https://leetcode.com/problems/repeated-dna-sequences/][Repeated dna sequences]]                                     | [[./100/repeated_dna_sequences.org][Python3]]  | Medium     |
   | 173 | [[https://leetcode.com/problems/binary-search-tree-iterator/][Binary search tree iterator]]                                | [[./100/binary_search_tree_iterator.py][Python3]]  | Medium     |
+  | 160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]  | Medium     |
   | 155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]  | Easy       |
   | 152 | [[https://leetcode.com/problems/maximum-product-subarray/][Maximum product subarray]]                                   | [[./100/maximum_product_subarray.py][Python3]]  | Medium     |
   | 150 | [[https://leetcode.com/problems/evaluate-reverse-polish-notation/][Evaluate reverse polish notation]]                           | [[./100/evaluate_reverse_polish_notation.py][Python3]]  | Medium     |
   | 148 | [[https://leetcode.com/problems/sort-list/][Sort list]]                                                  | [[./100/sort_list.org][Python3]]  | Medium     |
   | 147 | [[https://leetcode.com/problems/insertion-sort-list/][Insertion sort list]]                                        | [[./100/insertion_sort_list.org][Python3]]  | Medium     |
+  | 146 | [[https://leetcode.com/problems/lru-cache/][Lru cache]]                                                  | [[./100/lru_cache.org][Python3]]  | Medium     |
   | 145 | [[https://leetcode.com/problems/binary-tree-postorder-traversal/][Binary tree postorder traversal]]                            | [[./100/binary_tree_postorder_traversql.py][Python3]]  | Hard       |
   | 144 | [[https://leetcode.com/problems/binary-tree-preorder-traversal/][Binary tree preorder traversal]]                             | [[./100/binary_tree_preorder_traversal.py][Python3]]  | Medium     |
+  | 141 | [[https://leetcode.com/problems/linked-list-cycle/][Linked list cycle]]                                          | [[./100/linked_list_cycle.org][Python3]]  | Easy       |
   | 139 | [[https://leetcode.com/problems/word-break/][Word break]]                                                 | [[./100/word_break.py][Python3]]  | Medium     |
   | 138 | [[https://leetcode.com/problems/copy-list-with-random-pointer/][Copy list with random pointer]]                              | [[./100/copy_list_with_random_pointer.org][Python3]]  | Medium     |
   | 136 | [[https://leetcode.com/problems/single-number/][Single number]]                                              | [[./100/single_number.org][Python3]]  | Easy       |
@@ -165,6 +168,7 @@
   |  63 | [[https://leetcode.com/problems/unique-paths-ii/][Unique paths ii]]                                            | [[./000/unique_paths_ii.py][Python3]]  | Medium     |
   |  62 | [[https://leetcode.com/problems/unique-paths/][Unique paths]]                                               | [[./000/unique_paths.py][Python3]]  | Medium     |
   |  60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]  | Medium     |
+  |  56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3]]  | Medium     |
   |  53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]  | Easy       |
   |  49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]  | Medium     |
   |  47 | [[https://leetcode.com/problems/permutations-ii/][Permutations ii]]                                            | [[./000/permutations_ii.org][Python3]]  | Medium     |
@@ -181,3 +185,7 @@
   |   3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]  | Medium     |
   |   2 | [[https://leetcode.com/problems/add-two-numbers/][add two numbers]]                                            | [[./000/add_two_numbers.org][Python3]]  | Medium     |
   
+* Pramp problem's solution
+
+  | Title      | Solution |
+  | [[https://www.pramp.com/challenge/15oxrQx6LjtQj9JK9XqA][Sales Path]] | [[./pramp/sales_path.org][Python3]]  |

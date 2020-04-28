@@ -1,0 +1,73 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-27T21:31:30
+source: https://www.pramp.com/challenge/15oxrQx6LjtQj9JK9XqA
+
+Sales Path
+
+The car manufacturer Honda holds their distribution system in the form of a tree (not necessarily binary). The root is the company itself, and every node in the tree represents a car distributor that receives cars from the parent node and ships them to its children nodes. The leaf nodes are car dealerships that sell cars direct to consumers. In addition, every node holds an integer that is the cost of shipping a car to it.
+
+Take for example the tree below:
+
+
+#+DOWNLOADED: https://www.pramp.com/img/content/img_01.png @ 2020-04-27 21:32:39
+[[file:../images/2020-04-27_21-32-39_img_01.png]]
+
+A path from Honda’s factory to a car dealership, which is a path from the root to a leaf in the tree, is called a Sales Path. The cost of a Sales Path is the sum of the costs for every node in the path. For example, in the tree above one Sales Path is 0→3→0→10, and its cost is 13 (0+3+0+10).
+
+Honda wishes to find the minimal Sales Path cost in its distribution tree. Given a node *rootNode*, write a function *getCheapestCost* that calculates the minimal Sales Path cost in the tree.
+
+Implement your function in the most efficient manner and analyze its time and space complexities.
+
+*For example*:
+
+Given the =rootNode= of the tree in diagram above
+
+*Your function would return*:
+
+=7= since it’s the minimal Sales Path cost (there are actually two Sales Paths in the tree whose cost is =7: 0→6→1= and =0→3→2→1→1=)
+
+=Constraints=:
+
+    + *[time limit] 5000ms*
+
+    + *[input] Node* ~rootNode~
+        - 0 ≤ rootNode.cost ≤ 100000
+    + *[output] integer*
+
+
+#+begin_src python
+  # time complexity: O(n), n is the size of tree.
+  # space complexity: O(h), h is the size of deepest path.
+
+  def get_cheapest_cost(rootNode):
+    if not rootNode:
+      return 0
+    minCost = 0xfffff
+    stack = [(rootNode,rootNode.cost)]
+    while stack:
+      node, cost = stack.pop(-1)
+      if node.children:
+	for child in node.children:
+	  stack.append((child, child.cost + cost))
+      else:
+	minCost = min(cost, minCost)
+    return minCost
+    # your code goes here
+
+  ########################################## 
+  # Use the helper code below to implement #
+  # and test your function above           #
+  ##########################################
+
+  # A node 
+  class Node:
+
+    # Constructor to create a new node
+    def __init__(self, cost):
+      self.cost = cost
+      self.children = []
+      self.parent = None
+#+end_src
