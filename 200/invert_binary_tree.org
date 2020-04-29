@@ -1,0 +1,53 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-29T22:11:22
+source: https://leetcode.com/problems/invert-binary-tree/
+Invert a binary tree.
+
+Example:
+
+Input:
+
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+
+Output:
+
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+
+*Trivia*:
+This problem was inspired by [[https://twitter.com/mxcl/status/608682016205344768][this original tweet]] by [[https://twitter.com/mxcl][Max Howell]]:
+
+#+begin_quote
+Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so f*** off.
+#+end_quote
+
+#+begin_src python
+  # Definition for a binary tree node.
+  # class TreeNode:
+  #     def __init__(self, val=0, left=None, right=None):
+  #         self.val = val
+  #         self.left = left
+  #         self.right = right
+  # Runtime: 24 ms, faster than 91.34% of Python3 online submissions for Invert Binary Tree.
+  # time complexity: O(n), n is the size of tree.
+  # space complexity: O(1)
+  class Solution:
+      def invertTree(self, root: TreeNode) -> TreeNode:
+	  if not root:
+	      return root
+	  left = self.invertTree(root.left)
+	  right = self.invertTree(root.right)
+	  root.left = right
+	  root.right = left
+	  return root
+#+end_src

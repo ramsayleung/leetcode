@@ -108,6 +108,7 @@
   | 243 | [[https://leetcode.com/problems/shortest-word-distance/][Shortest word distance]]                                     | [[./200/shortest_word_distance.org][Python3]]  | Easy       |
   | 242 | [[https://leetcode.com/problems/valid-anagram/][Valid anagram]]                                              | [[./200/valid_anagram.org][Python3]]  | Easy       |
   | 232 | [[https://leetcode.com/problems/implement-queue-using-stacks/][Implement queue using stacks]]                               | [[./200/implement_queue_using_stacks.py][Python3]]  | Easy       |
+  | 226 | [[https://leetcode.com/problems/invert-binary-tree/][Invert binary tree]]                                         | [[./200/invert_binary_tree.org][Python3]]  | Easy       |
   | 225 | [[https://leetcode.com/problems/implement-stack-using-queues/][Implement stack using queues]]                               | [[./200/implement_stack_using_queues.py][Python3]]  | Easy       |
   | 224 | [[https://leetcode.com/problems/basic-calculator/][Basic calculator]]                                           | [[./200/basic_calculator.py][Python3]]  | Hard       |
   | 222 | [[https://leetcode.com/problems/count-complete-tree-nodes/][Count the complete tree nodes]]                              | [[./200/count_complete_tree_nodes.py][Python3]]  | Medium     |
