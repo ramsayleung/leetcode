@@ -1,0 +1,52 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-29T22:26:03
+source: https://leetcode.com/problems/palindrome-linked-list/
+
+Given a singly linked list, determine if it is a palindrome.
+
+*Example 1*:
+
+#+begin_example
+Input: 1->2
+Output: false
+#+end_example
+
+*Example 2*:
+
+#+begin_example
+Input: 1->2->2->1
+Output: true
+#+end_example
+
+*Follow up*:
+Could you do it in O(n) time and O(1) space?
+#+begin_src python
+  # Definition for singly-linked list.
+  # class ListNode:
+  #     def __init__(self, val=0, next=None):
+  #         self.val = val
+  #         self.next = next
+  # Runtime: 60 ms, faster than 97.29% of Python3 online submissions for Palindrome Linked List.
+  # time complexity: O(n), n is the size of linked-list
+  # space complexity: O(n), n is the size of extra space.
+  class Solution:
+      def isPalindrome(self, head: ListNode) -> bool:
+	  nums = []
+	  while head:
+	      nums.append(head.val)
+	      head = head.next
+	  return self.isPalidList(nums)
+      def isPalidList(self, nums: List[int])->bool:
+	  # 1221
+	  # 121
+	  size = len(nums)
+	  if size == 0:
+	      return True
+	  for i in range(size//2+1):
+	      if nums[i] != nums[size-1-i]:
+		  return False
+	  return True
+#+end_src
