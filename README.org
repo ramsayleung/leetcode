@@ -114,6 +114,7 @@
   | 221 | [[https://leetcode.com/problems/maximal-square/][Maximal square]]                                             | [[./200/maximal_square.py][Python3]]  | Medium     |
   | 219 | [[https://leetcode.com/problems/contains-duplicate-ii/][Contains duplicate ii]]                                      | [[./200/contains_duplicate_ii.org][Python3]]  | Easy       |
   | 217 | [[https://leetcode.com/problems/contains-duplicate/][Contains duplicate]]                                         | [[./200/contains_duplicate.org][Python3]]  | Easy       |
+  | 215 | [[https://leetcode.com/problems/kth-largest-element-in-an-array/][Kth largest element in an array]]                            | [[./200/kth_largest_element_in_an_array.org][Python3]]  | Medium     |
   | 213 | [[https://leetcode.com/problems/house-robber-ii/][House robber ii]]                                            | [[./200/house_robber_ii.py][Python3]]  | Medium     |
   | 208 | [[https://leetcode.com/problems/implement-trie-prefix-tree/][Implement trie prefix tree]]                                 | [[./200/implement_trie_prefix_tree.org][Python3]]  | Medium     |
   | 207 | [[https://leetcode.com/problems/course-schedule/][Course schedule]]                                            | [[./200/course_schedule.py][Python3]]  | Medium     |
@@ -192,3 +193,4 @@
 
   | Title      | Solution |
   | [[https://www.pramp.com/challenge/15oxrQx6LjtQj9JK9XqA][Sales Path]] | [[./pramp/sales_path.org][Python3]]  |
+

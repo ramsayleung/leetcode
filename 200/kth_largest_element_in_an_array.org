@@ -1,0 +1,56 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-29T22:03:24
+source: https://leetcode.com/problems/kth-largest-element-in-an-array/
+
+Find the *kth* largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+*Example 1*:
+
+#+begin_example
+Input: [3,2,1,5,6,4] and k = 2
+Output: 5
+#+end_example
+
+*Example 2*:
+
+#+begin_example
+Input: [3,2,3,1,2,4,5,5,6] and k = 4
+Output: 4
+#+end_example
+
+*Note*:
+You may assume k is always valid, 1 ≤ k ≤ array's length.
+
+#+begin_src python
+  # Runtime: 180 ms, faster than 17.76% of Python3 online submissions for Kth Largest Element in an Array.
+  # time complexity: O(nlogn), the average time complexity of merge sort.
+  # space complexity: O(n), it needs extra space to sort
+  class Solution:
+      def findKthLargest(self, nums: List[int], k: int) -> int:
+	  # sort by my handwrite merge sort implementation
+	  sortedNums = self.mergeSort(nums)
+	  return sortedNums[-k]
+      def mergeSort(self, nums: List[int])->List[int]:
+	  if len(nums) <2:
+	      return nums
+	  middle = len(nums)//2
+	  left = nums[:middle]
+	  right = nums[middle:]
+	  return self.merge(self.mergeSort(left), self.mergeSort(right))
+    
+      def merge(self, left: List[int], right: List[int])->List[int]:
+	  merged = []
+	  while len(left) > 0 and len(right) > 0:
+	      if left[0]< right[0]:
+		  merged.append(left.pop(0))
+	      else:
+		  merged.append(right.pop(0))
+	  while len(left) > 0:
+	      merged.append(left.pop(0))
+	  while len(right) > 0:
+	      merged.append(right.pop(0))
+	  return merged
+#+end_src
