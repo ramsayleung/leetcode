@@ -58,6 +58,7 @@
   | 463 | [[https://leetcode.com/problems/island-perimeter/][Island perimeter]]                                           | [[./400/island_perimeter.org][Python3]]  | Easy       |
   | 456 | [[https://leetcode.com/problems/132-pattern/][132 pattern]]                                                | [[./400/132_pattern.py][Python3]]  | Medium     |
   | 451 | [[https://leetcode.com/problems/sort-characters-by-frequency/][Sort characters by frequency]]                               | [[./400/sort_characters_by_frequency.org][Python3]]  | Medium     |
+  | 448 | [[https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/][Find all numbers disappeared in an array]]                   | [[./400/find_all_numbers_disappeared_in_an_array.org][Python3]]  | Easy       |
   | 439 | [[https://leetcode.com/problems/ternary-expression-parser/][Ternary expression parser]]                                  | [[./400/ternary_expression_parser.py][Python3]]  | Medium     |
   | 438 | [[https://leetcode.com/problems/find-all-anagrams-in-a-string/][Find all anagrams in a string]]                              | [[./400/find_all_anagrams_in_a_string.org][Python3]]  | Medium     |
   | 437 | [[https://leetcode.com/problems/path-sum-iii][Path sum iii]]                                               | [[./400/path_sum_iii.org][Python3]]  | Easy       |

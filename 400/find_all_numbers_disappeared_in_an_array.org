@@ -1,0 +1,36 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-05-02T17:46:35
+source: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
+Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
+
+Find all the elements of [1, n] inclusive that do not appear in this array.
+
+Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
+
+*Example*:
+
+#+begin_example
+Input:
+[4,3,2,7,8,2,3,1]
+
+Output:
+[5,6]
+#+end_example
+
+#+begin_src python
+  # Runtime: 360 ms, faster than 86.84% of Python3 online submissions for Find All Numbers Disappeared in an Array.
+  # time complexity: O(N), N is the size of nums
+  # space complexity: O(N), N is the size of seen set.
+  class Solution:
+      def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+	  result = []
+	  seen = set(nums)
+	  for i in range(1,len(nums)+1):
+	      if i not in seen:
+		  result.append(i)
+	  return result
+#+end_src
