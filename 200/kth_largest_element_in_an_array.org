@@ -28,6 +28,13 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
   # Runtime: 180 ms, faster than 17.76% of Python3 online submissions for Kth Largest Element in an Array.
   # time complexity: O(nlogn), the average time complexity of merge sort.
   # space complexity: O(n), it needs extra space to sort
+  # 这题非常有趣, 经常会用来作海量数据处理的问题. 如果数据量不大, 使用直接排序, 并
+  # 取第k大的数据并没有问题. 但对于大规模数据, 如1亿条数据, 取第1000大的数据. 直接
+  # 排序的成本为N*LogN. 其中一种优化方向是将1亿条数据分成若干个子数组, 如10W一个子
+  # 数组, 分成1000个数组, 然后取最大的1000个数字, 再合并一个数组, 再取第1000个数据.
+  # 算法时间复杂度还是N*LogN, 只是数据规模从1亿变成了10W. 另外一种问法就是内存不足
+  # 以放下1亿条数据, 应该如何处理. 还是类似的思路, 只是将子数组分割后保存到文件,
+  # 然后再读取前1000条文件, 合并后再取. 这也是Mysql排序时内存不足的处理方式.
   class Solution:
       def findKthLargest(self, nums: List[int], k: int) -> int:
 	  # sort by my handwrite merge sort implementation
@@ -40,7 +47,7 @@ You may assume k is always valid, 1 ≤ k ≤ array's length.
 	  left = nums[:middle]
 	  right = nums[middle:]
 	  return self.merge(self.mergeSort(left), self.mergeSort(right))
-    
+
       def merge(self, left: List[int], right: List[int])->List[int]:
 	  merged = []
 	  while len(left) > 0 and len(right) > 0:
