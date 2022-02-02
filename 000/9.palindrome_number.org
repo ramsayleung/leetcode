@@ -1,0 +1,73 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-02-02T11:12:25
+
+source: https://leetcode.com/problems/palindrome-number/
+
+Given an integer =x=, return =true= if =x= is palindrome integer.
+
+An integer is a *palindrome* when it reads the same backward as forward.
+
+    - For example, =121= is a palindrome while =123= is not.
+
+Example 1:
+
+#+begin_example
+Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+#+end_example
+
+Example 2:
+
+#+begin_example
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+#+end_example
+
+Example 3:
+
+#+begin_example
+Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+#+end_example
+ 
+
+Constraints:
+
+#+begin_example
+    -231 <= x <= 231 - 1
+#+end_example
+
+ 
+*Follow up*: Could you solve it without converting the integer to a string?
+
+Solution:
+
+#+begin_src c++
+  #include <string>
+  class Solution {
+  public:
+      bool isPalindrome(int x) {
+       if (x < 0) {
+	   return false;
+       }
+       std::string str = std::to_string(x);
+       auto p_str = str.c_str();
+       int end = str.size() - 1;
+       int start = 0;
+       while(start <= end){
+	   if(p_str[start] != p_str[end]){
+	       return false;
+	   }
+	   start ++;
+	   end --;
+       }
+       return true;
+      }
+  }; 
+#+end_src
