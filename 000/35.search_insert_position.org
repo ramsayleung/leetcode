@@ -1,0 +1,80 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-02-02T20:34:17
+* Description
+  source: https://leetcode.com/problems/search-insert-position/
+
+  Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+  You must write an algorithm with =O(log n)= runtime complexity.
+ 
+
+  Example 1:
+
+  #+begin_example
+  Input: nums = [1,3,5,6], target = 5
+  Output: 2
+  #+end_example
+
+  Example 2:
+
+  #+begin_example
+  Input: nums = [1,3,5,6], target = 2
+  Output: 1
+  #+end_example
+
+  Example 3:
+
+  #+begin_example
+  Input: nums = [1,3,5,6], target = 7
+  Output: 4
+  #+end_example
+
+  *Constraints*:
+
+  - 1 <= =nums.length= <= 10**4
+  - 10**4 <= =nums[i]= <= 10**4
+  - nums contains *distinct* values sorted in *ascending* order.
+  - 10**4 <= =target= <= 10**4
+* Solution
+  #+begin_src c++
+    class Solution {
+    public:
+	int searchInsert(vector<int>& nums, int target) {
+	    int start = 0;
+	    int end = nums.size() - 1;
+	    int medium = 0;
+	    int inserted_pos = 0;
+	    int min_value = 1000000;
+
+	    while(start <= end) {
+		medium = (start + end) / 2;
+		if(nums[medium] < target){
+		    start = medium + 1;
+		} else if(nums[medium] > target){
+		    end = medium - 1;
+		} else {
+		    return medium;
+		}
+
+		// find the closest value
+		int diff = abs(target - nums[medium]);
+		if(min_value > diff){
+		    min_value = diff;
+		    inserted_pos = medium;
+		}
+	    }
+
+	    // insert into the right side of inserted_pos
+	    if (target > nums[inserted_pos]){
+		return inserted_pos + 1;
+	    } else {
+	    // insert into the left side of inserted_pos
+	     return inserted_pos ;   
+	    }
+
+	}
+    };
+  #+end_src
