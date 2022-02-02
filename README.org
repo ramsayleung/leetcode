@@ -172,6 +172,7 @@
   |  78 | [[https://leetcode.com/problems/subsets/][Subsets]]                                                    | [[./000/subsets.org][Python3]]  | Medium     |
   |  77 | [[https://leetcode.com/problems/combinations/][Combinations]]                                               | [[./000/combinations.org][Python3]]  | Medium     |
   |  70 | [[https://leetcode.com/problems/climbing-stairs/][Climbing stairs]]                                            | [[./000/climbing_stairs.py][Python3]]  | Easy       |
+  |  66 | [[https://leetcode.com/problems/plus-one/][Plus one]]                                                   | [[./000/66.plus_one.org][C++]]      | Easy       |
   |  64 | [[https://leetcode.com/problems/minimum-path-sum/][Minimum path sum]]                                           | [[./000/minimum_path_sum.py][Python3]]  | Medium     |
   |  63 | [[https://leetcode.com/problems/unique-paths-ii/][Unique paths ii]]                                            | [[./000/unique_paths_ii.py][Python3]]  | Medium     |
   |  62 | [[https://leetcode.com/problems/unique-paths/][Unique paths]]                                               | [[./000/unique_paths.py][Python3]]  | Medium     |
@@ -189,6 +190,7 @@
   |  20 | [[https://leetcode.com/problems/valid-parentheses/][Valida parentheses]]                                         | [[./000/valid_parentheses.py][Python3]]  | Easy       |
   |  19 | [[https://leetcode.com/problems/remove-nth-node-from-end-of-list/][Remove nth node from end of list]]                           | [[./000/remove_nth_node_from_end_of_list.org][Python3]]  | Medium     |
   |  17 | [[https://leetcode.com/problems/letter-combinations-of-a-phone-number/][Letter combinations of a phone number]]                      | [[./000/letter_combinations_of_a_phone_number.org][Python3]]  | Medium     |
+  |   9 | [[https://leetcode.com/problems/palindrome-number/][Palindrome number]]                                          | [[./000/9.palindrome_number.org][C++]]      | Easy       |
   |   5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/longest_palindromic_substring.py][Python3]]  | Medium     |
   |   3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]  | Medium     |
   |   2 | [[https://leetcode.com/problems/add-two-numbers/][add two numbers]]                                            | [[./000/add_two_numbers.org][Python3]]  | Medium     |
