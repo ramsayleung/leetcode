@@ -134,6 +134,7 @@
   | 169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/majority_element.org][Python3]]  | Easy       |
   | 160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]  | Easy       |
   | 155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]  | Easy       |
+  | 153 | [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/][Find minimum in rotated sorted array]]                       | [[./100/153.find_minimum_in_rotated_sorted_array.org][C++]]      | Medium     |
   | 152 | [[https://leetcode.com/problems/maximum-product-subarray/][Maximum product subarray]]                                   | [[./100/maximum_product_subarray.py][Python3]]  | Medium     |
   | 150 | [[https://leetcode.com/problems/evaluate-reverse-polish-notation/][Evaluate reverse polish notation]]                           | [[./100/evaluate_reverse_polish_notation.py][Python3]]  | Medium     |
   | 148 | [[https://leetcode.com/problems/sort-list/][Sort list]]                                                  | [[./100/sort_list.org][Python3]]  | Medium     |
