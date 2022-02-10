@@ -196,6 +196,7 @@
   |  17 | [[https://leetcode.com/problems/letter-combinations-of-a-phone-number/][Letter combinations of a phone number]]                      | [[./000/letter_combinations_of_a_phone_number.org][Python3]]  | Medium     |
   |  13 | [[https://leetcode.com/problems/roman-to-integer/][Roman to integer]]                                           | [[./000/13.roman_to_integer.org][C++]]      | Easy       |
   |   9 | [[https://leetcode.com/problems/palindrome-number/][Palindrome number]]                                          | [[./000/9.palindrome_number.org][C++]]      | Easy       |
+  |   7 | [[https://leetcode.com/problems/reverse-integer/][Reverse integer]]                                            | [[./000/7.reverse_integer.org::*Description][C++]]      | Medium     |
   |   5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/longest_palindromic_substring.py][Python3]]  | Medium     |
   |   3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]  | Medium     |
   |   2 | [[https://leetcode.com/problems/add-two-numbers/][add two numbers]]                                            | [[./000/add_two_numbers.org][Python3]]  | Medium     |
