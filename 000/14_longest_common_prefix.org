@@ -1,0 +1,56 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-02-10T23:34:32
+* Description
+  source: https://leetcode.com/problems/longest-common-prefix
+  Write a function to find the longest common prefix string amongst an array of strings.
+
+  If there is no common prefix, return an empty string ~""~.
+
+  Example 1:
+
+  #+begin_example
+  Input: strs = ["flower","flow","flight"]
+  Output: "fl"
+  #+end_example
+
+  Example 2:
+
+  #+begin_example
+  Input: strs = ["dog","racecar","car"]
+  Output: ""
+  Explanation: There is no common prefix among the input strings.
+  #+end_example
+
+  *Constraints*:
+
+  - ~1 <= strs.length <= 200~
+  - ~0 <= strs[i].length <= 200~
+  - ~strs[i]~ consists of only lower-case English letters.
+* Solution
+  #+begin_src c++
+    class Solution {
+    public:
+      bool starts_with(const std::string& source, const std::string prefix){
+	return source.rfind(prefix, 0) == 0;
+      }
+
+      string longestCommonPrefix(vector<string>& strs) {
+	std::string first = strs[0];
+	std::string longest;
+
+	for(int i = 0; i < first.size(); i++){
+	  std::string prefix = first.substr(0, i + 1);
+	  for(int j = 1; j < strs.size(); j++){
+	    if (!starts_with(strs[j], prefix)){
+	      return longest;
+	    }
+	  }
+	  longest = prefix;
+	}
+	return longest;
+      }
+    };
+  #+end_src
