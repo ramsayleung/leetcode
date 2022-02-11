@@ -182,6 +182,7 @@
   |  60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]  | Medium     |
   |  56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3]]  | Medium     |
   |  53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]  | Easy       |
+  |  50 | [[https://leetcode.com/problems/powx-n/][Powx n]]                                                     | [[./000/50_powx_n.org::*Description][C++]]      | Medium     |
   |  49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]  | Medium     |
   |  47 | [[https://leetcode.com/problems/permutations-ii/][Permutations ii]]                                            | [[./000/permutations_ii.org][Python3]]  | Medium     |
   |  46 | [[https://leetcode.com/problems/permutations/][Permutations]]                                               | [[./000/permutations.org][Python3]]  | Medium     |
