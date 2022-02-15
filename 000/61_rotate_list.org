@@ -32,7 +32,7 @@
   - ~-100 <= Node.val <= 100~
   - ~0 <= k <= 2 * 10^9~
 * Solution
-  [[file:~/code/python/leetcode/images/000/61_rotate_list.png][file:~/code/python/leetcode/images/000/61_rotate_list.png]]
+  [[../images/000/61_rotate_list.png][../images/000/61_rotate_list.png]]
 
   #+begin_src c++
     /**
