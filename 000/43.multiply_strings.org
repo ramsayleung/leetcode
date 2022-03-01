@@ -8,6 +8,7 @@
 #+HUGO_SECTION: docs/000
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_DRAFT: false
+#+HUGO_WEIGHT: 43
 
 * Description
   source: https://leetcode.com/problems/multiply-strings/
@@ -38,7 +39,7 @@
   - ~num1~ and ~num2~ consist of digits only.
   - Both ~num1~ and ~num2~ do not contain any leading zero, except the number ~0~ itself.
 * Solution
-  A not good solution
+  A not good solution, it works(but with bad runtime complexity)
 
   #+begin_src c++
     #include <cmath>
@@ -59,10 +60,10 @@
 	  for (int i = size1 - 1; i >= 0; i--) {
 	    int multiply_result = (p_str1[i] - '0') * (p_str2[j] - '0');
 	    result = add(result, std::to_string(multiply_result) +
-				     std::string(size1 - 1 - i, '0'));
+			 std::string(size1 - 1 - i, '0'));
 	  }
 	  final_result =
-	      add(final_result, result + std::string(size2 - 1 - j, '0'));
+	    add(final_result, result + std::string(size2 - 1 - j, '0'));
 	}
 	return final_result;
       }
