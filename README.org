@@ -185,6 +185,7 @@
   |  49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]        | Medium     |
   |  47 | [[https://leetcode.com/problems/permutations-ii/][Permutations ii]]                                            | [[./000/permutations_ii.org][Python3]]        | Medium     |
   |  46 | [[https://leetcode.com/problems/permutations/][Permutations]]                                               | [[./000/permutations.org][Python3]]        | Medium     |
+  |  43 | [[https://leetcode.com/problems/multiply-strings/][Multiply strings]]                                           | [[./000/43.multiply_strings.org][C++]]            | Medium     |
   |  40 | [[https://leetcode.com/problems/combination-sum-ii/][Combination sum ii]]                                         | [[./000/combination-sum_ii.org][Python3]]        | Medium     |
   |  39 | [[https://leetcode.com/problems/combination-sum/][Combination sum]]                                            | [[./000/combination_sum.org][Python3]]        | Medium     |
   |  35 | [[https://leetcode.com/problems/search-insert-position/][Search insert position]]                                     | [[./000/35.search_insert_position.org][C++]]            | Easy       |
