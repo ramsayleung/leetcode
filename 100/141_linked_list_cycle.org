@@ -3,6 +3,18 @@
 #+AUTHOR: Ramsay Leung
 #+EMAIL: ramsayleung@gmail.com
 #+DATE: 2020-04-28T09:04:58
+#+OPTIONS: author:nil ^:{}
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/100
+#+HUGO_CUSTOM_FRONT_MATTER: :toc true
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-02-26 六 20:21]
+#+TITLE: 141. Linked list cycle
+#+HUGO_TAGS: linked_list
+#+HUGO_CATEGORIES: linked_list
+
+
 * Description
   source: https://leetcode.com/problems/linked-list-cycle/
 

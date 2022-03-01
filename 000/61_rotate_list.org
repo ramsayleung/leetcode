@@ -3,6 +3,19 @@
 #+AUTHOR: Ramsay Leung
 #+EMAIL: ramsayleung@gmail.com
 #+DATE: 2022-02-15T22:12:26
+#+OPTIONS: author:nil ^:{}
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_CUSTOM_FRONT_MATTER: :toc true
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-02-26 六 19:52]
+#+TITLE: 61. Rotate List
+#+HUGO_WEIGHT: 61
+#+HUGO_TAGS: linked_list
+#+HUGO_CATEGORIES: linked_list
+
+
 * Description
   source: https://leetcode.com/problems/rotate-list/
 
@@ -32,8 +45,7 @@
   - ~-100 <= Node.val <= 100~
   - ~0 <= k <= 2 * 10^9~
 * Solution
-  [[../images/000/61_rotate_list.png][../images/000/61_rotate_list.png]]
-
+  [[file:~/code/python/leetcode/images/000/61_rotate_list.png][file:~/code/python/leetcode/images/000/61_rotate_list.png]]
   #+begin_src c++
     /**
      ,* Definition for singly-linked list.

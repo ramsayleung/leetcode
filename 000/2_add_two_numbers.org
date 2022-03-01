@@ -1,0 +1,145 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2020-04-24T21:45:43
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+hugo_weight: 2
+#+TITLE: 2. Add two number
+
+* Description
+  source: https://leetcode.com/problems/add-two-numbers/
+
+  You are given two *non-empty* linked lists representing two non-negative integers. The digits are stored in *reverse order* and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+  You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+  Example:
+
+  [[https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg]]
+
+  #+begin_example
+  Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+  Output: 7 -> 0 -> 8
+  Explanation: 342 + 465 = 807.
+  #+end_example
+* Solution
+  Solution in Python3: 
+
+  #+begin_src python
+    # Definition for singly-linked list.
+    # class ListNode:
+    #     def __init__(self, x):
+    #         self.val = x
+    #         self.next = None
+
+    # Runtime: 72 ms, faster than 62.00% of Python3 online submissions for Add Two Numbers.
+    # time complexity: O(n1+n2), n1 is the length of l1, n2 is the length of l2
+    # space complexity: O(max(n1,n2)), the length of sum of two number equals the larger's
+
+
+    class Solution:
+	def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+	    num1 = self.getNumber(l1)
+	    num2 = self.getNumber(l2)
+	    result = num1+num2
+	    return self.constructNumber(result)
+
+	def getNumber(self, llist: ListNode) -> int:
+	    num = ""
+	    while llist:
+		num = str(llist.val) + num
+		llist = llist.next
+	    return int(num)
+
+	def constructNumber(self, num: int) -> ListNode:
+	    print(num)
+	    input = str(num)
+	    parent = root = None
+	    while len(input) > 0:
+		val = input[len(input)-1]
+		newNode = ListNode(int(val))
+		if not parent:
+		    parent = newNode
+		    root = parent
+		else:
+		    parent.next = newNode
+		    parent = newNode
+		input = input[:len(input)-1]
+	    return root
+
+  #+end_src
+
+  Solution in C++:
+
+  [[file:images/000/2_add_two_numbers.png][file:~/code/python/leetcode/000/images/000/2_add_two_numbers.png]]
+
+  #+begin_src c++
+    /**
+     ,* Definition for singly-linked list.
+     ,* struct ListNode {
+     ,*     int val;
+     ,*     ListNode *next;
+     ,*     ListNode() : val(0), next(nullptr) {}
+     ,*     ListNode(int x) : val(x), next(nullptr) {}
+     ,*     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+      ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+	// Runtime complexity O(n), n = max(l1.size(), l2.size())
+	// Space complexity O(1)
+
+	ListNode *result = l1;
+	ListNode *prev = nullptr;
+	int carry = 0;
+	while (l1 && l2) {
+	  int add_result = l1->val + l2->val + carry;
+	  if (add_result % 10 == add_result) {
+	    l1->val = add_result;
+	    carry = 0;
+	  } else {
+	    l1->val = add_result % 10;
+	    carry = 1;
+	  }
+
+	  prev = l1;
+	  l1 = l1->next;
+	  l2 = l2->next;
+	}
+
+	if (l1 || l2) {
+	  prev->next = (l1 != nullptr ? l1 : l2);
+	  ListNode *head = prev->next;
+
+	  while (head) {
+	    int add_result = head->val + carry;
+	    if (add_result % 10 == add_result) {
+	      head->val = add_result;
+	      carry = 0;
+	    } else {
+	      head->val = add_result % 10;
+	      carry = 1;
+	    }
+	    prev = head;
+	    head = head->next;
+	  }
+	} else {
+	  if (carry != 0) {
+	    prev->next = new ListNode(carry);
+	    return result;
+	  }
+	}
+
+	if (carry != 0) {
+	  prev->next = new ListNode(carry);
+	}
+
+	return result;
+      }
+    };
+  #+end_src
