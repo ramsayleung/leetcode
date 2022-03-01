@@ -1,0 +1,81 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-03-01 二 21:03
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-03-01 二 21:05]
+#+TITLE: 67. Add Binary
+#+HUGO_WEIGHT: 67
+
+* Description
+  source: https://leetcode.com/problems/add-binary/
+  Given two binary strings =a= and =b=, return their sum as a binary string.
+
+  Example 1:
+
+  #+begin_example
+  Input: a = "11", b = "1"
+  Output: "100"
+  #+end_example
+
+  Example 2:
+
+  #+begin_example
+  Input: a = "1010", b = "1011"
+  Output: "10101"
+  #+end_example
+
+
+  *Constraints*:
+
+  - ~1 <= a.length, b.length <= 10^4~
+  - ~a~ and ~b~ consist only of ~'0'~ or ~'1'~ characters.
+  - Each string does not contain leading zeros except for the zero itself.
+* Solution
+  [[file:~/code/python/leetcode/images/000/67_add_binary.png][file:~/code/python/leetcode/images/000/67_add_binary.png]]
+
+  #+begin_src c++
+    class Solution {
+    public:
+      string addBinary(string a, string b) {
+	// runtime complexity: O(N), N = max(a.size(), b.size());
+	// space complexity: O(N), N = max(a.size(), b.size());
+	auto p_a = a.c_str();
+	auto p_b = b.c_str();
+	auto sizea = a.size();
+	auto sizeb = b.size();
+	std::string result = (sizea > sizeb ? a : b);
+	int i = 0, j = 0, k = 0;
+	int carry = 0;
+
+	for (i = sizea - 1, j = sizeb - 1, k = result.size() - 1; i >= 0 || j >= 0;
+	     i--, j--, k--) {
+	  int add_result = 0;
+	  if (i >= 0) {
+	    add_result += p_a[i] - '0';
+	  }
+	  if (j >= 0) {
+	    add_result += p_b[j] - '0';
+	  }
+
+	  add_result += carry;
+	  if (add_result % 2 == add_result) {
+	    result[k] = add_result + '0';
+	    carry = 0;
+	  } else {
+	    result[k] = add_result % 2 + '0';
+	    carry = 1;
+	  }
+	}
+
+	if (carry != 0) {
+	  result = '1' + result;
+	}
+	return result;
+      }
+    };
+  #+end_src

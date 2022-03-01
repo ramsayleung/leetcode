@@ -173,6 +173,7 @@
   |  77 | [[https://leetcode.com/problems/combinations/][Combinations]]                                               | [[./000/combinations.org][Python3]]        | Medium     |
   |  74 | [[https://leetcode.com/problems/search-a-2d-matrix/][Search a 2d matrix]]                                         | [[./000/74.search_a_2d_matrix.org][C++]]            | Medium     |
   |  70 | [[https://leetcode.com/problems/climbing-stairs/][Climbing stairs]]                                            | [[./000/climbing_stairs.py][Python3]]        | Easy       |
+  |  67 | [[https://leetcode.com/problems/add-binary/][Add binary]]                                                 | [[./000/67_add_binary.org][C++]]            | Easy       |
   |  66 | [[https://leetcode.com/problems/plus-one/][Plus one]]                                                   | [[./000/66.plus_one.org][C++]]            | Easy       |
   |  64 | [[https://leetcode.com/problems/minimum-path-sum/][Minimum path sum]]                                           | [[./000/minimum_path_sum.py][Python3]]        | Medium     |
   |  63 | [[https://leetcode.com/problems/unique-paths-ii/][Unique paths ii]]                                            | [[./000/unique_paths_ii.py][Python3]]        | Medium     |
