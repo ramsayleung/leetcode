@@ -41,6 +41,8 @@
   - The number of nodes in the list is in the range ~[0, 100]~.
   - ~0 <= Node.val <= 100~
 * Solution
+  [[file:~/code/python/leetcode/images/000/24_swap_nodes_in_pair.png][file:~/code/python/leetcode/images/000/24_swap_nodes_in_pair.png]]
+
   #+begin_src c++
     /**
      ,* Definition for singly-linked list.
