@@ -1,0 +1,83 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-03-22 二 09:03
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-03-22 二 09:03]
+#+TITLE: 24. Swap Nodes in Pairs
+#+HUGO_WEIGHT: 24
+
+* Description
+  Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
+
+  Example 1:
+
+  [[https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg]]
+
+  #+begin_example
+  Input: head = [1,2,3,4]
+  Output: [2,1,4,3]
+  #+end_example
+  Example 2:
+
+  #+begin_example
+  Input: head = []
+  Output: []
+  #+end_example
+  Example 3:
+
+  #+begin_example
+  Input: head = [1]
+  Output: [1]
+  #+end_example
+
+
+  *Constraints*:
+
+  - The number of nodes in the list is in the range ~[0, 100]~.
+  - ~0 <= Node.val <= 100~
+* Solution
+  #+begin_src c++
+    /**
+     ,* Definition for singly-linked list.
+     ,* struct ListNode {
+     ,*     int val;
+     ,*     ListNode *next;
+     ,*     ListNode() : val(0), next(nullptr) {}
+     ,*     ListNode(int x) : val(x), next(nullptr) {}
+     ,*     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+      ListNode* swapPairs(ListNode* head) {
+	// Time complexity: O(N) N = S / 2, S is the length of linked-list
+	// Space Complexity: O(1)
+	if(!head || !head->next){
+	  return head;
+	}
+
+	ListNode* result = head->next;
+	ListNode* prev = nullptr;
+	while(head){
+	  auto right = head->next;
+	  if(right){
+	    head->next = right->next;
+	    right->next = head;   
+	    if (prev){
+	      prev->next = right;
+	    }
+	  }
+
+	  prev = head;
+	  head= head->next;
+	}
+
+	return result;
+      }
+    };
+  #+end_src
