@@ -12,11 +12,14 @@
 #+HUGO_WEIGHT: 1721
 
 * Description
+  source: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
   You are given the ~head~ of a linked list, and an integer ~k~.
 
   Return the head of the linked list after *swapping* the values of the ~kth~ node from the beginning and the ~kth~ node from the end (the list is *1-indexed*).
 
   *Example 1*:
+
+  [[https://assets.leetcode.com/uploads/2020/09/21/linked1.jpg]]
 
   #+begin_example
   Input: head = [1,2,3,4,5], k = 2
