@@ -1,0 +1,90 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-03-22 二 21:49
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-03-22 二 21:49]
+#+TITLE: 1721. Swapping Nodes in a Linked List
+#+HUGO_WEIGHT: 1721
+
+* Description
+  You are given the ~head~ of a linked list, and an integer ~k~.
+
+  Return the head of the linked list after *swapping* the values of the ~kth~ node from the beginning and the ~kth~ node from the end (the list is *1-indexed*).
+
+  *Example 1*:
+
+  #+begin_example
+  Input: head = [1,2,3,4,5], k = 2
+  Output: [1,4,3,2,5]
+  #+end_example
+
+
+  *Example 2*:
+
+  #+begin_example
+  Input: head = [7,9,6,6,7,8,3,0,9,5], k = 5
+  Output: [7,9,6,6,8,7,3,0,9,5]
+  #+end_example
+
+  *Constraints*:
+
+  - The number of nodes in the list is ~n~.
+  - ~1 <= k <= n <= 10^5~
+  - ~0 <= Node.val <= 100~
+* Solution
+  #+begin_src c++
+    /**
+     ,* Definition for singly-linked list.
+     ,* struct ListNode {
+     ,*     int val;
+     ,*     ListNode *next;
+     ,*     ListNode() : val(0), next(nullptr) {}
+     ,*     ListNode(int x) : val(x), next(nullptr) {}
+     ,*     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+      ListNode* swapNodes(ListNode* head, int k) {
+	// time complexity: O(2N) = O(N), N = size of linked list
+	// space compleixty(1)
+	int size = 0;
+	ListNode* first = head;
+	ListNode* kth_from_begin = nullptr;
+	ListNode* kth_from_end = nullptr;
+	while(first){
+	  size++;   
+	  if(size == k){
+	    kth_from_begin = first;
+	  }
+
+	  first = first->next;
+	}
+
+
+	int next_round_size = 0;
+	first = head;
+	while(first){
+	  next_round_size++;
+
+
+	  if(next_round_size == size - k + 1){
+	    kth_from_end = first;
+	    break;
+	  }
+	  first = first->next;
+	}
+
+	int tmp = kth_from_begin -> val;
+	kth_from_begin->val = kth_from_end->val;
+	kth_from_end -> val = tmp;
+
+	return head;
+      }
+    };
+  #+end_src

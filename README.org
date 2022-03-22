@@ -1,211 +1,212 @@
 * Leetcode Problems' Solutions
 
-  |   # | Title                                                      | Solution       | Difficulty |
-  |-----+------------------------------------------------------------+----------------+------------|
-  | 680 | [[https://leetcode.com/problems/valid-palindrome-ii/][Valid palindrome ii]]                                        | [[./600/valid_palindrome_ii.py][Python3]]        | Easy       |
-  | 679 | [[https://leetcode.com/problems/24-game/][24 game]]                                                    | [[./600/24_game.py][Python3]]        | Hard       |
-  | 678 | [[https://leetcode.com/problems/valid-parenthesis-string/][Valid parenthesis string]]                                   | [[./600/valid_parenthesis_string.py][Python3]]        | Medium     |
-  | 677 | [[https://leetcode.com/problems/map-sum-pairs/][Map sum pairs]]                                              | [[./600/map_sun_pairs.py][Python3]]        | Medium     |
-  | 676 | [[https://leetcode.com/problems/implement-magic-dictionary/][Implement magic dictionary]]                                 | [[./600/implement_magic_dictionary.py][Python3]]        | Medium     |
-  | 674 | [[https://leetcode.com/problems/longest-continuous-increasing-subsequence/][Longest continuous increasing subsequence]]                  | [[./600/longest_continuous_increasing_subsequence.py][Python3]]        | Easy       |
-  | 673 | [[https://leetcode.com/problems/number-of-longest-increasing-subsequence/][Number of longest increasing subsequence]]                   | [[./600/number_of_longest_increasing_subsequence.py][Python3]]        | Medium     |
-  | 672 | [[https://leetcode.com/problems/bulb-switcher-ii/][Bulb switcher2]]                                             | [[./600/bulb_switcher2.py][Python3]]        | Medium     |
-  | 671 | [[https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/][Second minimum node in binary tree]]                         | [[./600/second_minimum_node_in_binary_tree.py][Python3]]        | Easy       |
-  | 670 | [[https://leetcode.com/problems/maximum-swap/][Maximum swap]]                                               | [[./600/maximum_swap.py][Python3]]        | Medium     |
-  | 669 | [[https://leetcode.com/problems/trim-a-binary-search-tree/][Trim a binary search tree]]                                  | [[./600/trim_a_binary_search_tree.py][Python3]]        | Easy       |
-  | 668 | [[https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/submissions/][Kth smallest number in multiplication table]]                | [[./600/kth_smallest_number_in_multiplication_table.py][Python3]]        | Hard       |
-  | 667 | [[https://leetcode.com/problems/beautiful-arrangement-ii/][Beautiful arrangment ii]]                                    | [[./600/beautiful_arragement_2.py][Python3]]        | Medium     |
-  | 665 | [[https://leetcode.com/problems/non-decreasing-array/][Non decreasing array]]                                       | [[./600/non_decreasing_array.py][Python3]]        | Easy       |
-  | 662 | [[https://leetcode.com/problems/maximum-width-of-binary-tree/][Maximum width of binary tree]]                               | [[./600/maximum_width_of_binary_tree.py][Python3]]        | Medium     |
-  | 659 | [[https://leetcode.com/problems/split-array-into-consecutive-subsequences/][Split array into consecutive subsequences]]                  | [[./600/split_array_into_consecutive_subsequences.py][Python3]]        | Medium     |
-  | 658 | [[https://leetcode.com/problems/find-k-closest-elements/submissions/][Find k closest elements]]                                    | [[./600/find_k_closest_elements.py][Python3]]        | Medium     |
-  | 657 | [[https://leetcode.com/problems/robot-return-to-origin/][Robot return to origin]]                                     | [[./600/robot_return_to_origin.py][Python3]]        | Easy       |
-  | 655 | [[https://leetcode.com/problems/print-binary-tree/][Print binary tree]]                                          | [[./600/print_binary_tree.py][Python3]]        | Medium     |
-  | 654 | [[https://leetcode.com/problems/maximum-binary-tree/][Maximum binary tree]]                                        | [[./600/maximum_binary_tree.py][Python3]]        | Medium     |
-  | 653 | [[https://leetcode.com/problems/two-sum-iv-input-is-a-bst/][Two sum iv input is a bst]]                                  | [[./600/two_sum_4_input_a_bst.py][Python3]]        | Easy       |
-  | 652 | [[https://leetcode.com/problems/find-duplicate-subtrees/][Find duplicate subtree]]                                     | [[./600/find_duplicate_subtrees.py][Python3]]        | Medium     |
-  | 651 | [[https://leetcode.com/problems/2-keys-keyboard/][2 keys keyboard]]                                            | [[./600/_2_keys_keyboard.py][Python3]]        | Medium     |
-  | 650 | [[https://leetcode.com/problems/dota2-senate/][Dota2 senate]]                                               | [[./600/dota2_senate.py][Python3]]        | Medium     |
-  | 648 | [[https://leetcode.com/problems/replace-words/][Replace words]]                                              | [[./600/replace_words.py][Python3]]        | Medium     |
-  | 647 | [[https://leetcode.com/problems/palindromic-substrings/][Palindromic substrings]]                                     | [[./600/palindromic_substring.py][Python3]]        | Medium     |
-  | 646 | [[https://leetcode.com/problems/maximum-length-of-pair-chain/][Maximum length of pair chain]]                               | [[./600/maximum_length_of_pair_chain.py][Python3]]        | Medium     |
-  | 645 | [[https://leetcode.com/problems/set-mismatch/][Set mismatch]]                                               | [[./600/set_mismatch.py][Python3]]        | Easy       |
-  | 644 | [[https://leetcode.com/problems/maximum-average-subarray-ii/][Maximum average subarray ii]]                                | [[./600/maximum_average_subarray_2.py][Python3]]        | Hard       |
-  | 643 | [[https://leetcode.com/problems/maximum-average-subarray-i/][Maximum average subarray i]]                                 | [[./600/maximum_average_subarray_1.py][Python3]]        | Easy       |
-  | 642 | [[https://leetcode.com/problems/design-search-autocomplete-system/][Design search autocomplete system]]                          | [[./600/design_search_autocomplete_system.py][Python3]]        | Hard       |
-  | 641 | [[https://leetcode.com/problems/design-circular-deque/][Design circular deque]]                                      | [[./600/design_circular_deque.py][Python3]]        | Medium     |
-  | 640 | [[https://leetcode.com/problems/solve-the-equation/][Solve the equation]]                                         | [[./600/solve_equation_problem.py][Python3]]        | Medium     |
-  | 639 | [[https://leetcode.com/problems/decode-ways-ii/][Decode ways ii]]                                             | [[./600/decode_ways_2.py][Python3]]        | Hard       |
-  | 638 | [[https://leetcode.com/problems/shopping-offers/][Shopping offers]]                                            | [[./600/shopping_offers.py][Python3]]        | Medium     |
-  | 637 | [[https://leetcode.com/problems/average-of-levels-in-binary-tree/][Average of levels in binary tree]]                           | [[./600/average_levels_of_binary_tree.py][Python3]]        | Medium     |
-  | 636 | [[https://leetcode.com/problems/exclusive-time-of-functions/][Exclusive time of functions]]                                | [[./600/exclusive_times_of_functions.py][Python3]]        | Medium     |
-  | 599 | [[https://leetcode.com/problems/minimum-index-sum-of-two-lists/][Minimum index sum of two lists]]                             | [[./500/minimum_index_sum_of_two_lists.org][Python3]]        | Easy       |
-  | 594 | [[https://leetcode.com/problems/longest-harmonious-subsequence/][Longest harmonious subsequence]]                             | [[./500/longest_harmonious_subsequence.org][Python3]]        | Easy       |
-  | 591 | [[https://leetcode.com/problems/tag-validator/][Tag validator]]                                              | [[./500/tag_validator.py][Python3]]        | Hard       |
-  | 559 | [[https://leetcode.com/problems/maximum-depth-of-n-ary-tree/][Maximum depth of n ary tree]]                                | [[./500/maximum_depth_of_n_ary_tree.py][Python3]]        | Easy       |
-  | 542 | [[https://leetcode.com/problems/01-matrix/][01 matrix]]                                                  | [[./500/01_matrix.py][Python3]]        | Medium     |
-  | 525 | [[https://leetcode.com/problems/contiguous-array/][Contiguous array]]                                           | [[./500/contiguous_array.org][Python3]]        | Medium     |
-  | 515 | [[https://leetcode.com/problems/find-largest-value-in-each-tree-row/][Find largest value in each tree row]]                        | [[./500/find_largest_value_in_each_tree_row.py][Python3]]        | Medium     |
-  | 513 | [[https://leetcode.com/problems/find-bottom-left-tree-value/][Find bottom left tree value]]                                | [[./500/find_bottom_left_tree_value.py][Python3]]        | Medium     |
-  | 508 | [[https://leetcode.com/problems/most-frequent-subtree-sum/][Most frequent subtree sum]]                                  | [[./500/most_frequent_subtree_sum.org][Python3]]        | Medium     |
-  | 503 | [[https://leetcode.com/problems/next-greater-element-ii/][Next greater element ii]]                                    | [[./500/next_greater_element_2.py][Python3]]        | Medium     |
-  | 500 | [[https://leetcode.com/problems/keyboard-row/][Keyboard row]]                                               | [[./500/keyboard_row.org][Python3]]        | Easy       |
-  | 496 | [[https://leetcode.com/problems/next-greater-element-i/][Next greater element i]]                                     | [[./400/next_greater_element_1.py][Python3]]        | Easy       |
-  | 494 | [[https://leetcode.com/problems/target-sum/][Target sum]]                                                 | [[./400/target_sum.py][Python3]]        | Medium     |
-  | 463 | [[https://leetcode.com/problems/island-perimeter/][Island perimeter]]                                           | [[./400/island_perimeter.org][Python3]]        | Easy       |
-  | 456 | [[https://leetcode.com/problems/132-pattern/][132 pattern]]                                                | [[./400/132_pattern.py][Python3]]        | Medium     |
-  | 451 | [[https://leetcode.com/problems/sort-characters-by-frequency/][Sort characters by frequency]]                               | [[./400/sort_characters_by_frequency.org][Python3]]        | Medium     |
-  | 448 | [[https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/][Find all numbers disappeared in an array]]                   | [[./400/find_all_numbers_disappeared_in_an_array.org][Python3]]        | Easy       |
-  | 439 | [[https://leetcode.com/problems/ternary-expression-parser/][Ternary expression parser]]                                  | [[./400/ternary_expression_parser.py][Python3]]        | Medium     |
-  | 438 | [[https://leetcode.com/problems/find-all-anagrams-in-a-string/][Find all anagrams in a string]]                              | [[./400/find_all_anagrams_in_a_string.org][Python3]]        | Medium     |
-  | 437 | [[https://leetcode.com/problems/path-sum-iii][Path sum iii]]                                               | [[./400/path_sum_iii.org][Python3]]        | Easy       |
-  | 430 | [[https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/][Flatten a multilevel doubly linked list]]                    | [[./400/flatten_a_multilevel_doubly_linked_list.org][Python3]]        | Medium     |
-  | 429 | [[https://leetcode.com/problems/n-ary-tree-level-order-traversal/][N-ary tree level order traversal]]                           | [[./400/n_ary_tree_level_order_traversal.py][Python3]]        | Medium     |
-  | 416 | [[https://leetcode.com/problems/partition-equal-subset-sum/][Partition equal subset sum]]                                 | [[./400/partition_equal_subset_sum.py][Python3]]        | Medium     |
-  | 413 | [[https://leetcode.com/problems/arithmetic-slices/][Arithmetic slices]]                                          | [[./400/arithmetic_slices.py][Python3]]        | Medium     |
-  | 409 | [[https://leetcode.com/problems/longest-palindrome/][Longest palindrome]]                                         | [[./400/longest_palindrome.org][Python3]]        | Easy       |
-  | 402 | [[https://leetcode.com/problems/remove-k-digits/][Remove k digits]]                                            | [[./400/remove_k_digits.py][Python3]]        | Medium     |
-  | 394 | [[https://leetcode.com/problems/decode-string/][Decode String]]                                              | [[./300/decode_string.py][Python3]]        | Medium     |
-  | 392 | [[https://leetcode.com/problems/is-subsequence/][Is subsequence]]                                             | [[./300/is_subsequence.py][Python3]]        | Easy       |
-  | 389 | [[https://leetcode.com/problems/find-the-difference/][find-the-difference]]                                        | [[./300/find_the_difference.org][Python3]]        | Easy       |
-  | 387 | [[https://leetcode.com/problems/first-unique-character-in-a-string/][First unique character in a string]]                         | [[./300/first_unique_character_in_a_string.org][Python3]]        | Easy       |
-  | 380 | [[https://leetcode.com/problems/insert-delete-getrandom-o1/][Insert delete getrandom o1]]                                 | [[./300/insert_delete_getrandom_o1.org][Python3]]        | Medium     |
-  | 377 | [[https://leetcode.com/problems/combination-sum-iv/][Combination sum iv]]                                         | [[./300/combination_sum_iv.py][Python3]]        | Medium     |
-  | 376 | [[https://leetcode.com/problems/wiggle-subsequence/][Wiggle subsequence]]                                         | [[./300/wiggle_subsequence.py][Python3]]        | Medium     |
-  | 366 | [[https://leetcode.com/problems/find-leaves-of-binary-tree/][Find leaves of binary tree]]                                 | [[./300/find_leaves_of_binary_tree.org][Python3]]        | Medium     |
-  | 364 | [[https://leetcode.com/problems/nested-list-weight-sum-ii/][Nested list weight sum ii]]                                  | [[./300/nested_list_weight_sum_ii.org][Python3]]        | Medium     |
-  | 359 | [[https://leetcode.com/problems/logger-rate-limiter/][Logger rate limiter]]                                        | [[./300/logger_rate_limiter.org][Python3]]        | Easy       |
-  | 355 | [[https://leetcode.com/problems/design-twitter/][Design twitter]]                                             | [[./300/design_twitter.org][Python3]]        | Medium     |
-  | 350 | [[https://leetcode.com/problems/intersection-of-two-arrays-ii/][Intersection of two arrays ii]]                              | [[./300/intersection_of_two_arrays_ii.org][Python3]]        | Easy       |
-  | 349 | [[https://leetcode.com/problems/intersection-of-two-arrays/][Intersection of two arrays]]                                 | [[./300/intersection_of_two_arrays.org][Python3]]        | Easy       |
-  | 343 | [[https://leetcode.com/problems/integer-break/][Integer break]]                                              | [[./300/integer_break.py][Python3]]        | Medium     |
-  | 347 | [[https://leetcode.com/problems/top-k-frequent-elements/][Top k Frequent elements]]                                    | [[./300/top_k_frequent_elements.org][Python3]]        | Medium     |
-  | 341 | [[https://leetcode.com/problems/flatten-nested-list-iterator/][Flatten nested list iterator]]                               | [[./300/flatten_nested_list_iterator.py][Python3]]        | Medium     |
-  | 339 | [[https://leetcode.com/problems/nested-list-weight-sum/][Nested list weight sum]]                                     | [[./300/nested_list_weight_sum.org][Python3]]        | Easy       |
-  | 338 | [[https://leetcode.com/problems/counting-bits/][Counting bits]]                                              | [[./300/counting_bits.py][Python3]]        | Medium     |
-  | 337 | [[https://leetcode.com/problems/house-robber-iii/][House robber iii]]                                           | [[./300/house_robber_iii.org][Python3]]        | Medium     |
-  | 332 | [[https://leetcode.com/problems/coin-change/][Coin change]]                                                | [[./300/coin_change.py][Python3]]        | Medium     |
-  | 331 | [[https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/][Verify preorder serialization of a binary tree]]             | [[./300/verify_preorder_serialization_of_a_binary_tree.py][Python3]]        | Medium     |
-  | 325 | [[https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/][Maximum size subarray sum equals k]]                         | [[./300/maximum_size_subarray_sum_equals_k.org][Python3]]        | Medium     |
-  | 316 | [[https://leetcode.com/problems/remove-duplicate-letters/][Remove duplicate letters]]                                   | [[./300/remove_duplicate_letters.py][Python3]]        | Hard       |
-  | 314 | [[https://leetcode.com/problems/binary-tree-vertical-order-traversal/][Binary tree vertical order traversal]]                       | [[./300/binary_tree_vertical_order_traversal.org][Python3]]        | Medium     |
-  | 311 | [[https://leetcode.com/problems/sparse-matrix-multiplication/][Sparse matrix multiplication]]                               | [[./300/sparse_matrix_multiplication.org][Python3]]        | Medium     |
-  | 304 | [[https://leetcode.com/problems/range-sum-query-2d-immutable/][Range sum query 2d immutable]]                               | [[./300/range_sum_query_2d_immutable.py][Python3]]        | Medium     |
-  | 303 | [[https://leetcode.com/problems/range-sum-query-immutable/][Range sum query immutable]]                                  | [[./300/range_sum_query_immutable.py][Python3]]        | Easy       |
-  | 300 | [[https://leetcode.com/problems/longest-increasing-subsequence/][Longest increasing subsequence]]                             | [[./300/longest_increasing_subsequence.py][Python3]]        | Medium     |
-  | 290 | [[https://leetcode.com/problems/word-pattern/][Word pattern]]                                               | [[./200/word_pattern.org][Python3]]        | Easy       |
-  | 279 | [[https://leetcode.com/problems/perfect-squares/][Perfect squares]]                                            | [[./200/perfect_squares.py][Python3]]        | Medium     |
-  | 272 | [[https://leetcode.com/problems/closest-binary-search-tree-value-ii/][Closest binary search tree value ii]]                        | [[./200/closest_binary_search_tree_value_ii.py][Python3]]        | Hard       |
-  | 270 | [[https://leetcode.com/problems/closest-binary-search-tree-value/][Closest binary search tree value]]                           | [[./200/closest_binary_search_tree_value.py][Python3]]        | Easy       |
-  | 264 | [[https://leetcode.com/problems/ugly-number-ii/][Ugly number ii]]                                             | [[./200/ugly_number_ii.py][Python3]]        | Medium     |
-  | 263 | [[https://leetcode.com/problems/ugly-number/][Ugly number]]                                                | [[./200/ugly_number.py][Python3]]        | Easy       |
-  | 257 | [[https://leetcode.com/problems/binary-tree-paths/][Binary tree paths]]                                          | [[./200/binary_tree_paths.py][Python3]]        | Easy       |
-  | 255 | [[https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/][Verify preorder sequence in binary search tree]]             | [[./200/verify_preorder_sequence_in_binary_search_tree.py][Python3]]        | Medium     |
-  | 249 | [[https://leetcode.com/problems/group-shifted-strings/][Group shifted strings]]                                      | [[./200/group_shifted_strings.org][Python3]]        | Medium     |
-  | 245 | [[https://leetcode.com/problems/shortest-word-distance-iii/][Shortest word distance iii]]                                 | [[./200/shortest_word_distance_iii.org][Python3]]        | Medium     |
-  | 244 | [[https://leetcode.com/problems/shortest-word-distance-ii/][Shortest word distance ii]]                                  | [[./200/shortest_word_distance_ii.org][Python3]]        | Medium     |
-  | 243 | [[https://leetcode.com/problems/shortest-word-distance/][Shortest word distance]]                                     | [[./200/shortest_word_distance.org][Python3]]        | Easy       |
-  | 242 | [[https://leetcode.com/problems/valid-anagram/][Valid anagram]]                                              | [[./200/valid_anagram.org][Python3]]        | Easy       |
-  | 240 | [[https://leetcode.com/problems/search-a-2d-matrix-ii/][Search a 2d matrix ii]]                                      | [[./200/240.search_a_2d_matrix_ii.org::*Solution][C++]]            | Medium     |
-  | 234 | [[https://leetcode.com/problems/palindrome-linked-list/][Palindrome linked list]]                                     | [[./200/palindrome_linked_list.org][Python3]]        | Easy       |
-  | 232 | [[https://leetcode.com/problems/implement-queue-using-stacks/][Implement queue using stacks]]                               | [[./200/implement_queue_using_stacks.py][Python3]]        | Easy       |
-  | 226 | [[https://leetcode.com/problems/invert-binary-tree/][Invert binary tree]]                                         | [[./200/invert_binary_tree.org][Python3]]        | Easy       |
-  | 225 | [[https://leetcode.com/problems/implement-stack-using-queues/][Implement stack using queues]]                               | [[./200/implement_stack_using_queues.py][Python3]]        | Easy       |
-  | 224 | [[https://leetcode.com/problems/basic-calculator/][Basic calculator]]                                           | [[./200/basic_calculator.py][Python3]]        | Hard       |
-  | 222 | [[https://leetcode.com/problems/count-complete-tree-nodes/][Count the complete tree nodes]]                              | [[./200/count_complete_tree_nodes.py][Python3]]        | Medium     |
-  | 221 | [[https://leetcode.com/problems/maximal-square/][Maximal square]]                                             | [[./200/maximal_square.py][Python3]]        | Medium     |
-  | 219 | [[https://leetcode.com/problems/contains-duplicate-ii/][Contains duplicate ii]]                                      | [[./200/contains_duplicate_ii.org][Python3]]        | Easy       |
-  | 217 | [[https://leetcode.com/problems/contains-duplicate/][Contains duplicate]]                                         | [[./200/contains_duplicate.org][Python3]]        | Easy       |
-  | 215 | [[https://leetcode.com/problems/kth-largest-element-in-an-array/][Kth largest element in an array]]                            | [[./200/kth_largest_element_in_an_array.org][Python3]]        | Medium     |
-  | 213 | [[https://leetcode.com/problems/house-robber-ii/][House robber ii]]                                            | [[./200/house_robber_ii.py][Python3]]        | Medium     |
-  | 208 | [[https://leetcode.com/problems/implement-trie-prefix-tree/][Implement trie prefix tree]]                                 | [[./200/implement_trie_prefix_tree.org][Python3]]        | Medium     |
-  | 207 | [[https://leetcode.com/problems/course-schedule/][Course schedule]]                                            | [[./200/course_schedule.py][Python3]]        | Medium     |
-  | 206 | [[https://leetcode.com/problems/reverse-linked-list/][Reverse linked list]]                                        | [[./200/reverse_linked_list.org][Python3]]        | Easy       |
-  | 205 | [[https://leetcode.com/problems/isomorphic-strings/][Isomorphic strings]]                                         | [[./200/isomorphic_strings.org][Python3]]        | Easy       |
-  | 204 | [[https://leetcode.com/problems/count-primes/][Count primes]]                                               | [[./200/count_primes.org][Python3]]        | Easy       |
-  | 202 | [[https://leetcode.com/problems/happy-number/][Happy number]]                                               | [[./200/happy_number.org][Python3]]        | Easy       |
-  | 200 | [[https://leetcode.com/problems/number-of-islands/][Number of islands]]                                          | [[./200/number_of_islands.py][Python3]]        | Medium     |
-  | 199 | [[https://leetcode.com/problems/binary-tree-right-side-view/][Binary Tree Right Side View]]                                | [[./100/binary_tree_right_side_view.py][Python3]]        | Medium     |
-  | 198 | [[https://leetcode.com/problems/house-robber/][Binary search tree iterator]]                                | [[./100/house_robber.py][Python3]]        | Easy       |
-  | 189 | [[https://leetcode.com/problems/rotate-array/][Rotate array]]                                               | [[./100/189_rotate_array.org::*Description][C++]]            | Medium     |
-  | 187 | [[https://leetcode.com/problems/repeated-dna-sequences/][Repeated dna sequences]]                                     | [[./100/repeated_dna_sequences.org][Python3]]        | Medium     |
-  | 173 | [[https://leetcode.com/problems/binary-search-tree-iterator/][Binary search tree iterator]]                                | [[./100/binary_search_tree_iterator.py][Python3]]        | Medium     |
-  | 169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/majority_element.org][Python3]]        | Easy       |
-  | 160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]        | Easy       |
-  | 155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]        | Easy       |
-  | 153 | [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/][Find minimum in rotated sorted array]]                       | [[./100/153.find_minimum_in_rotated_sorted_array.org][C++]]            | Medium     |
-  | 152 | [[https://leetcode.com/problems/maximum-product-subarray/][Maximum product subarray]]                                   | [[./100/maximum_product_subarray.py][Python3]]        | Medium     |
-  | 150 | [[https://leetcode.com/problems/evaluate-reverse-polish-notation/][Evaluate reverse polish notation]]                           | [[./100/evaluate_reverse_polish_notation.py][Python3]]        | Medium     |
-  | 148 | [[https://leetcode.com/problems/sort-list/][Sort list]]                                                  | [[./100/sort_list.org][Python3]]        | Medium     |
-  | 147 | [[https://leetcode.com/problems/insertion-sort-list/][Insertion sort list]]                                        | [[./100/insertion_sort_list.org][Python3]]        | Medium     |
-  | 146 | [[https://leetcode.com/problems/lru-cache/][Lru cache]]                                                  | [[./100/lru_cache.org][Python3]]        | Medium     |
-  | 145 | [[https://leetcode.com/problems/binary-tree-postorder-traversal/][Binary tree postorder traversal]]                            | [[./100/binary_tree_postorder_traversql.py][Python3]]        | Hard       |
-  | 144 | [[https://leetcode.com/problems/binary-tree-preorder-traversal/][Binary tree preorder traversal]]                             | [[./100/binary_tree_preorder_traversal.py][Python3]]        | Medium     |
-  | 142 | [[https://leetcode.com/problems/linked-list-cycle-ii][Linked list cycle ii]]                                       | [[./100/linked_list_cycle_ii.org][Python3]]        | Medium     |
-  | 141 | [[https://leetcode.com/problems/linked-list-cycle/][Linked list cycle]]                                          | [[./100/141_linked_list_cycle.org][Python3 && C++]] | Easy       |
-  | 139 | [[https://leetcode.com/problems/word-break/][Word break]]                                                 | [[./100/word_break.py][Python3]]        | Medium     |
-  | 138 | [[https://leetcode.com/problems/copy-list-with-random-pointer/][Copy list with random pointer]]                              | [[./100/copy_list_with_random_pointer.org][Python3]]        | Medium     |
-  | 136 | [[https://leetcode.com/problems/single-number/][Single number]]                                              | [[./100/single_number.org][Python3]]        | Easy       |
-  | 129 | [[https://leetcode.com/problems/sum-root-to-leaf-numbers/][Sum root to leaf numbers]]                                   | [[./100/sum_root_to_leaf_numbers.py][Python3]]        | Medium     |
-  | 121 | [[https://leetcode.com/problems/best-time-to-buy-and-sell-stock/][Best time to buy and sell stock]]                            | [[./100/best_time_to_buy_and_sell_stock.py][Python3]]        | Easy       |
-  | 120 | [[https://leetcode.com/problems/triangle/][Triangle]]                                                   | [[./100/triangle.py][Python3]]        | Medium     |
-  | 117 | [[https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/][Populating next right pointers in each node ii]]             | [[./100/populating_next_right_pointers_in_each_node_ii.org][Python3]]        | Medium     |
-  | 116 | [[https://leetcode.com/problems/populating-next-right-pointers-in-each-node/][Populating next right pointers in each node]]                | [[./100/populating_next_right_pointers_in_each_node.org][Python3]]        | Medium     |
-  | 114 | [[https://leetcode.com/problems/flatten-binary-tree-to-linked-list/][Flatten binary tree to linked list]]                         | [[./100/flatten_binary_tree_to_linked_list.py][Python3]]        | Medium     |
-  | 113 | [[https://leetcode.com/problems/path-sum-ii/][Path sum ii]]                                                | [[./100/path_sum_ii.py][Python3]]        | Medium     |
-  | 112 | [[https://leetcode.com/problems/path-sum/][Path sum]]                                                   | [[./100/path_sum.py][Python3]]        | Easy       |
-  | 111 | [[https://leetcode.com/problems/minimum-depth-of-binary-tree/][Minimum depth of binary tree]]                               | [[./100/minimum_depth_of_binary_tree.py][Python3]]        | Easy       |
-  | 110 | [[https://leetcode.com/problems/balanced-binary-tree/][Balanced binary tree]]                                       | [[./100/balanced_binary_tree.py][Python3]]        | Easy       |
-  | 109 | [[https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/][Convert sorted list to binary search tree]]                  | [[./100/convert_sorted_list_to_binary_search_tree.py][Python3]]        | Medium     |
-  | 108 | [[https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/][Convert sorted array to binary search tree]]                 | [[./100/convert_sorted_array_to_binary_search_tree.py][Python3]]        | Easy       |
-  | 107 | [[https://leetcode.com/problems/binary-tree-level-order-traversal-ii/][Binary tree level order traversal ii]]                       | [[./100/binary_tree_level_order_traversal_ii.py][Python3]]        | Easy       |
-  | 106 | [[https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/][Construct binary tree from inorder and postorder traversal]] | [[./100/construct_binary_tree_from_inorder_and_postorder_traversal.py][Python3]]        | Medium     |
-  | 105 | [[https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/][Construct binary tree from preorder and inorder traversal]]  | [[./100/construct_binary_tree_from_preorder_and_inorder_traversal.py][Python3]]        | Medium     |
-  | 104 | [[https://leetcode.com/problems/maximum-depth-of-binary-tree/][Maximum depth of binary tree]]                               | [[./100/maximum_depth_of_binary_tree.py][Python3]]        | Easy       |
-  | 103 | [[https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/][Binary tree zigzag level order traversal]]                   | [[./100/binary_tree_zigzag_level_order_traversal.py][Python3]]        | Medium     |
-  | 102 | [[https://leetcode.com/problems/binary-tree-level-order-traversal/][Binary tree level order traversal]]                          | [[./100/binary_tree_level_order_traversal.py][Python3]]        | Medium     |
-  | 101 | [[https://leetcode.com/problems/symmetric-tree/][Symmetric tree]]                                             | [[./100/symmetric_tree.py][Python3]]        | Easy       |
-  | 100 | [[https://leetcode.com/problems/same-tree/][Same tree]]                                                  | [[./100/same_tree.py][Python3]]        | Easy       |
-  |  98 | [[https://leetcode.com/problems/validate-binary-search-tree/][Validate binary search tree]]                                | [[./000/validate_binary_search_tree.py][Python3]]        | Medium     |
-  |  94 | [[https://leetcode.com/problems/binary-tree-inorder-traversal/][Binary tree inorder traversal]]                              | [[./000/binary_tree_inorder_traversal.py][Python3]]        | Medium     |
-  |  91 | [[https://leetcode.com/problems/decode-ways/][Decode ways]]                                                | [[./000/decode_ways_1.py][Python3]]        | Medium     |
-  |  78 | [[https://leetcode.com/problems/subsets/][Subsets]]                                                    | [[./000/subsets.org][Python3]]        | Medium     |
-  |  77 | [[https://leetcode.com/problems/combinations/][Combinations]]                                               | [[./000/combinations.org][Python3]]        | Medium     |
-  |  74 | [[https://leetcode.com/problems/search-a-2d-matrix/][Search a 2d matrix]]                                         | [[./000/74.search_a_2d_matrix.org][C++]]            | Medium     |
-  |  70 | [[https://leetcode.com/problems/climbing-stairs/][Climbing stairs]]                                            | [[./000/climbing_stairs.py][Python3]]        | Easy       |
-  |  67 | [[https://leetcode.com/problems/add-binary/][Add binary]]                                                 | [[./000/67_add_binary.org][C++]]            | Easy       |
-  |  66 | [[https://leetcode.com/problems/plus-one/][Plus one]]                                                   | [[./000/66.plus_one.org][C++]]            | Easy       |
-  |  64 | [[https://leetcode.com/problems/minimum-path-sum/][Minimum path sum]]                                           | [[./000/minimum_path_sum.py][Python3]]        | Medium     |
-  |  63 | [[https://leetcode.com/problems/unique-paths-ii/][Unique paths ii]]                                            | [[./000/unique_paths_ii.py][Python3]]        | Medium     |
-  |  62 | [[https://leetcode.com/problems/unique-paths/][Unique paths]]                                               | [[./000/unique_paths.py][Python3]]        | Medium     |
-  |  61 | [[https://leetcode.com/problems/rotate-list/][Rotate list]]                                                | [[./000/61_rotate_list.org][C++]]            | Medium     |
-  |  60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]        | Medium     |
-  |  56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3]]        | Medium     |
-  |  53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]        | Easy       |
-  |  50 | [[https://leetcode.com/problems/powx-n/][Powx n]]                                                     | [[./000/50_powx_n.org::*Description][C++]]            | Medium     |
-  |  49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]        | Medium     |
-  |  47 | [[https://leetcode.com/problems/permutations-ii/][Permutations ii]]                                            | [[./000/permutations_ii.org][Python3]]        | Medium     |
-  |  46 | [[https://leetcode.com/problems/permutations/][Permutations]]                                               | [[./000/permutations.org][Python3]]        | Medium     |
-  |  43 | [[https://leetcode.com/problems/multiply-strings/][Multiply strings]]                                           | [[./000/43.multiply_strings.org][C++]]            | Medium     |
-  |  40 | [[https://leetcode.com/problems/combination-sum-ii/][Combination sum ii]]                                         | [[./000/combination-sum_ii.org][Python3]]        | Medium     |
-  |  39 | [[https://leetcode.com/problems/combination-sum/][Combination sum]]                                            | [[./000/combination_sum.org][Python3]]        | Medium     |
-  |  35 | [[https://leetcode.com/problems/search-insert-position/][Search insert position]]                                     | [[./000/35.search_insert_position.org][C++]]            | Easy       |
-  |  34 | [[https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/][Find first and last position of element in sorted array]]    | [[./000/find_first_and_last_position_of_element_in_sorted_array.org][Python3]]        | Medium     |
-  |  26 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array/][Remove duplicates from sorted array]]                        | [[./000/26_remove_duplicates_from_sorted_array.org][C++]]            | Easy       |
-  |  24 | [[https://leetcode.com/problems/swap-nodes-in-pairs/][Swap Nodes in Pairs]]                                        | [[./000/24_swap_nodes_in_pairs.org][C++]]            | Medium     |
-  |  23 | [[https://leetcode.com/problems/merge-k-sorted-lists/][Merge k sorted lists]]                                       | [[./000/merge_k_sorted_lists.org][Python3]]        | Hard       |
-  |  21 | [[https://leetcode.com/problems/merge-two-sorted-lists/][Merge two sorted lists]]                                     | [[./000/merge_two_sorted_lists.org][Python3]]        | Easy       |
-  |  20 | [[https://leetcode.com/problems/valid-parentheses/][Valida parentheses]]                                         | [[./000/valid_parentheses.py][Python3]]        | Easy       |
-  |  19 | [[https://leetcode.com/problems/remove-nth-node-from-end-of-list/][Remove nth node from end of list]]                           | [[./000/remove_nth_node_from_end_of_list.org][Python3]]        | Medium     |
-  |  17 | [[https://leetcode.com/problems/letter-combinations-of-a-phone-number/][Letter combinations of a phone number]]                      | [[./000/letter_combinations_of_a_phone_number.org][Python3]]        | Medium     |
-  |  14 | [[https://leetcode.com/problems/longest-common-prefix/][Longest common prefix]]                                      | [[./000/14_longest_common_prefix.org::*Description][C++]]            | Easy       |
-  |  13 | [[https://leetcode.com/problems/roman-to-integer/][Roman to integer]]                                           | [[./000/13.roman_to_integer.org][C++]]            | Easy       |
-  |   9 | [[https://leetcode.com/problems/palindrome-number/][Palindrome number]]                                          | [[./000/9.palindrome_number.org][C++]]            | Easy       |
-  |   7 | [[https://leetcode.com/problems/reverse-integer/][Reverse integer]]                                            | [[./000/7.reverse_integer.org::*Description][C++]]            | Medium     |
-  |   8 | [[https://leetcode.com/problems/string-to-integer-atoi/][String to integer atoi]]                                     | [[./000/8_string_to_integer_atoi.org::*Description][C++]]            | Medium     |
-  |   5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/longest_palindromic_substring.py][Python3]]        | Medium     |
-  |   3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]        | Medium     |
-  |   2 | [[https://leetcode.com/problems/add-two-numbers/][add two numbers]]                                            | [[./000/add_two_numbers.org][Python3]]        | Medium     |
+  |    # | Title                                                      | Solution       | Difficulty |
+  |------+------------------------------------------------------------+----------------+------------|
+  | 1721 | [[https://leetcode.com/problems/swapping-nodes-in-a-linked-list/][Swapping Nodes in a Linked List]]                            | [[./1700/1721_swapping_nodes_in_a_linked_list.org][C++]]            | Medium     |
+  |  680 | [[https://leetcode.com/problems/valid-palindrome-ii/][Valid palindrome ii]]                                        | [[./600/valid_palindrome_ii.py][Python3]]        | Easy       |
+  |  679 | [[https://leetcode.com/problems/24-game/][24 game]]                                                    | [[./600/24_game.py][Python3]]        | Hard       |
+  |  678 | [[https://leetcode.com/problems/valid-parenthesis-string/][Valid parenthesis string]]                                   | [[./600/valid_parenthesis_string.py][Python3]]        | Medium     |
+  |  677 | [[https://leetcode.com/problems/map-sum-pairs/][Map sum pairs]]                                              | [[./600/map_sun_pairs.py][Python3]]        | Medium     |
+  |  676 | [[https://leetcode.com/problems/implement-magic-dictionary/][Implement magic dictionary]]                                 | [[./600/implement_magic_dictionary.py][Python3]]        | Medium     |
+  |  674 | [[https://leetcode.com/problems/longest-continuous-increasing-subsequence/][Longest continuous increasing subsequence]]                  | [[./600/longest_continuous_increasing_subsequence.py][Python3]]        | Easy       |
+  |  673 | [[https://leetcode.com/problems/number-of-longest-increasing-subsequence/][Number of longest increasing subsequence]]                   | [[./600/number_of_longest_increasing_subsequence.py][Python3]]        | Medium     |
+  |  672 | [[https://leetcode.com/problems/bulb-switcher-ii/][Bulb switcher2]]                                             | [[./600/bulb_switcher2.py][Python3]]        | Medium     |
+  |  671 | [[https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/][Second minimum node in binary tree]]                         | [[./600/second_minimum_node_in_binary_tree.py][Python3]]        | Easy       |
+  |  670 | [[https://leetcode.com/problems/maximum-swap/][Maximum swap]]                                               | [[./600/maximum_swap.py][Python3]]        | Medium     |
+  |  669 | [[https://leetcode.com/problems/trim-a-binary-search-tree/][Trim a binary search tree]]                                  | [[./600/trim_a_binary_search_tree.py][Python3]]        | Easy       |
+  |  668 | [[https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/submissions/][Kth smallest number in multiplication table]]                | [[./600/kth_smallest_number_in_multiplication_table.py][Python3]]        | Hard       |
+  |  667 | [[https://leetcode.com/problems/beautiful-arrangement-ii/][Beautiful arrangment ii]]                                    | [[./600/beautiful_arragement_2.py][Python3]]        | Medium     |
+  |  665 | [[https://leetcode.com/problems/non-decreasing-array/][Non decreasing array]]                                       | [[./600/non_decreasing_array.py][Python3]]        | Easy       |
+  |  662 | [[https://leetcode.com/problems/maximum-width-of-binary-tree/][Maximum width of binary tree]]                               | [[./600/maximum_width_of_binary_tree.py][Python3]]        | Medium     |
+  |  659 | [[https://leetcode.com/problems/split-array-into-consecutive-subsequences/][Split array into consecutive subsequences]]                  | [[./600/split_array_into_consecutive_subsequences.py][Python3]]        | Medium     |
+  |  658 | [[https://leetcode.com/problems/find-k-closest-elements/submissions/][Find k closest elements]]                                    | [[./600/find_k_closest_elements.py][Python3]]        | Medium     |
+  |  657 | [[https://leetcode.com/problems/robot-return-to-origin/][Robot return to origin]]                                     | [[./600/robot_return_to_origin.py][Python3]]        | Easy       |
+  |  655 | [[https://leetcode.com/problems/print-binary-tree/][Print binary tree]]                                          | [[./600/print_binary_tree.py][Python3]]        | Medium     |
+  |  654 | [[https://leetcode.com/problems/maximum-binary-tree/][Maximum binary tree]]                                        | [[./600/maximum_binary_tree.py][Python3]]        | Medium     |
+  |  653 | [[https://leetcode.com/problems/two-sum-iv-input-is-a-bst/][Two sum iv input is a bst]]                                  | [[./600/two_sum_4_input_a_bst.py][Python3]]        | Easy       |
+  |  652 | [[https://leetcode.com/problems/find-duplicate-subtrees/][Find duplicate subtree]]                                     | [[./600/find_duplicate_subtrees.py][Python3]]        | Medium     |
+  |  651 | [[https://leetcode.com/problems/2-keys-keyboard/][2 keys keyboard]]                                            | [[./600/_2_keys_keyboard.py][Python3]]        | Medium     |
+  |  650 | [[https://leetcode.com/problems/dota2-senate/][Dota2 senate]]                                               | [[./600/dota2_senate.py][Python3]]        | Medium     |
+  |  648 | [[https://leetcode.com/problems/replace-words/][Replace words]]                                              | [[./600/replace_words.py][Python3]]        | Medium     |
+  |  647 | [[https://leetcode.com/problems/palindromic-substrings/][Palindromic substrings]]                                     | [[./600/palindromic_substring.py][Python3]]        | Medium     |
+  |  646 | [[https://leetcode.com/problems/maximum-length-of-pair-chain/][Maximum length of pair chain]]                               | [[./600/maximum_length_of_pair_chain.py][Python3]]        | Medium     |
+  |  645 | [[https://leetcode.com/problems/set-mismatch/][Set mismatch]]                                               | [[./600/set_mismatch.py][Python3]]        | Easy       |
+  |  644 | [[https://leetcode.com/problems/maximum-average-subarray-ii/][Maximum average subarray ii]]                                | [[./600/maximum_average_subarray_2.py][Python3]]        | Hard       |
+  |  643 | [[https://leetcode.com/problems/maximum-average-subarray-i/][Maximum average subarray i]]                                 | [[./600/maximum_average_subarray_1.py][Python3]]        | Easy       |
+  |  642 | [[https://leetcode.com/problems/design-search-autocomplete-system/][Design search autocomplete system]]                          | [[./600/design_search_autocomplete_system.py][Python3]]        | Hard       |
+  |  641 | [[https://leetcode.com/problems/design-circular-deque/][Design circular deque]]                                      | [[./600/design_circular_deque.py][Python3]]        | Medium     |
+  |  640 | [[https://leetcode.com/problems/solve-the-equation/][Solve the equation]]                                         | [[./600/solve_equation_problem.py][Python3]]        | Medium     |
+  |  639 | [[https://leetcode.com/problems/decode-ways-ii/][Decode ways ii]]                                             | [[./600/decode_ways_2.py][Python3]]        | Hard       |
+  |  638 | [[https://leetcode.com/problems/shopping-offers/][Shopping offers]]                                            | [[./600/shopping_offers.py][Python3]]        | Medium     |
+  |  637 | [[https://leetcode.com/problems/average-of-levels-in-binary-tree/][Average of levels in binary tree]]                           | [[./600/average_levels_of_binary_tree.py][Python3]]        | Medium     |
+  |  636 | [[https://leetcode.com/problems/exclusive-time-of-functions/][Exclusive time of functions]]                                | [[./600/exclusive_times_of_functions.py][Python3]]        | Medium     |
+  |  599 | [[https://leetcode.com/problems/minimum-index-sum-of-two-lists/][Minimum index sum of two lists]]                             | [[./500/minimum_index_sum_of_two_lists.org][Python3]]        | Easy       |
+  |  594 | [[https://leetcode.com/problems/longest-harmonious-subsequence/][Longest harmonious subsequence]]                             | [[./500/longest_harmonious_subsequence.org][Python3]]        | Easy       |
+  |  591 | [[https://leetcode.com/problems/tag-validator/][Tag validator]]                                              | [[./500/tag_validator.py][Python3]]        | Hard       |
+  |  559 | [[https://leetcode.com/problems/maximum-depth-of-n-ary-tree/][Maximum depth of n ary tree]]                                | [[./500/maximum_depth_of_n_ary_tree.py][Python3]]        | Easy       |
+  |  542 | [[https://leetcode.com/problems/01-matrix/][01 matrix]]                                                  | [[./500/01_matrix.py][Python3]]        | Medium     |
+  |  525 | [[https://leetcode.com/problems/contiguous-array/][Contiguous array]]                                           | [[./500/contiguous_array.org][Python3]]        | Medium     |
+  |  515 | [[https://leetcode.com/problems/find-largest-value-in-each-tree-row/][Find largest value in each tree row]]                        | [[./500/find_largest_value_in_each_tree_row.py][Python3]]        | Medium     |
+  |  513 | [[https://leetcode.com/problems/find-bottom-left-tree-value/][Find bottom left tree value]]                                | [[./500/find_bottom_left_tree_value.py][Python3]]        | Medium     |
+  |  508 | [[https://leetcode.com/problems/most-frequent-subtree-sum/][Most frequent subtree sum]]                                  | [[./500/most_frequent_subtree_sum.org][Python3]]        | Medium     |
+  |  503 | [[https://leetcode.com/problems/next-greater-element-ii/][Next greater element ii]]                                    | [[./500/next_greater_element_2.py][Python3]]        | Medium     |
+  |  500 | [[https://leetcode.com/problems/keyboard-row/][Keyboard row]]                                               | [[./500/keyboard_row.org][Python3]]        | Easy       |
+  |  496 | [[https://leetcode.com/problems/next-greater-element-i/][Next greater element i]]                                     | [[./400/next_greater_element_1.py][Python3]]        | Easy       |
+  |  494 | [[https://leetcode.com/problems/target-sum/][Target sum]]                                                 | [[./400/target_sum.py][Python3]]        | Medium     |
+  |  463 | [[https://leetcode.com/problems/island-perimeter/][Island perimeter]]                                           | [[./400/island_perimeter.org][Python3]]        | Easy       |
+  |  456 | [[https://leetcode.com/problems/132-pattern/][132 pattern]]                                                | [[./400/132_pattern.py][Python3]]        | Medium     |
+  |  451 | [[https://leetcode.com/problems/sort-characters-by-frequency/][Sort characters by frequency]]                               | [[./400/sort_characters_by_frequency.org][Python3]]        | Medium     |
+  |  448 | [[https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/][Find all numbers disappeared in an array]]                   | [[./400/find_all_numbers_disappeared_in_an_array.org][Python3]]        | Easy       |
+  |  439 | [[https://leetcode.com/problems/ternary-expression-parser/][Ternary expression parser]]                                  | [[./400/ternary_expression_parser.py][Python3]]        | Medium     |
+  |  438 | [[https://leetcode.com/problems/find-all-anagrams-in-a-string/][Find all anagrams in a string]]                              | [[./400/find_all_anagrams_in_a_string.org][Python3]]        | Medium     |
+  |  437 | [[https://leetcode.com/problems/path-sum-iii][Path sum iii]]                                               | [[./400/path_sum_iii.org][Python3]]        | Easy       |
+  |  430 | [[https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/][Flatten a multilevel doubly linked list]]                    | [[./400/flatten_a_multilevel_doubly_linked_list.org][Python3]]        | Medium     |
+  |  429 | [[https://leetcode.com/problems/n-ary-tree-level-order-traversal/][N-ary tree level order traversal]]                           | [[./400/n_ary_tree_level_order_traversal.py][Python3]]        | Medium     |
+  |  416 | [[https://leetcode.com/problems/partition-equal-subset-sum/][Partition equal subset sum]]                                 | [[./400/partition_equal_subset_sum.py][Python3]]        | Medium     |
+  |  413 | [[https://leetcode.com/problems/arithmetic-slices/][Arithmetic slices]]                                          | [[./400/arithmetic_slices.py][Python3]]        | Medium     |
+  |  409 | [[https://leetcode.com/problems/longest-palindrome/][Longest palindrome]]                                         | [[./400/longest_palindrome.org][Python3]]        | Easy       |
+  |  402 | [[https://leetcode.com/problems/remove-k-digits/][Remove k digits]]                                            | [[./400/remove_k_digits.py][Python3]]        | Medium     |
+  |  394 | [[https://leetcode.com/problems/decode-string/][Decode String]]                                              | [[./300/decode_string.py][Python3]]        | Medium     |
+  |  392 | [[https://leetcode.com/problems/is-subsequence/][Is subsequence]]                                             | [[./300/is_subsequence.py][Python3]]        | Easy       |
+  |  389 | [[https://leetcode.com/problems/find-the-difference/][find-the-difference]]                                        | [[./300/find_the_difference.org][Python3]]        | Easy       |
+  |  387 | [[https://leetcode.com/problems/first-unique-character-in-a-string/][First unique character in a string]]                         | [[./300/first_unique_character_in_a_string.org][Python3]]        | Easy       |
+  |  380 | [[https://leetcode.com/problems/insert-delete-getrandom-o1/][Insert delete getrandom o1]]                                 | [[./300/insert_delete_getrandom_o1.org][Python3]]        | Medium     |
+  |  377 | [[https://leetcode.com/problems/combination-sum-iv/][Combination sum iv]]                                         | [[./300/combination_sum_iv.py][Python3]]        | Medium     |
+  |  376 | [[https://leetcode.com/problems/wiggle-subsequence/][Wiggle subsequence]]                                         | [[./300/wiggle_subsequence.py][Python3]]        | Medium     |
+  |  366 | [[https://leetcode.com/problems/find-leaves-of-binary-tree/][Find leaves of binary tree]]                                 | [[./300/find_leaves_of_binary_tree.org][Python3]]        | Medium     |
+  |  364 | [[https://leetcode.com/problems/nested-list-weight-sum-ii/][Nested list weight sum ii]]                                  | [[./300/nested_list_weight_sum_ii.org][Python3]]        | Medium     |
+  |  359 | [[https://leetcode.com/problems/logger-rate-limiter/][Logger rate limiter]]                                        | [[./300/logger_rate_limiter.org][Python3]]        | Easy       |
+  |  355 | [[https://leetcode.com/problems/design-twitter/][Design twitter]]                                             | [[./300/design_twitter.org][Python3]]        | Medium     |
+  |  350 | [[https://leetcode.com/problems/intersection-of-two-arrays-ii/][Intersection of two arrays ii]]                              | [[./300/intersection_of_two_arrays_ii.org][Python3]]        | Easy       |
+  |  349 | [[https://leetcode.com/problems/intersection-of-two-arrays/][Intersection of two arrays]]                                 | [[./300/intersection_of_two_arrays.org][Python3]]        | Easy       |
+  |  343 | [[https://leetcode.com/problems/integer-break/][Integer break]]                                              | [[./300/integer_break.py][Python3]]        | Medium     |
+  |  347 | [[https://leetcode.com/problems/top-k-frequent-elements/][Top k Frequent elements]]                                    | [[./300/top_k_frequent_elements.org][Python3]]        | Medium     |
+  |  341 | [[https://leetcode.com/problems/flatten-nested-list-iterator/][Flatten nested list iterator]]                               | [[./300/flatten_nested_list_iterator.py][Python3]]        | Medium     |
+  |  339 | [[https://leetcode.com/problems/nested-list-weight-sum/][Nested list weight sum]]                                     | [[./300/nested_list_weight_sum.org][Python3]]        | Easy       |
+  |  338 | [[https://leetcode.com/problems/counting-bits/][Counting bits]]                                              | [[./300/counting_bits.py][Python3]]        | Medium     |
+  |  337 | [[https://leetcode.com/problems/house-robber-iii/][House robber iii]]                                           | [[./300/house_robber_iii.org][Python3]]        | Medium     |
+  |  332 | [[https://leetcode.com/problems/coin-change/][Coin change]]                                                | [[./300/coin_change.py][Python3]]        | Medium     |
+  |  331 | [[https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/][Verify preorder serialization of a binary tree]]             | [[./300/verify_preorder_serialization_of_a_binary_tree.py][Python3]]        | Medium     |
+  |  325 | [[https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/][Maximum size subarray sum equals k]]                         | [[./300/maximum_size_subarray_sum_equals_k.org][Python3]]        | Medium     |
+  |  316 | [[https://leetcode.com/problems/remove-duplicate-letters/][Remove duplicate letters]]                                   | [[./300/remove_duplicate_letters.py][Python3]]        | Hard       |
+  |  314 | [[https://leetcode.com/problems/binary-tree-vertical-order-traversal/][Binary tree vertical order traversal]]                       | [[./300/binary_tree_vertical_order_traversal.org][Python3]]        | Medium     |
+  |  311 | [[https://leetcode.com/problems/sparse-matrix-multiplication/][Sparse matrix multiplication]]                               | [[./300/sparse_matrix_multiplication.org][Python3]]        | Medium     |
+  |  304 | [[https://leetcode.com/problems/range-sum-query-2d-immutable/][Range sum query 2d immutable]]                               | [[./300/range_sum_query_2d_immutable.py][Python3]]        | Medium     |
+  |  303 | [[https://leetcode.com/problems/range-sum-query-immutable/][Range sum query immutable]]                                  | [[./300/range_sum_query_immutable.py][Python3]]        | Easy       |
+  |  300 | [[https://leetcode.com/problems/longest-increasing-subsequence/][Longest increasing subsequence]]                             | [[./300/longest_increasing_subsequence.py][Python3]]        | Medium     |
+  |  290 | [[https://leetcode.com/problems/word-pattern/][Word pattern]]                                               | [[./200/word_pattern.org][Python3]]        | Easy       |
+  |  279 | [[https://leetcode.com/problems/perfect-squares/][Perfect squares]]                                            | [[./200/perfect_squares.py][Python3]]        | Medium     |
+  |  272 | [[https://leetcode.com/problems/closest-binary-search-tree-value-ii/][Closest binary search tree value ii]]                        | [[./200/closest_binary_search_tree_value_ii.py][Python3]]        | Hard       |
+  |  270 | [[https://leetcode.com/problems/closest-binary-search-tree-value/][Closest binary search tree value]]                           | [[./200/closest_binary_search_tree_value.py][Python3]]        | Easy       |
+  |  264 | [[https://leetcode.com/problems/ugly-number-ii/][Ugly number ii]]                                             | [[./200/ugly_number_ii.py][Python3]]        | Medium     |
+  |  263 | [[https://leetcode.com/problems/ugly-number/][Ugly number]]                                                | [[./200/ugly_number.py][Python3]]        | Easy       |
+  |  257 | [[https://leetcode.com/problems/binary-tree-paths/][Binary tree paths]]                                          | [[./200/binary_tree_paths.py][Python3]]        | Easy       |
+  |  255 | [[https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/][Verify preorder sequence in binary search tree]]             | [[./200/verify_preorder_sequence_in_binary_search_tree.py][Python3]]        | Medium     |
+  |  249 | [[https://leetcode.com/problems/group-shifted-strings/][Group shifted strings]]                                      | [[./200/group_shifted_strings.org][Python3]]        | Medium     |
+  |  245 | [[https://leetcode.com/problems/shortest-word-distance-iii/][Shortest word distance iii]]                                 | [[./200/shortest_word_distance_iii.org][Python3]]        | Medium     |
+  |  244 | [[https://leetcode.com/problems/shortest-word-distance-ii/][Shortest word distance ii]]                                  | [[./200/shortest_word_distance_ii.org][Python3]]        | Medium     |
+  |  243 | [[https://leetcode.com/problems/shortest-word-distance/][Shortest word distance]]                                     | [[./200/shortest_word_distance.org][Python3]]        | Easy       |
+  |  242 | [[https://leetcode.com/problems/valid-anagram/][Valid anagram]]                                              | [[./200/valid_anagram.org][Python3]]        | Easy       |
+  |  240 | [[https://leetcode.com/problems/search-a-2d-matrix-ii/][Search a 2d matrix ii]]                                      | [[./200/240.search_a_2d_matrix_ii.org::*Solution][C++]]            | Medium     |
+  |  234 | [[https://leetcode.com/problems/palindrome-linked-list/][Palindrome linked list]]                                     | [[./200/palindrome_linked_list.org][Python3]]        | Easy       |
+  |  232 | [[https://leetcode.com/problems/implement-queue-using-stacks/][Implement queue using stacks]]                               | [[./200/implement_queue_using_stacks.py][Python3]]        | Easy       |
+  |  226 | [[https://leetcode.com/problems/invert-binary-tree/][Invert binary tree]]                                         | [[./200/invert_binary_tree.org][Python3]]        | Easy       |
+  |  225 | [[https://leetcode.com/problems/implement-stack-using-queues/][Implement stack using queues]]                               | [[./200/implement_stack_using_queues.py][Python3]]        | Easy       |
+  |  224 | [[https://leetcode.com/problems/basic-calculator/][Basic calculator]]                                           | [[./200/basic_calculator.py][Python3]]        | Hard       |
+  |  222 | [[https://leetcode.com/problems/count-complete-tree-nodes/][Count the complete tree nodes]]                              | [[./200/count_complete_tree_nodes.py][Python3]]        | Medium     |
+  |  221 | [[https://leetcode.com/problems/maximal-square/][Maximal square]]                                             | [[./200/maximal_square.py][Python3]]        | Medium     |
+  |  219 | [[https://leetcode.com/problems/contains-duplicate-ii/][Contains duplicate ii]]                                      | [[./200/contains_duplicate_ii.org][Python3]]        | Easy       |
+  |  217 | [[https://leetcode.com/problems/contains-duplicate/][Contains duplicate]]                                         | [[./200/contains_duplicate.org][Python3]]        | Easy       |
+  |  215 | [[https://leetcode.com/problems/kth-largest-element-in-an-array/][Kth largest element in an array]]                            | [[./200/kth_largest_element_in_an_array.org][Python3]]        | Medium     |
+  |  213 | [[https://leetcode.com/problems/house-robber-ii/][House robber ii]]                                            | [[./200/house_robber_ii.py][Python3]]        | Medium     |
+  |  208 | [[https://leetcode.com/problems/implement-trie-prefix-tree/][Implement trie prefix tree]]                                 | [[./200/implement_trie_prefix_tree.org][Python3]]        | Medium     |
+  |  207 | [[https://leetcode.com/problems/course-schedule/][Course schedule]]                                            | [[./200/course_schedule.py][Python3]]        | Medium     |
+  |  206 | [[https://leetcode.com/problems/reverse-linked-list/][Reverse linked list]]                                        | [[./200/reverse_linked_list.org][Python3]]        | Easy       |
+  |  205 | [[https://leetcode.com/problems/isomorphic-strings/][Isomorphic strings]]                                         | [[./200/isomorphic_strings.org][Python3]]        | Easy       |
+  |  204 | [[https://leetcode.com/problems/count-primes/][Count primes]]                                               | [[./200/count_primes.org][Python3]]        | Easy       |
+  |  202 | [[https://leetcode.com/problems/happy-number/][Happy number]]                                               | [[./200/happy_number.org][Python3]]        | Easy       |
+  |  200 | [[https://leetcode.com/problems/number-of-islands/][Number of islands]]                                          | [[./200/number_of_islands.py][Python3]]        | Medium     |
+  |  199 | [[https://leetcode.com/problems/binary-tree-right-side-view/][Binary Tree Right Side View]]                                | [[./100/binary_tree_right_side_view.py][Python3]]        | Medium     |
+  |  198 | [[https://leetcode.com/problems/house-robber/][Binary search tree iterator]]                                | [[./100/house_robber.py][Python3]]        | Easy       |
+  |  189 | [[https://leetcode.com/problems/rotate-array/][Rotate array]]                                               | [[./100/189_rotate_array.org::*Description][C++]]            | Medium     |
+  |  187 | [[https://leetcode.com/problems/repeated-dna-sequences/][Repeated dna sequences]]                                     | [[./100/repeated_dna_sequences.org][Python3]]        | Medium     |
+  |  173 | [[https://leetcode.com/problems/binary-search-tree-iterator/][Binary search tree iterator]]                                | [[./100/binary_search_tree_iterator.py][Python3]]        | Medium     |
+  |  169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/majority_element.org][Python3]]        | Easy       |
+  |  160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]        | Easy       |
+  |  155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]        | Easy       |
+  |  153 | [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/][Find minimum in rotated sorted array]]                       | [[./100/153.find_minimum_in_rotated_sorted_array.org][C++]]            | Medium     |
+  |  152 | [[https://leetcode.com/problems/maximum-product-subarray/][Maximum product subarray]]                                   | [[./100/maximum_product_subarray.py][Python3]]        | Medium     |
+  |  150 | [[https://leetcode.com/problems/evaluate-reverse-polish-notation/][Evaluate reverse polish notation]]                           | [[./100/evaluate_reverse_polish_notation.py][Python3]]        | Medium     |
+  |  148 | [[https://leetcode.com/problems/sort-list/][Sort list]]                                                  | [[./100/sort_list.org][Python3]]        | Medium     |
+  |  147 | [[https://leetcode.com/problems/insertion-sort-list/][Insertion sort list]]                                        | [[./100/insertion_sort_list.org][Python3]]        | Medium     |
+  |  146 | [[https://leetcode.com/problems/lru-cache/][Lru cache]]                                                  | [[./100/lru_cache.org][Python3]]        | Medium     |
+  |  145 | [[https://leetcode.com/problems/binary-tree-postorder-traversal/][Binary tree postorder traversal]]                            | [[./100/binary_tree_postorder_traversql.py][Python3]]        | Hard       |
+  |  144 | [[https://leetcode.com/problems/binary-tree-preorder-traversal/][Binary tree preorder traversal]]                             | [[./100/binary_tree_preorder_traversal.py][Python3]]        | Medium     |
+  |  142 | [[https://leetcode.com/problems/linked-list-cycle-ii][Linked list cycle ii]]                                       | [[./100/linked_list_cycle_ii.org][Python3]]        | Medium     |
+  |  141 | [[https://leetcode.com/problems/linked-list-cycle/][Linked list cycle]]                                          | [[./100/141_linked_list_cycle.org][Python3 && C++]] | Easy       |
+  |  139 | [[https://leetcode.com/problems/word-break/][Word break]]                                                 | [[./100/word_break.py][Python3]]        | Medium     |
+  |  138 | [[https://leetcode.com/problems/copy-list-with-random-pointer/][Copy list with random pointer]]                              | [[./100/copy_list_with_random_pointer.org][Python3]]        | Medium     |
+  |  136 | [[https://leetcode.com/problems/single-number/][Single number]]                                              | [[./100/single_number.org][Python3]]        | Easy       |
+  |  129 | [[https://leetcode.com/problems/sum-root-to-leaf-numbers/][Sum root to leaf numbers]]                                   | [[./100/sum_root_to_leaf_numbers.py][Python3]]        | Medium     |
+  |  121 | [[https://leetcode.com/problems/best-time-to-buy-and-sell-stock/][Best time to buy and sell stock]]                            | [[./100/best_time_to_buy_and_sell_stock.py][Python3]]        | Easy       |
+  |  120 | [[https://leetcode.com/problems/triangle/][Triangle]]                                                   | [[./100/triangle.py][Python3]]        | Medium     |
+  |  117 | [[https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/][Populating next right pointers in each node ii]]             | [[./100/populating_next_right_pointers_in_each_node_ii.org][Python3]]        | Medium     |
+  |  116 | [[https://leetcode.com/problems/populating-next-right-pointers-in-each-node/][Populating next right pointers in each node]]                | [[./100/populating_next_right_pointers_in_each_node.org][Python3]]        | Medium     |
+  |  114 | [[https://leetcode.com/problems/flatten-binary-tree-to-linked-list/][Flatten binary tree to linked list]]                         | [[./100/flatten_binary_tree_to_linked_list.py][Python3]]        | Medium     |
+  |  113 | [[https://leetcode.com/problems/path-sum-ii/][Path sum ii]]                                                | [[./100/path_sum_ii.py][Python3]]        | Medium     |
+  |  112 | [[https://leetcode.com/problems/path-sum/][Path sum]]                                                   | [[./100/path_sum.py][Python3]]        | Easy       |
+  |  111 | [[https://leetcode.com/problems/minimum-depth-of-binary-tree/][Minimum depth of binary tree]]                               | [[./100/minimum_depth_of_binary_tree.py][Python3]]        | Easy       |
+  |  110 | [[https://leetcode.com/problems/balanced-binary-tree/][Balanced binary tree]]                                       | [[./100/balanced_binary_tree.py][Python3]]        | Easy       |
+  |  109 | [[https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/][Convert sorted list to binary search tree]]                  | [[./100/convert_sorted_list_to_binary_search_tree.py][Python3]]        | Medium     |
+  |  108 | [[https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/][Convert sorted array to binary search tree]]                 | [[./100/convert_sorted_array_to_binary_search_tree.py][Python3]]        | Easy       |
+  |  107 | [[https://leetcode.com/problems/binary-tree-level-order-traversal-ii/][Binary tree level order traversal ii]]                       | [[./100/binary_tree_level_order_traversal_ii.py][Python3]]        | Easy       |
+  |  106 | [[https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/][Construct binary tree from inorder and postorder traversal]] | [[./100/construct_binary_tree_from_inorder_and_postorder_traversal.py][Python3]]        | Medium     |
+  |  105 | [[https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/][Construct binary tree from preorder and inorder traversal]]  | [[./100/construct_binary_tree_from_preorder_and_inorder_traversal.py][Python3]]        | Medium     |
+  |  104 | [[https://leetcode.com/problems/maximum-depth-of-binary-tree/][Maximum depth of binary tree]]                               | [[./100/maximum_depth_of_binary_tree.py][Python3]]        | Easy       |
+  |  103 | [[https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/][Binary tree zigzag level order traversal]]                   | [[./100/binary_tree_zigzag_level_order_traversal.py][Python3]]        | Medium     |
+  |  102 | [[https://leetcode.com/problems/binary-tree-level-order-traversal/][Binary tree level order traversal]]                          | [[./100/binary_tree_level_order_traversal.py][Python3]]        | Medium     |
+  |  101 | [[https://leetcode.com/problems/symmetric-tree/][Symmetric tree]]                                             | [[./100/symmetric_tree.py][Python3]]        | Easy       |
+  |  100 | [[https://leetcode.com/problems/same-tree/][Same tree]]                                                  | [[./100/same_tree.py][Python3]]        | Easy       |
+  |   98 | [[https://leetcode.com/problems/validate-binary-search-tree/][Validate binary search tree]]                                | [[./000/validate_binary_search_tree.py][Python3]]        | Medium     |
+  |   94 | [[https://leetcode.com/problems/binary-tree-inorder-traversal/][Binary tree inorder traversal]]                              | [[./000/binary_tree_inorder_traversal.py][Python3]]        | Medium     |
+  |   91 | [[https://leetcode.com/problems/decode-ways/][Decode ways]]                                                | [[./000/decode_ways_1.py][Python3]]        | Medium     |
+  |   78 | [[https://leetcode.com/problems/subsets/][Subsets]]                                                    | [[./000/subsets.org][Python3]]        | Medium     |
+  |   77 | [[https://leetcode.com/problems/combinations/][Combinations]]                                               | [[./000/combinations.org][Python3]]        | Medium     |
+  |   74 | [[https://leetcode.com/problems/search-a-2d-matrix/][Search a 2d matrix]]                                         | [[./000/74.search_a_2d_matrix.org][C++]]            | Medium     |
+  |   70 | [[https://leetcode.com/problems/climbing-stairs/][Climbing stairs]]                                            | [[./000/climbing_stairs.py][Python3]]        | Easy       |
+  |   67 | [[https://leetcode.com/problems/add-binary/][Add binary]]                                                 | [[./000/67_add_binary.org][C++]]            | Easy       |
+  |   66 | [[https://leetcode.com/problems/plus-one/][Plus one]]                                                   | [[./000/66.plus_one.org][C++]]            | Easy       |
+  |   64 | [[https://leetcode.com/problems/minimum-path-sum/][Minimum path sum]]                                           | [[./000/minimum_path_sum.py][Python3]]        | Medium     |
+  |   63 | [[https://leetcode.com/problems/unique-paths-ii/][Unique paths ii]]                                            | [[./000/unique_paths_ii.py][Python3]]        | Medium     |
+  |   62 | [[https://leetcode.com/problems/unique-paths/][Unique paths]]                                               | [[./000/unique_paths.py][Python3]]        | Medium     |
+  |   61 | [[https://leetcode.com/problems/rotate-list/][Rotate list]]                                                | [[./000/61_rotate_list.org][C++]]            | Medium     |
+  |   60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]        | Medium     |
+  |   56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3]]        | Medium     |
+  |   53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]        | Easy       |
+  |   50 | [[https://leetcode.com/problems/powx-n/][Powx n]]                                                     | [[./000/50_powx_n.org::*Description][C++]]            | Medium     |
+  |   49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]        | Medium     |
+  |   47 | [[https://leetcode.com/problems/permutations-ii/][Permutations ii]]                                            | [[./000/permutations_ii.org][Python3]]        | Medium     |
+  |   46 | [[https://leetcode.com/problems/permutations/][Permutations]]                                               | [[./000/permutations.org][Python3]]        | Medium     |
+  |   43 | [[https://leetcode.com/problems/multiply-strings/][Multiply strings]]                                           | [[./000/43.multiply_strings.org][C++]]            | Medium     |
+  |   40 | [[https://leetcode.com/problems/combination-sum-ii/][Combination sum ii]]                                         | [[./000/combination-sum_ii.org][Python3]]        | Medium     |
+  |   39 | [[https://leetcode.com/problems/combination-sum/][Combination sum]]                                            | [[./000/combination_sum.org][Python3]]        | Medium     |
+  |   35 | [[https://leetcode.com/problems/search-insert-position/][Search insert position]]                                     | [[./000/35.search_insert_position.org][C++]]            | Easy       |
+  |   34 | [[https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/][Find first and last position of element in sorted array]]    | [[./000/find_first_and_last_position_of_element_in_sorted_array.org][Python3]]        | Medium     |
+  |   26 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array/][Remove duplicates from sorted array]]                        | [[./000/26_remove_duplicates_from_sorted_array.org][C++]]            | Easy       |
+  |   24 | [[https://leetcode.com/problems/swap-nodes-in-pairs/][Swap Nodes in Pairs]]                                        | [[./000/24_swap_nodes_in_pairs.org][C++]]            | Medium     |
+  |   23 | [[https://leetcode.com/problems/merge-k-sorted-lists/][Merge k sorted lists]]                                       | [[./000/merge_k_sorted_lists.org][Python3]]        | Hard       |
+  |   21 | [[https://leetcode.com/problems/merge-two-sorted-lists/][Merge two sorted lists]]                                     | [[./000/merge_two_sorted_lists.org][Python3]]        | Easy       |
+  |   20 | [[https://leetcode.com/problems/valid-parentheses/][Valida parentheses]]                                         | [[./000/valid_parentheses.py][Python3]]        | Easy       |
+  |   19 | [[https://leetcode.com/problems/remove-nth-node-from-end-of-list/][Remove nth node from end of list]]                           | [[./000/remove_nth_node_from_end_of_list.org][Python3]]        | Medium     |
+  |   17 | [[https://leetcode.com/problems/letter-combinations-of-a-phone-number/][Letter combinations of a phone number]]                      | [[./000/letter_combinations_of_a_phone_number.org][Python3]]        | Medium     |
+  |   14 | [[https://leetcode.com/problems/longest-common-prefix/][Longest common prefix]]                                      | [[./000/14_longest_common_prefix.org::*Description][C++]]            | Easy       |
+  |   13 | [[https://leetcode.com/problems/roman-to-integer/][Roman to integer]]                                           | [[./000/13.roman_to_integer.org][C++]]            | Easy       |
+  |    9 | [[https://leetcode.com/problems/palindrome-number/][Palindrome number]]                                          | [[./000/9.palindrome_number.org][C++]]            | Easy       |
+  |    7 | [[https://leetcode.com/problems/reverse-integer/][Reverse integer]]                                            | [[./000/7.reverse_integer.org::*Description][C++]]            | Medium     |
+  |    8 | [[https://leetcode.com/problems/string-to-integer-atoi/][String to integer atoi]]                                     | [[./000/8_string_to_integer_atoi.org::*Description][C++]]            | Medium     |
+  |    5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/longest_palindromic_substring.py][Python3]]        | Medium     |
+  |    3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]        | Medium     |
+  |    2 | [[https://leetcode.com/problems/add-two-numbers/][add two numbers]]                                            | [[./000/add_two_numbers.org][Python3]]        | Medium     |
   
 * Pramp problem's solution
 
