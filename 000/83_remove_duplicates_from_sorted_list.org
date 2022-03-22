@@ -1,0 +1,88 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-03-22 二 23:19
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-03-22 二 23:19]
+#+TITLE: 83. Remove Duplicates from Sorted List
+#+HUGO_WEIGHT: 83
+
+* Description
+  Given the =head= of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list *sorted* as well.
+
+
+  *Example 1*:
+
+  [[https://assets.leetcode.com/uploads/2021/01/04/list1.jpg]]
+
+  #+begin_example
+  Input: head = [1,1,2]
+  Output: [1,2]
+  #+end_example
+
+  *Example 2*:
+  [[https://assets.leetcode.com/uploads/2021/01/04/list2.jpg]]
+
+  #+begin_example
+  Input: head = [1,1,2,3,3]
+  Output: [1,2,3]
+  #+end_example
+
+
+  *Constraints*:
+
+  - The number of nodes in the list is in the range ~[0, 300]~.
+  - ~-100 <= Node.val <= 100~
+  - The list is guaranteed to be *sorted* in ascending order.
+* Solution
+  #+begin_src c++
+    /**
+     ,* Definition for singly-linked list.
+     ,* struct ListNode {
+     ,*     int val;
+     ,*     ListNode *next;
+     ,*     ListNode() : val(0), next(nullptr) {}
+     ,*     ListNode(int x) : val(x), next(nullptr) {}
+     ,*     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+      ListNode* deleteDuplicates(ListNode* head) {
+	// time complexity: O(N): N is size of linked list
+	// space compleixty: O(1)
+	if(!head){
+	  return head;
+	}
+
+	ListNode* prev = nullptr;
+	ListNode* result = head;
+	while(head){
+	  if(!prev){
+	    prev = head;
+	    continue;
+	  }
+
+	  if(prev->val != head->val){
+	    prev->next = head;
+	    prev = prev->next;
+	  }else{
+	    // delete the last duplicate node
+	    if(!head->next){
+	      prev -> next = nullptr;
+	      return result;
+	    }
+	  }
+
+	  head = head -> next;
+	}
+
+	return result;
+      }
+    };
+  #+end_src
+
