@@ -1,0 +1,113 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-03-23 三 12:52
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-03-23 三 12:52]
+#+TITLE: 92. Reverse Linked List II
+#+HUGO_WEIGHT: 92
+
+* Description
+  source: https://leetcode.com/problems/reverse-linked-list-ii/
+
+  Given the =head= of a singly linked list and two integers =left= and =right= where =left <= right=, reverse the nodes of the list from position =left= to position =right=, and return the reversed list.
+
+  *Example 1*:
+
+  [[https://assets.leetcode.com/uploads/2021/02/19/rev2ex2.jpg]]
+
+  #+begin_example
+  Input: head = [1,2,3,4,5], left = 2, right = 4
+  Output: [1,4,3,2,5]
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: head = [5], left = 1, right = 1
+  Output: [5]
+  #+end_example
+ 
+
+  *Constraints*:
+
+  The number of nodes in the list is =n=.
+  - ~1 <= n <= 500~
+  - ~-500 <= Node.val <= 500~
+  - ~1 <= left <= right <= n~
+* Solution
+  [[file:~/code/python/leetcode/images/000/92_reverse_linked_list_ii.png][file:~/code/python/leetcode/images/000/92_reverse_linked_list_ii.png]]
+
+  #+begin_src c++
+    /**
+     ,* Definition for singly-linked list.
+     ,* struct ListNode {
+     ,*     int val;
+     ,*     ListNode *next;
+     ,*     ListNode() : val(0), next(nullptr) {}
+     ,*     ListNode(int x) : val(x), next(nullptr) {}
+     ,*     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+      ListNode* reverseBetween(ListNode* head, int left, int right) {
+	// time complexity: O(2N), N = size of the linked list
+	// space compleixty: O(1)
+	if(!head || left == right){
+	  return head;
+	}
+
+	ListNode* left_prev = nullptr;
+	ListNode* left_node = nullptr;
+	ListNode* right_node = nullptr;
+	ListNode* result = nullptr;
+
+	int size = 0;
+	while(head){
+	  size ++;
+	  if(!result && size <= left - 1){
+	    result = head;
+	  }
+	  if(size == left - 1){
+	    left_prev = head;
+	  }
+
+	  if(size == left){
+	    left_node = head;
+	  }
+
+
+	  if(size == right){
+	    right_node = head;
+	  }
+
+	  head = head->next;
+	}
+
+	ListNode* right_node_next = right_node -> next;
+	right_node-> next = nullptr;
+	if(!result){
+	  result = right_node;
+	}
+
+	while(left_node){
+	  ListNode* left_next = left_node->next;
+	  left_node->next = right_node_next;
+	  right_node_next = left_node;
+	  if(!left_next && left_prev){
+	    left_prev -> next = left_node;
+	  }
+	  left_node = left_next;
+	}
+
+
+
+	return result;
+      }
+    };
+  #+end_src
