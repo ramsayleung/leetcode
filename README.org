@@ -124,6 +124,7 @@
   |  206 | [[https://leetcode.com/problems/reverse-linked-list/][Reverse linked list]]                                        | [[./200/reverse_linked_list.org][Python3]]        | Easy       |
   |  205 | [[https://leetcode.com/problems/isomorphic-strings/][Isomorphic strings]]                                         | [[./200/isomorphic_strings.org][Python3]]        | Easy       |
   |  204 | [[https://leetcode.com/problems/count-primes/][Count primes]]                                               | [[./200/count_primes.org][Python3]]        | Easy       |
+  |  203 | [[https://leetcode.com/problems/remove-linked-list-elements/][Remove Linked List Elements]]                                | [[./200/203_remove_linked_list_elements.org][C++]]            | Easy       |
   |  202 | [[https://leetcode.com/problems/happy-number/][Happy number]]                                               | [[./200/happy_number.org][Python3]]        | Easy       |
   |  200 | [[https://leetcode.com/problems/number-of-islands/][Number of islands]]                                          | [[./200/number_of_islands.py][Python3]]        | Medium     |
   |  199 | [[https://leetcode.com/problems/binary-tree-right-side-view/][Binary Tree Right Side View]]                                | [[./100/binary_tree_right_side_view.py][Python3]]        | Medium     |
