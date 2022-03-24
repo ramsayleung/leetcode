@@ -1,0 +1,106 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-03-24 四 21:05
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-03-24 四 21:05]
+#+TITLE: 86. Partition List
+#+HUGO_WEIGHT: 86
+
+* Description
+  source: https://leetcode.com/problems/partition-list/
+
+  Given the =head= of a linked list and a value =x=, partition it such that all nodes *less than* =x= come before nodes *greater than or equal* to =x=.
+
+  You should *preserve* the original relative order of the nodes in each of the two partitions.
+
+  *Example 1*:
+
+  [[https://assets.leetcode.com/uploads/2021/01/04/partition.jpg]]
+
+  #+begin_example
+  Input: head = [1,4,3,2,5,2], x = 3
+  Output: [1,2,2,4,3,5]
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: head = [2,1], x = 2
+  Output: [1,2]
+  #+end_example
+ 
+
+  *Constraints*:
+
+  - The number of nodes in the list is in the range =[0, 200]=.
+  - ~-100 <= Node.val <= 100~
+  - ~-200 <= x <= 200~
+* Solution
+  [[file:~/code/python/leetcode/images/000/86_partition_list.png][file:~/code/python/leetcode/images/000/86_partition_list.png]]
+  #+begin_src c++
+    /**
+     ,* Definition for singly-linked list.
+     ,* struct ListNode {
+     ,*     int val;
+     ,*     ListNode *next;
+     ,*     ListNode() : val(0), next(nullptr) {}
+     ,*     ListNode(int x) : val(x), next(nullptr) {}
+     ,*     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+      ListNode *partition(ListNode *head, int x) {
+	// Time complexity: O(N), N is the size of linked_list
+	// Space complexity: O(1)
+	if (!head) {
+	  return head;
+	}
+
+	ListNode *first_less_x = nullptr;
+	ListNode *last_less_x = nullptr;
+	ListNode *last_greater_x = nullptr;
+	ListNode *first_greater_x = nullptr;
+	while (head) {
+	  if (head->val < x) {
+	    first_less_x = (first_less_x == nullptr ? head : first_less_x);
+
+	    if (!last_less_x) {
+	      last_less_x = head;
+
+	    } else {
+	      last_less_x->next = head;
+	      last_less_x = last_less_x->next;
+	    }
+	  } else {
+	    first_greater_x = (first_greater_x == nullptr ? head : first_greater_x);
+
+	    if (!last_greater_x) {
+	      last_greater_x = head;
+	    } else {
+	      last_greater_x->next = head;
+	      last_greater_x = last_greater_x->next;
+	    }
+	  }
+
+	  head = head->next;
+	}
+
+	if (last_greater_x) {
+	  last_greater_x->next = nullptr;
+	}
+
+	if (last_less_x) {
+	  last_less_x->next = first_greater_x;
+	}
+
+	return first_less_x != nullptr ? first_less_x : first_greater_x;
+      }
+    };
+  #+end_src
+
