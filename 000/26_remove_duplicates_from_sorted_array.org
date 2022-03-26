@@ -70,30 +70,28 @@
   #+begin_src c++
     class Solution {
     public:
-	int removeDuplicates(vector<int>& nums) {
-	    if(nums.size() == 0){
-		return 0;
-	    }
-        
-	    int prev = -101;
-	    auto iter = nums.begin();
-        
-	    while(iter != nums.end()){
-		if(prev == *iter){
-		    std::remove(iter, nums.end(), prev);
-		}else {
-                
-		}
-            
-		if(*iter == *(nums.end() - 1)){
-		    return iter - nums.begin() + 1;
-		}
-            
-		prev = *iter;
-		iter++;
-	    }
-        
-	    return iter - nums.begin() + 1;
+      int removeDuplicates(vector<int>& nums) {
+	if(nums.size() == 0){
+	  return 0;
 	}
+
+	int prev = -101;
+	auto iter = nums.begin();
+
+	while(iter != nums.end()){
+	  if(prev == *iter){
+	    std::remove(iter, nums.end(), prev);
+	  }
+
+	  if(*iter == *(nums.end() - 1)){
+	    return iter - nums.begin() + 1;
+	  }
+
+	  prev = *iter;
+	  iter++;
+	}
+
+	return iter - nums.begin() + 1;
+      }
     };
   #+end_src
