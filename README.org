@@ -144,6 +144,7 @@
   |  146 | [[https://leetcode.com/problems/lru-cache/][Lru cache]]                                                  | [[./100/lru_cache.org][Python3]]        | Medium     |
   |  145 | [[https://leetcode.com/problems/binary-tree-postorder-traversal/][Binary tree postorder traversal]]                            | [[./100/binary_tree_postorder_traversql.py][Python3]]        | Hard       |
   |  144 | [[https://leetcode.com/problems/binary-tree-preorder-traversal/][Binary tree preorder traversal]]                             | [[./100/binary_tree_preorder_traversal.py][Python3]]        | Medium     |
+  |  143 | [[https://leetcode.com/problems/reorder-list/][Reorder list]]                                               | [[./100/143_reorder_list.org][C++]]            | Medium     |
   |  142 | [[https://leetcode.com/problems/linked-list-cycle-ii][Linked list cycle ii]]                                       | [[./100/linked_list_cycle_ii.org][Python3]]        | Medium     |
   |  141 | [[https://leetcode.com/problems/linked-list-cycle/][Linked list cycle]]                                          | [[./100/141_linked_list_cycle.org][Python3 && C++]] | Easy       |
   |  139 | [[https://leetcode.com/problems/word-break/][Word break]]                                                 | [[./100/word_break.py][Python3]]        | Medium     |
