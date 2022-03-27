@@ -13,6 +13,7 @@
 
 * Description
   source: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
+
   You are given the ~head~ of a linked list, and an integer ~k~.
 
   Return the head of the linked list after *swapping* the values of the ~kth~ node from the beginning and the ~kth~ node from the end (the list is *1-indexed*).
@@ -40,6 +41,8 @@
   - ~1 <= k <= n <= 10^5~
   - ~0 <= Node.val <= 100~
 * Solution
+  [[file:~/code/python/leetcode/images/1700/1721_swapping_nodes_in_a_linked_list.png][file:~/code/python/leetcode/images/1700/1721_swapping_nodes_in_a_linked_list.png]] 
+
   #+begin_src c++
     /**
      ,* Definition for singly-linked list.
