@@ -11,6 +11,7 @@
 #+HUGO_DRAFT: false
 #+DATE: [2022-02-26 六 20:21]
 #+TITLE: 141. Linked list cycle
+#+HUGO_WEIGHT: 141
 #+HUGO_TAGS: linked_list
 #+HUGO_CATEGORIES: linked_list
 

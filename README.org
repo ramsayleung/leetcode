@@ -2,6 +2,7 @@
 
   |    # | Title                                                      | Solution       | Difficulty |
   |------+------------------------------------------------------------+----------------+------------|
+  | 2095 | [[https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/][Delete the Middle Node of a Linked List]]                    | [[./2000/2095_delete_the_middle_node_of_a_linked_list.org][C++]]            | Medium     |
   | 1721 | [[https://leetcode.com/problems/swapping-nodes-in-a-linked-list/][Swapping Nodes in a Linked List]]                            | [[./1700/1721_swapping_nodes_in_a_linked_list.org][C++]]            | Medium     |
   |  680 | [[https://leetcode.com/problems/valid-palindrome-ii/][Valid palindrome ii]]                                        | [[./600/valid_palindrome_ii.py][Python3]]        | Easy       |
   |  679 | [[https://leetcode.com/problems/24-game/][24 game]]                                                    | [[./600/24_game.py][Python3]]        | Hard       |
