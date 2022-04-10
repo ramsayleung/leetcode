@@ -100,6 +100,7 @@
   |  279 | [[https://leetcode.com/problems/perfect-squares/][Perfect squares]]                                            | [[./200/perfect_squares.py][Python3]]        | Medium     |
   |  272 | [[https://leetcode.com/problems/closest-binary-search-tree-value-ii/][Closest binary search tree value ii]]                        | [[./200/closest_binary_search_tree_value_ii.py][Python3]]        | Hard       |
   |  270 | [[https://leetcode.com/problems/closest-binary-search-tree-value/][Closest binary search tree value]]                           | [[./200/closest_binary_search_tree_value.py][Python3]]        | Easy       |
+  |  268 | [[https://leetcode.com/problems/missing-number/][Missing number]]                                             | [[./200/268_missing_number.org][C++]]            | Easy      |
   |  264 | [[https://leetcode.com/problems/ugly-number-ii/][Ugly number ii]]                                             | [[./200/ugly_number_ii.py][Python3]]        | Medium     |
   |  263 | [[https://leetcode.com/problems/ugly-number/][Ugly number]]                                                | [[./200/ugly_number.py][Python3]]        | Easy       |
   |  257 | [[https://leetcode.com/problems/binary-tree-paths/][Binary tree paths]]                                          | [[./200/binary_tree_paths.py][Python3]]        | Easy       |
@@ -112,7 +113,7 @@
   |  240 | [[https://leetcode.com/problems/search-a-2d-matrix-ii/][Search a 2d matrix ii]]                                      | [[./200/240.search_a_2d_matrix_ii.org::*Solution][C++]]            | Medium     |
   |  234 | [[https://leetcode.com/problems/palindrome-linked-list/][Palindrome linked list]]                                     | [[./200/palindrome_linked_list.org][Python3]]        | Easy       |
   |  232 | [[https://leetcode.com/problems/implement-queue-using-stacks/][Implement queue using stacks]]                               | [[./200/implement_queue_using_stacks.py][Python3]]        | Easy       |
-  |  229 | [[https://leetcode.com/problems/majority-element-ii/][Majority element ii]]                                        | [[./200/229_majority_element_ii.org][C++]]            | Medium    |
+  |  229 | [[https://leetcode.com/problems/majority-element-ii/][Majority element ii]]                                        | [[./200/229_majority_element_ii.org][C++]]            | Medium     |
   |  226 | [[https://leetcode.com/problems/invert-binary-tree/][Invert binary tree]]                                         | [[./200/invert_binary_tree.org][Python3]]        | Easy       |
   |  225 | [[https://leetcode.com/problems/implement-stack-using-queues/][Implement stack using queues]]                               | [[./200/implement_stack_using_queues.py][Python3]]        | Easy       |
   |  224 | [[https://leetcode.com/problems/basic-calculator/][Basic calculator]]                                           | [[./200/basic_calculator.py][Python3]]        | Hard       |
@@ -135,7 +136,7 @@
   |  189 | [[https://leetcode.com/problems/rotate-array/][Rotate array]]                                               | [[./100/189_rotate_array.org::*Description][C++]]            | Medium     |
   |  187 | [[https://leetcode.com/problems/repeated-dna-sequences/][Repeated dna sequences]]                                     | [[./100/repeated_dna_sequences.org][Python3]]        | Medium     |
   |  173 | [[https://leetcode.com/problems/binary-search-tree-iterator/][Binary search tree iterator]]                                | [[./100/binary_search_tree_iterator.py][Python3]]        | Medium     |
-  |  169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/majority_element.org][Python3]]        | Easy       |
+  |  169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/169_majority_element.org][Python3&&C++]]   | Easy       |
   |  160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]        | Easy       |
   |  155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]        | Easy       |
   |  153 | [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/][Find minimum in rotated sorted array]]                       | [[./100/153.find_minimum_in_rotated_sorted_array.org][C++]]            | Medium     |
