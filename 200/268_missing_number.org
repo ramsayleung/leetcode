@@ -4,7 +4,7 @@
 #+EMAIL: ramsayleung@gmail.com
 #+DATE: 2022-04-10 日 14:17
 #+HUGO_BASE_DIR: ~/code/org/leetcode_book
-#+HUGO_SECTION: docs/268
+#+HUGO_SECTION: docs/200
 #+HUGO_AUTO_SET_LASTMOD: t
 #+HUGO_DRAFT: false
 #+DATE: [2022-04-10 日 14:17]

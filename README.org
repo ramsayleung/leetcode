@@ -82,6 +82,7 @@
   |  349 | [[https://leetcode.com/problems/intersection-of-two-arrays/][Intersection of two arrays]]                                 | [[./300/intersection_of_two_arrays.org][Python3]]        | Easy       |
   |  343 | [[https://leetcode.com/problems/integer-break/][Integer break]]                                              | [[./300/integer_break.py][Python3]]        | Medium     |
   |  347 | [[https://leetcode.com/problems/top-k-frequent-elements/][Top k Frequent elements]]                                    | [[./300/top_k_frequent_elements.org][Python3]]        | Medium     |
+  |  342 | [[https://leetcode.com/problems/power-of-four/][Power of four]]                                              | [[./300/342_power_of_four.org][C++]]            | Easy       |
   |  341 | [[https://leetcode.com/problems/flatten-nested-list-iterator/][Flatten nested list iterator]]                               | [[./300/flatten_nested_list_iterator.py][Python3]]        | Medium     |
   |  339 | [[https://leetcode.com/problems/nested-list-weight-sum/][Nested list weight sum]]                                     | [[./300/nested_list_weight_sum.org][Python3]]        | Easy       |
   |  338 | [[https://leetcode.com/problems/counting-bits/][Counting bits]]                                              | [[./300/counting_bits.py][Python3]]        | Medium     |

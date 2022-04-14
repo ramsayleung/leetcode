@@ -1,0 +1,72 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-04-14 四 22:57
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/300
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-04-14 四 22:57]
+#+TITLE: 342. Power of Four
+#+HUGO_WEIGHT: 342
+
+* Description
+  source: https://leetcode.com/problems/power-of-four/
+
+  Given an integer =n=, return =true= if it is a power of four. Otherwise, return =false=.
+
+  An integer =n= is a power of four, if there exists an integer =x= such that ~n == 4^x~.
+
+ 
+
+  *Example 1*:
+
+  #+begin_example
+  Input: n = 16
+  Output: true
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: n = 5
+  Output: false
+  #+end_example
+
+  *Example 3*:
+
+  #+begin_example
+  Input: n = 1
+  Output: true
+  #+end_example
+
+  *Constraints*:
+
+  ~-2^31 <= n <= 2^31 - 1~
+
+  *Follow up*: Could you solve it without loops/recursion?
+* Solution
+  #+begin_src C++
+    #include <bitset>
+    class Solution {
+    public:
+      bool isPowerOfFour(int n) {
+	// Space complexity: O(1)
+	// Time complexity: O(32) -> O(1)
+	std::bitset<33> binary = std::bitset<33>(n);
+	if (binary.count() != 1) {
+	  return false;
+	}
+
+	std::string bin_str = binary.to_string();
+	for (int i = bin_str.size() - 1; i >= 0; i--) {
+	  if (bin_str[i] == '1') {
+	    return (bin_str.size() - 1 - i) % 2 == 0;
+	  }
+	}
+
+	return false;
+      }
+    };
+  #+end_src
