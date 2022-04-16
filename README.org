@@ -142,6 +142,7 @@
   |  187 | [[https://leetcode.com/problems/repeated-dna-sequences/][Repeated dna sequences]]                                     | [[./100/repeated_dna_sequences.org][Python3]]        | Medium     |
   |  173 | [[https://leetcode.com/problems/binary-search-tree-iterator/][Binary search tree iterator]]                                | [[./100/binary_search_tree_iterator.py][Python3]]        | Medium     |
   |  169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/169_majority_element.org][Python3&&C++]]   | Easy       |
+  |  162 | [[https://leetcode.com/problems/find-peak-element/][Find peak element]]                                          | [[./100/162_find_peak_element.org][C++]]            | Medium     |
   |  160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]        | Easy       |
   |  155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]        | Easy       |
   |  153 | [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/][Find minimum in rotated sorted array]]                       | [[./100/153.find_minimum_in_rotated_sorted_array.org][C++]]            | Medium     |
