@@ -100,6 +100,7 @@
   |  290 | [[https://leetcode.com/problems/word-pattern/][Word pattern]]                                               | [[./200/word_pattern.org][Python3]]        | Easy       |
   |  287 | [[https://leetcode.com/problems/find-the-duplicate-number/][Find the duplicate number]]                                  | [[./200/287_find_the_duplicate_number.org][C++]]            | Medium     |
   |  279 | [[https://leetcode.com/problems/perfect-squares/][Perfect squares]]                                            | [[./200/perfect_squares.py][Python3]]        | Medium     |
+  |  278 | [[https://leetcode.com/problems/first-bad-version/][First bad version]]                                          | [[./200/278_first_bad_version.org][C++]]            | Easy       |
   |  272 | [[https://leetcode.com/problems/closest-binary-search-tree-value-ii/][Closest binary search tree value ii]]                        | [[./200/closest_binary_search_tree_value_ii.py][Python3]]        | Hard       |
   |  270 | [[https://leetcode.com/problems/closest-binary-search-tree-value/][Closest binary search tree value]]                           | [[./200/closest_binary_search_tree_value.py][Python3]]        | Easy       |
   |  268 | [[https://leetcode.com/problems/missing-number/][Missing number]]                                             | [[./200/268_missing_number.org][C++]]            | Easy       |
@@ -206,7 +207,7 @@
   |   40 | [[https://leetcode.com/problems/combination-sum-ii/][Combination sum ii]]                                         | [[./000/combination-sum_ii.org][Python3]]        | Medium     |
   |   39 | [[https://leetcode.com/problems/combination-sum/][Combination sum]]                                            | [[./000/combination_sum.org][Python3]]        | Medium     |
   |   35 | [[https://leetcode.com/problems/search-insert-position/][Search insert position]]                                     | [[./000/35.search_insert_position.org][C++]]            | Easy       |
-  |   34 | [[https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/][Find first and last position of element in sorted array]]    | [[./000/34_find_first_and_last_position_of_element_in_sorted_array.org][Python3&&C++]]        | Medium     |
+  |   34 | [[https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/][Find first and last position of element in sorted array]]    | [[./000/34_find_first_and_last_position_of_element_in_sorted_array.org][Python3&&C++]]   | Medium     |
   |   33 | [[https://leetcode.com/problems/search-in-rotated-sorted-array/][Search in rotated sorted array]]                             | [[./000/33_search_in_rotated_sorted_array.org][C++]]            | Medium     |
   |   27 | [[https://leetcode.com/problems/remove-element/][Remove element]]                                             | [[./000/27_remove_element.org][C++]]            | Easy       |
   |   26 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array/][Remove duplicates from sorted array]]                        | [[./000/26_remove_duplicates_from_sorted_array.org][C++]]            | Easy       |

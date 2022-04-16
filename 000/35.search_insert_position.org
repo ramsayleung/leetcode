@@ -3,6 +3,13 @@
 #+AUTHOR: Ramsay Leung
 #+EMAIL: ramsayleung@gmail.com
 #+DATE: 2022-02-02T20:34:17
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+TITLE: 35. Search Insert Position
+#+HUGO_WEIGHT: 35
+
 * Description
   source: https://leetcode.com/problems/search-insert-position/
 
