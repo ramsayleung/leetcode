@@ -52,8 +52,8 @@
     class Solution {
     public:
       bool isPowerOfFour(int n) {
-	// Space complexity: O(1)
-	// Time complexity: O(32) -> O(1)
+	// Space complexity: O(33) -> O(1)
+	// Time complexity: O(33) -> O(1)
 	std::bitset<33> binary = std::bitset<33>(n);
 	if (binary.count() != 1) {
 	  return false;

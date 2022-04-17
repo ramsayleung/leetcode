@@ -57,6 +57,8 @@
     class Solution {
     public:
 	int hammingWeight(uint32_t n) {
+	    // Space complexity: O(32) => O(1)
+	    // Time complexity: O(1)
 	    std::bitset<32> binary = std::bitset<32>(n);
 	    return binary.count();
 	}

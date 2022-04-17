@@ -55,6 +55,8 @@
     class Solution {
     public:
       bool isPowerOfTwo(int n) {
+	// Space complexity: O(33) => O(1)
+	// Time complexity: O(1)
 	return std::bitset<33>(n).count() == 1;
       }
     };
