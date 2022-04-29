@@ -4,6 +4,7 @@
   |------+------------------------------------------------------------+----------------+------------|
   | 2095 | [[https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/][Delete the Middle Node of a Linked List]]                    | [[./2000/2095_delete_the_middle_node_of_a_linked_list.org][C++]]            | Medium     |
   | 1721 | [[https://leetcode.com/problems/swapping-nodes-in-a-linked-list/][Swapping Nodes in a Linked List]]                            | [[./1700/1721_swapping_nodes_in_a_linked_list.org][C++]]            | Medium     |
+  |  692 | [[https://leetcode.com/problems/top-k-frequent-words/][Top K Frequent Words]]                                       | [[./600/692_top_k_frequent_words.org][C++]]            | Medium     |
   |  680 | [[https://leetcode.com/problems/valid-palindrome-ii/][Valid palindrome ii]]                                        | [[./600/valid_palindrome_ii.py][Python3]]        | Easy       |
   |  679 | [[https://leetcode.com/problems/24-game/][24 game]]                                                    | [[./600/24_game.py][Python3]]        | Hard       |
   |  678 | [[https://leetcode.com/problems/valid-parenthesis-string/][Valid parenthesis string]]                                   | [[./600/valid_parenthesis_string.py][Python3]]        | Medium     |
@@ -72,6 +73,7 @@
   |  389 | [[https://leetcode.com/problems/find-the-difference/][find-the-difference]]                                        | [[./300/find_the_difference.org][Python3]]        | Easy       |
   |  387 | [[https://leetcode.com/problems/first-unique-character-in-a-string/][First unique character in a string]]                         | [[./300/first_unique_character_in_a_string.org][Python3]]        | Easy       |
   |  380 | [[https://leetcode.com/problems/insert-delete-getrandom-o1/][Insert delete getrandom o1]]                                 | [[./300/insert_delete_getrandom_o1.org][Python3]]        | Medium     |
+  |  378 | [[https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix][Kth Smallest Element in a Sorted Matrix]]                    | [[./300/378_kth_smallest_element_in_a_sorted_matrix.org][C++]]            | Medium     |
   |  377 | [[https://leetcode.com/problems/combination-sum-iv/][Combination sum iv]]                                         | [[./300/combination_sum_iv.py][Python3]]        | Medium     |
   |  376 | [[https://leetcode.com/problems/wiggle-subsequence/][Wiggle subsequence]]                                         | [[./300/wiggle_subsequence.py][Python3]]        | Medium     |
   |  374 | [[https://leetcode.com/problems/guess-number-higher-or-lower/][Guess number higher or lower]]                               | [[./300/374_guess_number_higher_or_lower.org][C++]]            | Easy       |
@@ -118,6 +120,7 @@
   |  234 | [[https://leetcode.com/problems/palindrome-linked-list/][Palindrome linked list]]                                     | [[./200/palindrome_linked_list.org][Python3]]        | Easy       |
   |  232 | [[https://leetcode.com/problems/implement-queue-using-stacks/][Implement queue using stacks]]                               | [[./200/implement_queue_using_stacks.py][Python3]]        | Easy       |
   |  231 | [[https://leetcode.com/problems/power-of-two/][Power of two]]                                               | [[./200/231_power_of_two.org][C++]]            | Easy       |
+  |  230 | [[https://leetcode.com/problems/kth-smallest-element-in-a-bst/][Kth Smallest Element in a BST]]                              | [[./200/230_kth_smallest_element_in_a_bst.org][C++]]            | Medium     |
   |  229 | [[https://leetcode.com/problems/majority-element-ii/][Majority element ii]]                                        | [[./200/229_majority_element_ii.org][C++]]            | Medium     |
   |  226 | [[https://leetcode.com/problems/invert-binary-tree/][Invert binary tree]]                                         | [[./200/invert_binary_tree.org][Python3]]        | Easy       |
   |  225 | [[https://leetcode.com/problems/implement-stack-using-queues/][Implement stack using queues]]                               | [[./200/implement_stack_using_queues.py][Python3]]        | Easy       |
@@ -184,6 +187,7 @@
   |   98 | [[https://leetcode.com/problems/validate-binary-search-tree/][Validate binary search tree]]                                | [[./000/validate_binary_search_tree.py][Python3]]        | Medium     |
   |   94 | [[https://leetcode.com/problems/binary-tree-inorder-traversal/][Binary tree inorder traversal]]                              | [[./000/binary_tree_inorder_traversal.py][Python3]]        | Medium     |
   |   91 | [[https://leetcode.com/problems/decode-ways/][Decode ways]]                                                | [[./000/decode_ways_1.py][Python3]]        | Medium     |
+  |   88 | [[https://leetcode.com/problems/merge-sorted-array/][Merge Sorted Array]]                                         | [[./000/88_merge_sorted_array.org][C++]]            | Medium     |
   |   86 | [[https://leetcode.com/problems/partition-list/][Partition List]]                                             | [[./000/86_partition_list.org][C++]]            | Medium     |
   |   83 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-list/][Remove Duplicates from Sorted List]]                         | [[./000/83_remove_duplicates_from_sorted_list.org][C++]]            | Easy       |
   |   80 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/][Remove Duplicates from Sorted Array II]]                     | [[./000/80_remove_duplicates_from_sorted_array_ii.org][C++]]            | Medium     |
