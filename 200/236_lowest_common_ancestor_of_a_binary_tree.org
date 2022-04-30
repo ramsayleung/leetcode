@@ -1,0 +1,94 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-04-30 Sat 08:30
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/200
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-04-30 Sat 08:30]
+#+TITLE: 236. Lowest Common Ancestor of a Binary Tree
+#+HUGO_WEIGHT: 236
+
+* Description
+  source: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+
+  Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+
+  According to [[https://en.wikipedia.org/wiki/Lowest_common_ancestor][the definition of LCA on Wikipedia]]: “The lowest common ancestor is defined between two nodes =p= and =q= as the lowest node in =T= that has both =p= and =q= as descendants (where we allow *a node to be a descendant of itself*).”
+
+  *Example 1*:
+
+  [[https://assets.leetcode.com/uploads/2018/12/14/binarytree.png]]
+
+  #+begin_example
+  Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+  Output: 3
+  Explanation: The LCA of nodes 5 and 1 is 3.
+  #+end_example
+
+  *Example 2*:
+
+  [[https://assets.leetcode.com/uploads/2018/12/14/binarytree.png][https://assets.leetcode.com/uploads/2018/12/14/binarytree.png]]
+
+  #+begin_example
+  Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
+  Output: 5
+  Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
+  #+end_example
+
+  *Example 3*:
+
+  #+begin_example
+  Input: root = [1,2], p = 1, q = 2
+  Output: 1
+  #+end_example
+ 
+
+  *Constraints*:
+
+  - The number of nodes in the tree is in the range ~[2, 10^5]~.
+  - ~-10^9 <= Node.val <= 10^9~
+  - All ~Node.val~ are *unique*.
+  - ~p != q~
+  - ~p~ and ~q~ will exist in the tree.
+* Solution
+  #+begin_src C++
+    /**
+     ,* Definition for a binary tree node.
+     ,* struct TreeNode {
+     ,*     int val;
+     ,*     TreeNode *left;
+     ,*     TreeNode *right;
+     ,*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+	TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+	    // Space complexity: O(1)
+	    // Time complexity: O(N)
+	    find(root, p, q);
+	    return ancestor_;
+	}
+    
+	bool find(TreeNode* root, TreeNode* p, TreeNode* q){
+	    if(!root){
+		return false;
+	    }
+    
+	    int left = find(root->left, p, q)? 1: 0;
+	    int right = find(root->right, p, q)?1: 0;
+	    int mid = (root->val == p->val || root->val == q->val)? 1: 0;
+	    if(left + right + mid >= 2){
+		ancestor_ = root;
+	    }
+        
+	    return (left + right + mid) > 0;
+	}
+    private:
+	TreeNode* ancestor_ = nullptr;
+    };
+  #+end_src
+

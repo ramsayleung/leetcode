@@ -1,0 +1,84 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-04-30 Sat 08:59
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-04-30 Sat 08:59]
+#+TITLE: 82. Remove Duplicates from Sorted List II
+#+HUGO_WEIGHT: 82
+
+* Description
+  source: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+
+  Given the =head= of a *sorted* linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list sorted as well.
+
+
+  *Example 1*:
+
+  [[https://assets.leetcode.com/uploads/2021/01/04/linkedlist1.jpg][https://assets.leetcode.com/uploads/2021/01/04/linkedlist1.jpg]]
+
+  #+begin_example
+  Input: head = [1,2,3,3,4,4,5]
+  Output: [1,2,5]
+  #+end_example
+  *Example 2*:
+
+  [[https://assets.leetcode.com/uploads/2021/01/04/linkedlist2.jpg][https://assets.leetcode.com/uploads/2021/01/04/linkedlist2.jpg]]
+
+  #+begin_example
+  Input: head = [1,1,1,2,3]
+  Output: [2,3]
+  #+end_example
+
+
+  *Constraints*:
+
+  - The number of nodes in the list is in the range =[0, 300]=.
+  - ~-100 <= Node.val <= 100~
+  - The list is guaranteed to be *sorted* in ascending order.
+* Solution
+  #+begin_src C++
+    /**
+     ,* Definition for singly-linked list.
+     ,* struct ListNode {
+     ,*     int val;
+     ,*     ListNode *next;
+     ,*     ListNode() : val(0), next(nullptr) {}
+     ,*     ListNode(int x) : val(x), next(nullptr) {}
+     ,*     ListNode(int x, ListNode *next) : val(x), next(next) {}
+     ,* };
+     ,*/
+    class Solution {
+    public:
+      ListNode* deleteDuplicates(ListNode* head) {
+	// Space complexity: O(1)
+	// Time complexity: O(N)
+	ListNode fake_head(0, head);
+	ListNode *prev = &fake_head;
+	while(head){
+	  if(head->next && head->next->val == head->val){
+	    // loop until the last node of the sublist needed to delete
+	    // e.g. [3, 3]
+	    while(head->next && head->next->val == head->val){
+	      head = head->next;
+	    }
+
+	    // let the `prev` node point to the next node of the last node of the subset
+	    // it doesn't matter if the head->next is duplicated either, since we could loop head->next again until we find the last node of `head-next`.
+	    prev->next = head->next;
+	  } else{
+	    prev = prev->next;
+	  }
+
+	  head = head->next;
+	}
+
+	return fake_head.next;
+      }
+    };
+  #+end_src
+

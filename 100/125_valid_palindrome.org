@@ -1,0 +1,73 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-04-30 Sat 08:50
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/100
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-04-30 Sat 08:50]
+#+TITLE: 125. Valid Palindrome
+#+HUGO_WEIGHT: 125
+
+* Description
+  source: https://leetcode.com/problems/valid-palindrome/
+
+  A phrase is a *palindrome* if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+  Given a string =s=, return =true= if it is a *palindrome*, or =false= otherwise.
+
+  *Example 1*:
+
+  #+begin_example
+  Input: s = "A man, a plan, a canal: Panama"
+  Output: true
+  Explanation: "amanaplanacanalpanama" is a palindrome.
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: s = "race a car"
+  Output: false
+  Explanation: "raceacar" is not a palindrome.
+  #+end_example
+
+  *Example 3*:
+
+  #+begin_example
+  Input: s = " "
+  Output: true
+  Explanation: s is an empty string "" after removing non-alphanumeric characters.
+  Since an empty string reads the same forward and backward, it is a palindrome.
+  #+end_example
+
+  *Constraints*:
+
+  - ~1 <= s.length <= 2 * 10^5~
+  - ~s~ consists only of printable ASCII characters.
+* Solution
+  #+begin_src C++
+    #include <algorithm>
+    #include <sstream>
+    class Solution {
+    public:
+      bool isPalindrome(string s) {
+	// Space complexity: O(2N) => O(N), N is the size of conanical string
+	// Time complexity: O(2N) => O(N), N is the size of conanical string
+	std::stringstream ss;
+	std::string canonical;
+	for(int i =0; i < s.size(); i++){
+	  if(isalnum(s[i])){
+	    canonical += tolower(s[i]);
+	  }
+	}
+
+	std::string source = canonical; 
+	std::reverse(canonical.begin(), canonical.end());
+	return source == canonical;
+      }
+    };
+  #+end_src
+
