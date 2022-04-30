@@ -1,0 +1,62 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/100
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2020-04-16 Web 00:40]
+#+TITLE: 136. Single Number
+#+HUGO_WEIGHT: 136
+* Description
+  source: https://leetcode.com/problems/single-number/
+
+  Given a *non-empty* array of integers, every element appears twice except for one. Find that single one.
+
+  Note:
+
+  Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+
+  Example 1:
+
+  #+begin_example
+  Input: [2,2,1]
+  Output: 1
+  #+end_example
+
+  Example 2:
+
+  #+begin_example
+  Input: [4,1,2,1,2]
+  Output: 4
+  #+end_example
+
+* Solution
+  #+begin_src python
+
+    from collections import Counter
+    from typing import List
+
+    # time complexity: O(n), n is the size of nums
+    # space complexity: O(n), n is the size of map
+
+    class Solution:
+	def singleNumber(self, nums: List[int]) -> int:
+	    c = Counter(nums)
+	    return c.most_common()[-1][0]
+  #+end_src
+
+  #+begin_src C++
+    #include <algorithm>
+    #include <functional>
+    class Solution {
+    public:
+      int singleNumber(vector<int>& nums) {
+	// Time complexity: O(N)
+	// Space complexity: O(1)
+	// A xor A = 0
+	// A xor A xor B = B
+	return std::accumulate(nums.begin(), nums.end(), 0, std::bit_xor<int>{});
+
+      }
+    };
+  #+end_src

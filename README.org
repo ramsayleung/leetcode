@@ -165,7 +165,8 @@
   |  141 | [[https://leetcode.com/problems/linked-list-cycle/][Linked list cycle]]                                          | [[./100/141_linked_list_cycle.org][Python3 && C++]] | Easy       |
   |  139 | [[https://leetcode.com/problems/word-break/][Word break]]                                                 | [[./100/word_break.py][Python3]]        | Medium     |
   |  138 | [[https://leetcode.com/problems/copy-list-with-random-pointer/][Copy list with random pointer]]                              | [[./100/copy_list_with_random_pointer.org][Python3]]        | Medium     |
-  |  136 | [[https://leetcode.com/problems/single-number/][Single number]]                                              | [[./100/single_number.org][Python3]]        | Easy       |
+  |  137 | [[https://leetcode.com/problems/single-number-ii/][Single Number II]]                                           | [[./100/137_single_number_ii.org][C++]]            | Medium     |
+  |  136 | [[https://leetcode.com/problems/single-number/][Single number]]                                              | [[./100/136_single_number.org][Python3&&C++]]   | Easy       |
   |  129 | [[https://leetcode.com/problems/sum-root-to-leaf-numbers/][Sum root to leaf numbers]]                                   | [[./100/sum_root_to_leaf_numbers.py][Python3]]        | Medium     |
   |  125 | [[https://leetcode.com/problems/valid-palindrome/][Valid palindrome]]                                           | [[./100/125_valid_palindrome.org][C++]]            | Easy       |
   |  121 | [[https://leetcode.com/problems/best-time-to-buy-and-sell-stock/][Best time to buy and sell stock]]                            | [[./100/best_time_to_buy_and_sell_stock.py][Python3]]        | Easy       |
@@ -209,7 +210,7 @@
   |   61 | [[https://leetcode.com/problems/rotate-list/][Rotate list]]                                                | [[./000/61_rotate_list.org][C++]]            | Medium     |
   |   60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]        | Medium     |
   |   57 | [[https://leetcode.com/problems/insert-interval/][Insert interval]]                                            | [[./000/57_insert_interval.org][C++]]            | Medium     |
-  |   56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3&&C++]] | Medium     |
+  |   56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3&&C++]]   | Medium     |
   |   53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]        | Easy       |
   |   50 | [[https://leetcode.com/problems/powx-n/][Powx n]]                                                     | [[./000/50_powx_n.org::*Description][C++]]            | Medium     |
   |   49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]        | Medium     |
