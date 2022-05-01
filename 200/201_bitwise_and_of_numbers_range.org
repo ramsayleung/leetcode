@@ -1,0 +1,67 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-05-01 Sun 13:54
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/200
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-05-01 Sun 13:54]
+#+TITLE: 201. Bitwise AND of Numbers Range
+#+HUGO_WEIGHT: 201
+
+* Description
+  source: https://leetcode.com/problems/bitwise-and-of-numbers-range/
+
+  Given two integers =left= and =right= that represent the range =[left, right]=, return the bitwise AND of all numbers in this range, inclusive.
+
+ 
+
+  *Example 1*:
+
+  #+begin_example
+  Input: left = 5, right = 7
+  Output: 4
+  #+end_example
+  *Example 2*:
+
+  #+begin_example
+  Input: left = 0, right = 0
+  Output: 0
+  #+end_example
+  *Example 3*:
+
+  #+begin_example
+  Input: left = 1, right = 2147483647
+  Output: 0
+  #+end_example
+ 
+
+  *Constraints*:
+
+  - ~0 <= left <= right <= 2^31 - 1~
+* Solution
+  [[file:~/code/python/leetcode/images/200/201-bitwise-and-of-numbers-range.png][file:~/code/python/leetcode/images/200/201-bitwise-and-of-numbers-range.png]]
+  #+begin_src C++
+    #include <limits>
+    class Solution {
+    public:
+      int rangeBitwiseAnd(int left, int right) {
+	// Time complexity: O(32) => O(1)
+	// Space complexity: O(1)
+	if(left == 0){
+	  return 0;
+	}
+
+	int diff_bit_count = 0;
+	while(left != right){
+	  left = left >> 1;
+	  right = right >> 1;
+	  diff_bit_count++;
+	}
+
+	return right << diff_bit_count;   
+      }
+    };
+  #+end_src
