@@ -109,6 +109,7 @@
   |  268 | [[https://leetcode.com/problems/missing-number/][Missing number]]                                             | [[./200/268_missing_number.org][C++]]            | Easy       |
   |  264 | [[https://leetcode.com/problems/ugly-number-ii/][Ugly number ii]]                                             | [[./200/ugly_number_ii.py][Python3]]        | Medium     |
   |  263 | [[https://leetcode.com/problems/ugly-number/][Ugly number]]                                                | [[./200/ugly_number.py][Python3]]        | Easy       |
+  |  260 | [[https://leetcode.com/problems/single-number-iii/][Single Number III]]                                          | [[./200/260_single_number_iii.org][C++]]            | Medium     |
   |  257 | [[https://leetcode.com/problems/binary-tree-paths/][Binary tree paths]]                                          | [[./200/binary_tree_paths.py][Python3]]        | Easy       |
   |  255 | [[https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/][Verify preorder sequence in binary search tree]]             | [[./200/verify_preorder_sequence_in_binary_search_tree.py][Python3]]        | Medium     |
   |  249 | [[https://leetcode.com/problems/group-shifted-strings/][Group shifted strings]]                                      | [[./200/group_shifted_strings.org][Python3]]        | Medium     |
