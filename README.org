@@ -67,6 +67,7 @@
   |  416 | [[https://leetcode.com/problems/partition-equal-subset-sum/][Partition equal subset sum]]                                 | [[./400/partition_equal_subset_sum.py][Python3]]        | Medium     |
   |  413 | [[https://leetcode.com/problems/arithmetic-slices/][Arithmetic slices]]                                          | [[./400/arithmetic_slices.py][Python3]]        | Medium     |
   |  409 | [[https://leetcode.com/problems/longest-palindrome/][Longest palindrome]]                                         | [[./400/longest_palindrome.org][Python3]]        | Easy       |
+  |  405 | [[https://leetcode.com/problems/convert-a-number-to-hexadecimal/][Convert a Number to Hexadecimal]]                            | [[./400/405_convert_a_number_to_hexadecimal.org][C++]]            | Easy       |
   |  402 | [[https://leetcode.com/problems/remove-k-digits/][Remove k digits]]                                            | [[./400/remove_k_digits.py][Python3]]        | Medium     |
   |  394 | [[https://leetcode.com/problems/decode-string/][Decode String]]                                              | [[./300/decode_string.py][Python3]]        | Medium     |
   |  392 | [[https://leetcode.com/problems/is-subsequence/][Is subsequence]]                                             | [[./300/is_subsequence.py][Python3]]        | Easy       |
@@ -151,6 +152,7 @@
   |  187 | [[https://leetcode.com/problems/repeated-dna-sequences/][Repeated dna sequences]]                                     | [[./100/repeated_dna_sequences.org][Python3]]        | Medium     |
   |  173 | [[https://leetcode.com/problems/binary-search-tree-iterator/][Binary search tree iterator]]                                | [[./100/binary_search_tree_iterator.py][Python3]]        | Medium     |
   |  169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/169_majority_element.org][Python3&&C++]]   | Easy       |
+  |  167 | [[https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/][Two Sum II - Input Array Is Sorted]]                         | [[./100/167_two_sum_ii_input_array_is_sorted.org][C++]]            | Medium     |
   |  162 | [[https://leetcode.com/problems/find-peak-element/][Find peak element]]                                          | [[./100/162_find_peak_element.org][C++]]            | Medium     |
   |  160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]        | Easy       |
   |  155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]        | Easy       |
