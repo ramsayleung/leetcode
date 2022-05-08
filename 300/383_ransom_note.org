@@ -1,0 +1,79 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-05-08 日 08:04
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/300
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-05-08 日 08:04]
+#+TITLE: 383. Ransom Note
+#+HUGO_WEIGHT: 383
+
+* Description
+  source: https://leetcode.com/problems/ransom-note/
+
+  Given two strings ~ransomNote~ and ~magazine~, return ~true~ if ~ransomNote~ can be constructed from ~magazine~ and ~false~ otherwise.
+
+  Each letter in ~magazine~ can only be used once in ~ransomNote~.
+
+  *Example 1*:
+
+  #+begin_example
+  Input: ransomNote = "a", magazine = "b"
+  Output: false
+  #+end_example
+  *Example 2*:
+
+  #+begin_example
+  Input: ransomNote = "aa", magazine = "ab"
+  Output: false
+  #+end_example
+  *Example 3*:
+
+  #+begin_example
+  Input: ransomNote = "aa", magazine = "aab"
+  Output: true
+  #+end_example
+
+
+  Constraints:
+
+  - ~1 <= ransomNote.length, magazine.length <= 10^5~
+  - ~ransomNote~ and ~magazine~ consist of lowercase English letters.
+* Solution
+  #+begin_src C++
+    #include <unordered_map>
+    class Solution {
+    public:
+      bool canConstruct(string ransomNote, string magazine) {
+	// Time complexity: O(N + M), N is the size of ransomNode, M is the size of
+	// magazine Space complexity: O(26) => O(1)
+
+	// table doubling is expensive,so just preallocating the space
+	std::unordered_map<char, int> word_freq(26); 
+
+	for (int i = 0; i < magazine.size(); i++) {
+	  auto iter = word_freq.find(magazine[i]);
+	  if (iter == word_freq.end()) {
+	    word_freq[magazine[i]] = 1;
+	  } else {
+	    iter->second++;
+	  }
+	}
+
+	for (int i = 0; i < ransomNote.size(); i++) {
+	  auto iter = word_freq.find(ransomNote[i]);
+	  if (iter == word_freq.end() || iter->second < 1) {
+	    return false;
+	  } else {
+	    iter->second--;
+	  }
+	}
+
+	return true;
+      }
+    };
+  #+end_src
+

@@ -73,6 +73,7 @@
   |  392 | [[https://leetcode.com/problems/is-subsequence/][Is subsequence]]                                             | [[./300/is_subsequence.py][Python3]]        | Easy       |
   |  389 | [[https://leetcode.com/problems/find-the-difference/][find-the-difference]]                                        | [[./300/find_the_difference.org][Python3]]        | Easy       |
   |  387 | [[https://leetcode.com/problems/first-unique-character-in-a-string/][First unique character in a string]]                         | [[./300/first_unique_character_in_a_string.org][Python3]]        | Easy       |
+  |  383 | [[https://leetcode.com/problems/ransom-note/][Ransom Note]]                                                | [[./300/383_ransom_note.org][C++]]            | Easy       |
   |  380 | [[https://leetcode.com/problems/insert-delete-getrandom-o1/][Insert delete getrandom o1]]                                 | [[./300/insert_delete_getrandom_o1.org][Python3]]        | Medium     |
   |  378 | [[https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix][Kth Smallest Element in a Sorted Matrix]]                    | [[./300/378_kth_smallest_element_in_a_sorted_matrix.org][C++]]            | Medium     |
   |  377 | [[https://leetcode.com/problems/combination-sum-iv/][Combination sum iv]]                                         | [[./300/combination_sum_iv.py][Python3]]        | Medium     |
@@ -215,6 +216,7 @@
   |   60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]        | Medium     |
   |   57 | [[https://leetcode.com/problems/insert-interval/][Insert interval]]                                            | [[./000/57_insert_interval.org][C++]]            | Medium     |
   |   56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3&&C++]]   | Medium     |
+  |   54 | [[https://leetcode.com/problems/spiral-matrix/][Spiral Matrix]]                                              | [[./000/54_spiral_matrix.org][C++]]            | Medium     |
   |   53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]        | Easy       |
   |   50 | [[https://leetcode.com/problems/powx-n/][Powx n]]                                                     | [[./000/50_powx_n.org::*Description][C++]]            | Medium     |
   |   49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]        | Medium     |
