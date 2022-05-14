@@ -236,10 +236,11 @@
   |   26 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array/][Remove duplicates from sorted array]]                        | [[./000/26_remove_duplicates_from_sorted_array.org][C++]]            | Easy       |
   |   24 | [[https://leetcode.com/problems/swap-nodes-in-pairs/][Swap Nodes in Pairs]]                                        | [[./000/24_swap_nodes_in_pairs.org][C++]]            | Medium     |
   |   23 | [[https://leetcode.com/problems/merge-k-sorted-lists/][Merge k sorted lists]]                                       | [[./000/merge_k_sorted_lists.org][Python3]]        | Hard       |
+  |   22 | [[https://leetcode.com/problems/generate-parentheses/][Generate parentheses]]                                       | [[./000/22_generate_parentheses.org][C++]]            | Medium     |
   |   21 | [[https://leetcode.com/problems/merge-two-sorted-lists/][Merge two sorted lists]]                                     | [[./000/merge_two_sorted_lists.org][Python3]]        | Easy       |
   |   20 | [[https://leetcode.com/problems/valid-parentheses/][Valida parentheses]]                                         | [[./000/valid_parentheses.py][Python3]]        | Easy       |
   |   19 | [[https://leetcode.com/problems/remove-nth-node-from-end-of-list/][Remove nth node from end of list]]                           | [[./000/remove_nth_node_from_end_of_list.org][Python3]]        | Medium     |
-  |   17 | [[https://leetcode.com/problems/letter-combinations-of-a-phone-number/][Letter combinations of a phone number]]                      | [[./000/17_letter_combinations_of_a_phone_number.org][Python3&&C++]]        | Medium     |
+  |   17 | [[https://leetcode.com/problems/letter-combinations-of-a-phone-number/][Letter combinations of a phone number]]                      | [[./000/17_letter_combinations_of_a_phone_number.org][Python3&&C++]]   | Medium     |
   |   14 | [[https://leetcode.com/problems/longest-common-prefix/][Longest common prefix]]                                      | [[./000/14_longest_common_prefix.org::*Description][C++]]            | Easy       |
   |   13 | [[https://leetcode.com/problems/roman-to-integer/][Roman to integer]]                                           | [[./000/13.roman_to_integer.org][C++]]            | Easy       |
   |   12 | [[https://leetcode.com/problems/integer-to-roman/][Integer to roman]]                                           | [[./000/12_integer_to_roman.org][C++]]            | Medium     |

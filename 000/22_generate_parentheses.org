@@ -1,0 +1,66 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-05-14 六 08:20
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-05-14 六 08:20]
+#+TITLE: 22. Generate Parentheses
+#+HUGO_WEIGHT: 22
+
+* Description
+  source: https://leetcode.com/problems/generate-parentheses/
+
+  Given =n= pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+  *Example 1*:
+
+  #+begin_example
+  Input: n = 3
+  Output: ["((()))","(()())","(())()","()(())","()()()"]
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: n = 1
+  Output: ["()"]
+  #+end_example
+ 
+  *Constraints*:
+
+  - 1 <= n <= 8
+
+* Solution
+  #+begin_src C++
+    class Solution {
+    public:
+	vector<string> generateParenthesis(int n) {
+	    // Time complexity: O(2^(n *2))
+	    // Space complexity: O(2^n)
+	    std::vector<std::string> result;
+	    backtrack(n, n, "" ,result);
+	    return result;
+        
+	}
+	void backtrack(int left, int right, const std::string& pars, std::vector<std::string>& result){
+	    if(left == 0 && right == 0){
+		result.push_back(pars);
+	    }
+
+        
+	    if(left > 0){
+		backtrack(left - 1, right, pars + "(", result);
+	    }
+        
+	    // ensure close parenthese goes after open parenthese.
+	    if(right >left){
+		backtrack(left, right - 1 , pars + ")", result);
+	    }
+	}
+    
+    };
+  #+end_src
