@@ -205,6 +205,7 @@
   |   83 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-list/][Remove Duplicates from Sorted List]]                         | [[./000/83_remove_duplicates_from_sorted_list.org][C++]]            | Easy       |
   |   82 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/][Remove Duplicates from Sorted List II]]                      | [[./000/82_remove_duplicates_from_sorted_list_ii.org][C++]]            | Medium     |
   |   80 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/][Remove Duplicates from Sorted Array II]]                     | [[./000/80_remove_duplicates_from_sorted_array_ii.org][C++]]            | Medium     |
+  |   79 | [[https://leetcode.com/problems/word-search/][Word Search]]                                                | [[./000/79_word_search.org][C++]]            | Medium     |
   |   78 | [[https://leetcode.com/problems/subsets/][Subsets]]                                                    | [[./000/78_subsets.org][Python3&&C++]]   | Medium     |
   |   77 | [[https://leetcode.com/problems/combinations/][Combinations]]                                               | [[./000/combinations.org][Python3]]        | Medium     |
   |   75 | [[https://leetcode.com/problems/sort-colors/][Sort colors]]                                                | [[./000/75_sort_colors.org][C++]]            | Medium     |
