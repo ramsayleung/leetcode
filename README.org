@@ -160,6 +160,7 @@
   |  155 | [[https://leetcode.com/problems/min-stack/][Min stack]]                                                  | [[./100/min_stack.py][Python3]]        | Easy       |
   |  153 | [[https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/][Find minimum in rotated sorted array]]                       | [[./100/153.find_minimum_in_rotated_sorted_array.org][C++]]            | Medium     |
   |  152 | [[https://leetcode.com/problems/maximum-product-subarray/][Maximum product subarray]]                                   | [[./100/maximum_product_subarray.py][Python3]]        | Medium     |
+  |  151 | [[https://leetcode.com/problems/reverse-words-in-a-string/][Reverse Words in a String]]                                  | [[./100/151_reverse_words_in_a_string.org][C++]]            | Medium     |
   |  150 | [[https://leetcode.com/problems/evaluate-reverse-polish-notation/][Evaluate reverse polish notation]]                           | [[./100/evaluate_reverse_polish_notation.py][Python3]]        | Medium     |
   |  148 | [[https://leetcode.com/problems/sort-list/][Sort list]]                                                  | [[./100/sort_list.org][Python3]]        | Medium     |
   |  147 | [[https://leetcode.com/problems/insertion-sort-list/][Insertion sort list]]                                        | [[./100/insertion_sort_list.org][Python3]]        | Medium     |
@@ -221,6 +222,7 @@
   |   61 | [[https://leetcode.com/problems/rotate-list/][Rotate list]]                                                | [[./000/61_rotate_list.org][C++]]            | Medium     |
   |   60 | [[https://leetcode.com/problems/permutation-sequence/][Permutation sequence]]                                       | [[./000/permutation_sequence.org][Python3]]        | Medium     |
   |   59 | [[https://leetcode.com/problems/spiral-matrix-ii/][Spiral Matrix II]]                                           | [[./000/59_spiral_matrix_ii.org][C++]]            | Medium     |
+  |   58 | [[https://leetcode.com/problems/length-of-last-word/][Length of Last Word]]                                        | [[./000/58_length_of_last_word.org][C++]]            | Easy       |
   |   57 | [[https://leetcode.com/problems/insert-interval/][Insert interval]]                                            | [[./000/57_insert_interval.org][C++]]            | Medium     |
   |   56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3&&C++]]   | Medium     |
   |   54 | [[https://leetcode.com/problems/spiral-matrix/][Spiral Matrix]]                                              | [[./000/54_spiral_matrix.org][C++]]            | Medium     |
