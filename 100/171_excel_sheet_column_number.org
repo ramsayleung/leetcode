@@ -1,0 +1,74 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-05-21 六 17:44
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/100
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-05-21 六 17:45]
+#+TITLE: 171. Excel Sheet Column Number
+#+HUGO_WEIGHT: 171
+
+* Description
+  source: https://leetcode.com/problems/excel-sheet-column-number/
+
+  Given a string ~columnTitle~ that represents the column title as appears in an Excel sheet, return its corresponding column number.
+
+  For example:
+
+  #+begin_example
+  A -> 1
+  B -> 2
+  C -> 3
+  ...
+  Z -> 26
+  AA -> 27
+  AB -> 28 
+  ...
+  #+end_example
+
+
+  *Example 1*:
+
+  #+begin_example
+  Input: columnTitle = "A"
+  Output: 1
+  #+end_example
+  *Example 2*:
+
+  #+begin_example
+  Input: columnTitle = "AB"
+  Output: 28
+  #+end_example
+  *Example 3*:
+
+  #+begin_example
+  Input: columnTitle = "ZY"
+  Output: 701
+  #+end_example
+
+
+  *Constraints*:
+
+  - ~1 <= columnTitle.length <= 7~
+  - ~columnTitle~ consists only of uppercase English letters.
+  - ~columnTitle~ is in the range ~["A", "FXSHRXW"]~.
+* Solution
+  #+begin_src C++
+    class Solution {
+    public:
+      int titleToNumber(string columnTitle) {
+	// Time complexity: O(N), N is the size of columnTitle
+	// Space complexity: O(1)
+	int size = columnTitle.size();
+	long result = 0;
+	for(int i = 0; i < size; i++){
+	  result = result * 26 + columnTitle[i] - 'A' + 1;
+	}
+	return result;
+      }
+    };
+  #+end_src
+
