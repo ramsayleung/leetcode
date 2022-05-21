@@ -1,0 +1,43 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-05-21 六 17:53
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/400
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-05-21 六 17:53]
+#+TITLE: 434. Number of Segments in a String
+#+HUGO_WEIGHT: 434
+
+* Description
+  source: https://leetcode.com/problems/number-of-segments-in-a-string/
+
+  Given a string s, return the number of segments in the string.
+
+A segment is defined to be a contiguous sequence of non-space characters.
+
+ 
+
+*Example 1*:
+
+#+begin_example
+Input: s = "Hello, my name is John"
+Output: 5
+Explanation: The five segments are ["Hello,", "my", "name", "is", "John"]
+#+end_example
+*Example 2*:
+
+#+begin_example
+Input: s = "Hello"
+Output: 1
+#+end_example
+ 
+
+*Constraints*:
+
+- ~0 <= s.length <= 300~
+- ~s~ consists of lowercase and uppercase English letters, digits, or one of the following characters ~"!@#$%^&*()_+-=',.:"~.
+- The only space character in ~s~ is ~' '~.
+* Solution

@@ -59,6 +59,7 @@
   |  456 | [[https://leetcode.com/problems/132-pattern/][132 pattern]]                                                | [[./400/132_pattern.py][Python3]]        | Medium     |
   |  451 | [[https://leetcode.com/problems/sort-characters-by-frequency/][Sort characters by frequency]]                               | [[./400/sort_characters_by_frequency.org][Python3]]        | Medium     |
   |  448 | [[https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/][Find all numbers disappeared in an array]]                   | [[./400/find_all_numbers_disappeared_in_an_array.org][Python3]]        | Easy       |
+  |  434 | [[https://leetcode.com/problems/number-of-segments-in-a-string/][Number of Segments in a String]]                             | [[./400/434_number_of_segments_in_a_string.org][C++]]            | Easy       |
   |  439 | [[https://leetcode.com/problems/ternary-expression-parser/][Ternary expression parser]]                                  | [[./400/ternary_expression_parser.py][Python3]]        | Medium     |
   |  438 | [[https://leetcode.com/problems/find-all-anagrams-in-a-string/][Find all anagrams in a string]]                              | [[./400/find_all_anagrams_in_a_string.org][Python3]]        | Medium     |
   |  437 | [[https://leetcode.com/problems/path-sum-iii][Path sum iii]]                                               | [[./400/path_sum_iii.org][Python3]]        | Easy       |
@@ -155,6 +156,7 @@
   |  173 | [[https://leetcode.com/problems/binary-search-tree-iterator/][Binary search tree iterator]]                                | [[./100/binary_search_tree_iterator.py][Python3]]        | Medium     |
   |  171 | [[https://leetcode.com/problems/excel-sheet-column-number/][Excel Sheet Column Number]]                                  | [[./100/171_excel_sheet_column_number.org][C++]]            | Easy       |
   |  169 | [[https://leetcode.com/problems/majority-element/][Majority element]]                                           | [[./100/169_majority_element.org][Python3&&C++]]   | Easy       |
+  |  168 | [[https://leetcode.com/problems/excel-sheet-column-title/][Excel Sheet Column Title]]                                   | [[./100/168_excel_sheet_column_title.org][C++]]            | Easy       |
   |  167 | [[https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/][Two Sum II - Input Array Is Sorted]]                         | [[./100/167_two_sum_ii_input_array_is_sorted.org][C++]]            | Medium     |
   |  162 | [[https://leetcode.com/problems/find-peak-element/][Find peak element]]                                          | [[./100/162_find_peak_element.org][C++]]            | Medium     |
   |  160 | [[https://leetcode.com/problems/intersection-of-two-linked-lists/][Intersection of two linked lists]]                           | [[./100/intersection_of_two_linked_lists.org][Python3]]        | Easy       |
