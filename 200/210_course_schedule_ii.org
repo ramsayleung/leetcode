@@ -1,0 +1,105 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-05-22 日 16:23
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/200
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-05-22 日 16:23]
+#+TITLE: 210. Course Schedule II
+#+HUGO_WEIGHT: 210
+
+* Description
+  source: https://leetcode.com/problems/course-schedule-ii/
+  
+  There are a total of =numCourses= courses you have to take, labeled from =0= to =numCourses - 1=. You are given an array =prerequisites= where =prerequisites[i] = [ai, bi]= indicates that you *must* take course =bi= first if you want to take course =ai=.
+
+  - For example, the pair ~[0, 1]~, indicates that to take course ~0~ you have to first take course ~1~.
+
+  Return the ordering of courses you should take to finish all courses. If there are many valid answers, return *any* of them. If it is impossible to finish all courses, return *an empty array*.
+
+  *Example 1*:
+
+  #+begin_example
+  Input: numCourses = 2, prerequisites = [[1,0]]
+  Output: [0,1]
+  Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1].
+  #+end_example
+  *Example 2*:
+
+  #+begin_example
+  Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]
+  Output: [0,2,1,3]
+  Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0.
+  So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3].
+  #+end_example
+  *Example 3*:
+
+  #+begin_example
+  Input: numCourses = 1, prerequisites = []
+  Output: [0]
+  #+end_example
+
+  *Constraints*:
+
+  - ~1 <= numCourses <= 2000~
+  - ~0 <= prerequisites.length <= numCourses * (numCourses - 1)~
+  - ~prerequisites[i].length == 2~
+  - ~0 <= ai, bi < numCourses~
+  - ~ai != bi~
+  - All the pairs ~[ai, bi]~ are *distinct*.
+* Solution
+  Demonstration: [[https://ramsayleung.github.io/post/2022/topological_sorting/]]
+
+  #+begin_src C++
+    class Solution {
+    public:
+      vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+	if(numCourses == 1){
+	  return std::vector<int>{0};
+	}
+
+	// Kahn's algorithm
+	std::vector<std::vector<int>> adj(numCourses, std::vector<int>());
+	std::vector<int> in_degree(numCourses, 0);
+
+	for(const auto& pre: prerequisites){
+	  adj[pre[1]].push_back(pre[0]);
+	  in_degree[pre[0]] ++;
+	}
+
+	std::deque<int> queue; // set of vertices of indegree 0
+	for(int i = 0; i < numCourses; i++){
+	  if(in_degree[i] == 0){
+	    queue.push_back(i);
+	  }
+	}
+
+	std::vector<int> order(numCourses, 0);
+
+	int index = 0;
+	while(queue.size() > 0){
+	  int cur = queue.front();
+	  queue.pop_front();
+	  order[index++] = cur;
+
+	  for(const auto& next: adj[cur]){
+	    if(--in_degree[next] == 0){
+	      queue.push_back(next);
+	    }
+	  }
+	}
+
+	// there is no cycle
+	if(numCourses == index){
+	  return order;
+	}else{
+	  return std::vector<int>{};
+	}
+
+      }
+    };
+  #+end_src
+
