@@ -1,0 +1,67 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-05-27 五 20:51
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/300
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-05-27 五 20:51]
+#+TITLE: 386. Lexicographical Numbers
+#+HUGO_WEIGHT: 386
+
+* Description
+  source: https://leetcode.com/problems/lexicographical-numbers/
+
+  Given an integer ~n~, return all the numbers in the range ~[1, n]~ sorted in lexicographical order.
+
+  You must write an algorithm that runs in ~O(n)~ time and uses ~O(1)~ extra space. 
+
+  *Example 1*:
+
+  #+begin_example
+  Input: n = 13
+  Output: [1,10,11,12,13,2,3,4,5,6,7,8,9]
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: n = 2
+  Output: [1,2]
+  #+end_example
+
+
+  *Constraints*:
+
+  - ~1 <= n <= 5 * 10^4~
+* Solution
+  #+begin_src C++
+    #include <vector>
+    class Solution {
+    public:
+      vector<int> lexicalOrder(int n) {
+	// Time complexity: O(N)
+	// space complexity: O(1)
+	int upper = std::min(9, n);
+	std::vector<int> result;
+
+	for (int i = 1; i <= upper; i++) {
+	  dfs(i, n, result);
+	}
+	return result;
+      }
+
+      void dfs(int val, int n, std::vector<int> &result) {
+	if (val <= n) {
+	  result.push_back(val);
+	  for (int i = 0; i <= 9; i++) {
+	    if (val * 10 + i <= n) {
+	      dfs(val * 10 + i, n, result);
+	    }
+	  }
+	}
+      }
+    };
+  #+end_src
