@@ -259,7 +259,7 @@
   |    9 | [[https://leetcode.com/problems/palindrome-number/][Palindrome number]]                                          | [[./000/9.palindrome_number.org][C++]]            | Easy       |
   |    7 | [[https://leetcode.com/problems/reverse-integer/][Reverse integer]]                                            | [[./000/7.reverse_integer.org::*Description][C++]]            | Medium     |
   |    8 | [[https://leetcode.com/problems/string-to-integer-atoi/][String to integer atoi]]                                     | [[./000/8_string_to_integer_atoi.org::*Description][C++]]            | Medium     |
-  |    5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/longest_palindromic_substring.py][Python3]]        | Medium     |
+  |    5 | [[https://leetcode.com/problems/longest-palindromic-substring/][Longest palindromic substring]]                              | [[./000/5_longest_palindromic_substring.org][Python3&&C++]]   | Medium     |
   |    3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters/][Longest substring without repeating characters]]             | [[./000/longest_substring_without_repeating_characters.org][Python3]]        | Medium     |
   |    2 | [[https://leetcode.com/problems/add-two-numbers/][add two numbers]]                                            | [[./000/add_two_numbers.org][Python3]]        | Medium     |
   

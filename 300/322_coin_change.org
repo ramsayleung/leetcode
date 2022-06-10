@@ -55,6 +55,10 @@
       int coinChange(vector<int>& coins, int amount) {
 	// Time complexity: O(N*A), N is the size of coins, A = amount
 	// Space complexity: O(A)
+
+	// Suppose the coins are [1, 2 5]
+	// f(x) is fewest number of coins of x amount
+	// so f(x) = min{f(x - 1) + 1, f(x - 2) + 1, f(x - 5) + 1}
 	int max_val = 0x709394;
 	std::vector<int> f(amount + 1, max_val);
 	f[0] = 0;
