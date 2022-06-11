@@ -1,0 +1,98 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-06-11 六 10:28
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-06-11 六 10:28]
+#+TITLE: 55. Jump Game
+#+HUGO_WEIGHT: 55
+
+* Description
+  source: https://leetcode.com/problems/jump-game/
+
+  You are given an integer array =nums=. You are initially positioned at the array's *first index*, and each element in the array represents your maximum jump length at that position.
+
+  Return =true= if you can reach the last index, or =false= otherwise.
+
+  *Example 1*:
+
+  #+begin_example
+  Input: nums = [2,3,1,1,4]
+  Output: true
+  Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: nums = [3,2,1,0,4]
+  Output: false
+  Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
+  #+end_example
+
+
+  *Constraints*:
+
+  - ~1 <= nums.length <= 10^4~
+  - ~0 <= nums[i] <= 10^5~
+* Solution
+  I came up with two solutions, the better solution: 
+  #+begin_src C++
+    class Solution {
+    public:
+	bool canJump(vector<int>& nums) {
+	    // Time complexity: O(N)
+	    // Space complexity: O(1)
+        
+	    // farest: the farest index we can jump
+	    // just interate the nums to the end, and check if farest >= last index
+	    int farest = 0;
+	    for(int i = 0; i< nums.size(); i++){
+		// there is no way to jump to current index;
+		if(i > farest){
+		    return false;
+		}
+            
+		farest = std::max(nums[i] + i, farest);
+	    }
+        
+	    return true;
+	}
+    };
+  #+end_src
+
+  The general solution with dynamic programming
+  #+begin_src C++
+    class Solution {
+    public:
+	bool canJump(vector<int>& nums) {
+	    // dynamic programming formula
+	    // f(x) = true: if you can reach the index x from first index
+	    // when nums[x] + x < nums.size, f({x + 1: x + nums[x]}) = true
+        
+	    std::vector<bool> f(nums.size(), false);
+	    f[0] = true;
+	    for(int x = 0; x < nums.size(); x++){
+		if(!f[x]){
+		    return false;
+		}
+            
+		for(int p = 0; p <= nums[x]; p++){
+		    if(x + p < nums.size()){
+			 f[x + p] = f[x + p] || f[x];
+		    }
+                
+		    if(x + p == nums.size() && f[nums.size() - 1]){
+			return true;
+		    }
+		}
+	    }
+        
+	    return f[nums.size() - 1];
+	}
+    };
+  #+end_src

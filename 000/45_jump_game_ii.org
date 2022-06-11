@@ -1,0 +1,73 @@
+#+LATEX_CLASS: ramsay-org-article
+#+LATEX_CLASS_OPTIONS: [oneside,A4paper,12pt]
+#+AUTHOR: Ramsay Leung
+#+EMAIL: ramsayleung@gmail.com
+#+DATE: 2022-06-11 六 10:25
+#+HUGO_BASE_DIR: ~/code/org/leetcode_book
+#+HUGO_SECTION: docs/000
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+DATE: [2022-06-11 六 10:25]
+#+TITLE: 45. Jump Game II
+#+HUGO_WEIGHT: 45
+
+* Description
+  source: https://leetcode.com/problems/jump-game-ii/
+
+  Given an array of non-negative integers =nums=, you are initially positioned at the first index of the array.
+
+  Each element in the array represents your maximum jump length at that position.
+
+  Your goal is to reach the last index in the minimum number of jumps.
+
+  You can assume that you can always reach the last index.
+
+  *Example 1*:
+
+  #+begin_example
+  Input: nums = [2,3,1,1,4]
+  Output: 2
+  Explanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
+  #+end_example
+
+  *Example 2*:
+
+  #+begin_example
+  Input: nums = [2,3,0,1,4]
+  Output: 2
+  #+end_example
+
+
+  *Constraints*:
+
+  - ~1 <= nums.length <= 10^4~
+  - ~0 <= nums[i] <= 1000~
+* Solution
+  #+begin_src C++
+    #include <vector>
+    class Solution {
+    public:
+      int jump(vector<int>& nums) {
+	// Time complexity: O(N ^ N);
+	// Space complexity: O(N)
+
+	// dynamic programming formula
+	// f[x] is minimum number of jumps we need to jump to index x from first index.
+	// suppose nums[x] + x < nums.size(), f({x + 1:x + nums[x]}) = f(x) + 1
+	std::vector<int> f(nums.size(), 0x709394);
+	f[0] = 0;
+	for(int x = 0; x < nums.size(); x++){
+	  for(int p = 0; p <= nums[x]; p++){
+	    if(p + x < nums.size()){
+	      f[x + p] = std::min(f[x + p], f[x] + 1);
+	    }
+
+	    if(p + x == nums.size() - 1){
+	      return f[nums.size() -1 ];
+	    }
+	  }
+	}
+	return f[nums.size() -1 ];
+      }
+    };
+  #+end_src

@@ -232,12 +232,14 @@
   |   58 | [[https://leetcode.com/problems/length-of-last-word/][Length of Last Word]]                                        | [[./000/58_length_of_last_word.org][C++]]            | Easy       |
   |   57 | [[https://leetcode.com/problems/insert-interval/][Insert interval]]                                            | [[./000/57_insert_interval.org][C++]]            | Medium     |
   |   56 | [[https://leetcode.com/problems/merge-intervals/][Merge intervals]]                                            | [[./000/merge_intervals.org][Python3&&C++]]   | Medium     |
+  |   55 | [[https://leetcode.com/problems/jump-game/][Jump Game]]                                                  | [[./000/55_jump_game.org][C++]]            | Medium     |
   |   54 | [[https://leetcode.com/problems/spiral-matrix/][Spiral Matrix]]                                              | [[./000/54_spiral_matrix.org][C++]]            | Medium     |
   |   53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum subarray]]                                           | [[./000/maximum_subarray.py][Python3]]        | Easy       |
   |   50 | [[https://leetcode.com/problems/powx-n/][Powx n]]                                                     | [[./000/50_powx_n.org::*Description][C++]]            | Medium     |
   |   49 | [[https://leetcode.com/problems/group-anagrams/][Group anagrams]]                                             | [[./000/group_anagrams.org][Python3]]        | Medium     |
   |   47 | [[https://leetcode.com/problems/permutations-ii/][Permutations ii]]                                            | [[./000/permutations_ii.org][Python3]]        | Medium     |
   |   46 | [[https://leetcode.com/problems/permutations/][Permutations]]                                               | [[./000/permutations.org][Python3]]        | Medium     |
+  |   45 | [[https://leetcode.com/problems/jump-game-ii/][Jump Game II]]                                               | [[./000/45_jump_game_ii.org][C++]]            | Medium     |
   |   43 | [[https://leetcode.com/problems/multiply-strings/][Multiply strings]]                                           | [[./000/43.multiply_strings.org][C++]]            | Medium     |
   |   40 | [[https://leetcode.com/problems/combination-sum-ii/][Combination sum ii]]                                         | [[./000/combination-sum_ii.org][Python3]]        | Medium     |
   |   39 | [[https://leetcode.com/problems/combination-sum/][Combination sum]]                                            | [[./000/combination_sum.org][Python3]]        | Medium     |
